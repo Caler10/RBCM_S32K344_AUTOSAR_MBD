@@ -1,0 +1,9 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/sys_init.c:209:6:sys_enableAllInterrupts	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/sys_init.c:219:6:sys_disableAllInterrupts	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/sys_init.c:229:6:sys_disableIsrSource	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/sys_init.c:239:6:sys_enableIsrSource	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/sys_init.c:250:6:sys_registerIsrHandler	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/sys_init.c:983:16:sys_init	56	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/sys_init.c:1011:6:sys_halt	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/sys_init.c:1023:6:sys_stop	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/sys_init.c:1028:7:EUnit_GetCoreID	0	static

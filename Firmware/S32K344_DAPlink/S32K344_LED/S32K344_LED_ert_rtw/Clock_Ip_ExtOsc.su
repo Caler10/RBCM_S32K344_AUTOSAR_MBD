@@ -1,0 +1,12 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_ExtOsc.c:157:13:Clock_Ip_ExternalOscillatorEmpty	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_ExtOsc.c:162:13:Clock_Ip_DisableClockIpExternalOscillatorEmpty	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_ExtOsc.c:172:13:Clock_Ip_ResetFxoscOsconBypEocvGmSel	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_ExtOsc.c:286:13:Clock_Ip_DisableFxoscOsconBypEocvGmSel	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_ExtOsc.c:293:13:Clock_Ip_EnableFxoscOsconBypEocvGmSel	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_ExtOsc.c:363:13:Clock_Ip_CompleteSxoscOsconEocv	32	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_ExtOsc.c:229:13:Clock_Ip_CompleteFxoscOsconBypEocvGmSel	32	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_ExtOsc.c:333:13:Clock_Ip_SetSxoscOsconEocv	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_ExtOsc.c:190:13:Clock_Ip_SetFxoscOsconBypEocvGmSel	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_ExtOsc.c:421:13:Clock_Ip_EnableSxoscOsconEocv	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_ExtOsc.c:415:13:Clock_Ip_DisableSxoscOsconEocv	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_ExtOsc.c:315:13:Clock_Ip_ResetSxoscOsconEocv	0	static

@@ -1,0 +1,74 @@
+@echo off
+setlocal enabledelayedexpansion
+REM ------------------------------------------------------------------
+REM 脚本：keil-mdk 的编译脚本
+REM 日期：2022/6/16
+REM 输入参数：-r： 全局编译； -b： 编译； -f： 烧录； 无参数：编译
+REM 使用方法：
+REM 1、将脚本放置任意文件夹，并对此文件夹添加环境变量
+REM 2、在相关工程路径下进行脚本调用此脚本，根据需求输入参数
+REM 参考资料：
+REM ARM开发网站：https://developer.arm.com/documentation/101407/latest/Command-Line
+REM ------------------------------------------------------------------
+
+REM 这里把UV设置成Keil安装地址
+set UV=D:\AppGallery\Software\Keil_v5\UV4\UV4.exe
+REM 查找工程文件并把UV_PRO_PATH设置成工程路径
+for /f "delims=" %%i in ('dir /s/b/a-d ^| findstr .uvprojx') do (
+	set UV_PRO_PATH=%%i
+	set /a n=n+1)
+echo %UV_PRO_PATH%
+REM 判断是否只有一个工程文件
+if not %n%==1 (
+	goto NO_ONLY
+)
+
+REM 开始编译或烧录
+echo .>build_log.txt
+
+if "%UV_PRO_PATH%" == "" goto NOP
+if "%1" == "-b" (
+REM 编译
+    echo Init building ... 
+    %UV% -j0 -sg -b %UV_PRO_PATH% -o %cd%\build_log.txt 
+    type build_log.txt
+) else if "%1" == "-f" (
+REM 烧录
+    echo Init flashing ...  
+    %UV% -j0 -sg -f %UV_PRO_PATH% -o %cd%\build_log.txt 
+    type build_log.txt
+) else if "%1" == "-r" (
+REM 全局编译
+    echo Init building ...  
+    %UV% -j0 -sg -r %UV_PRO_PATH% -o %cd%\build_log.txt 
+    type build_log.txt
+) else (
+REM 仅编译
+    echo Init building ... 
+	%UV% -j0 -sg -b %UV_PRO_PATH% -o %cd%\build_log.txt
+    type build_log.txt
+REM    echo Init flashing ... 
+REM    %UV% -j0 -sg -f %UV_PRO_PATH% -o %cd%\build_log.txt 
+REM    type build_log.txt
+)
+if "%2" == "-f" (
+REM 烧录
+    echo Init flashing ... 
+    %UV% -j0 -sg -f %UV_PRO_PATH% -o %cd%\build_log.txt 
+    type build_log.txt
+)
+echo Done.
+del %cd%\build_log.txt
+goto end
+
+:NOP
+echo No ProjectName
+goto end
+
+:NO_ONLY
+echo Not the only Project,Please check project number
+goto end
+
+:end
+REM 打开下面这个注释可能导致控制台窗口在编译完成后关闭
+::exit

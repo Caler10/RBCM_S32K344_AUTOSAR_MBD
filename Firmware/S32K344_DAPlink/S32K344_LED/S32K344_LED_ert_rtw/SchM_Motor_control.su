@@ -1,0 +1,13 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Motor_control.c:309:8:Motor_Control_schm_read_msr	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Motor_control.c:393:6:SchM_Enter_Motor_Control_MOTORCONTROL_EXCLUSIVE_AREA_00	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Motor_control.c:417:6:SchM_Exit_Motor_Control_MOTORCONTROL_EXCLUSIVE_AREA_00	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Motor_control.c:431:6:SchM_Enter_Motor_Control_MOTORCONTROL_EXCLUSIVE_AREA_01	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Motor_control.c:455:6:SchM_Exit_Motor_Control_MOTORCONTROL_EXCLUSIVE_AREA_01	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Motor_control.c:469:6:SchM_Enter_Motor_Control_MOTORCONTROL_EXCLUSIVE_AREA_02	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Motor_control.c:493:6:SchM_Exit_Motor_Control_MOTORCONTROL_EXCLUSIVE_AREA_02	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Motor_control.c:507:6:SchM_Enter_Motor_Control_MOTORCONTROL_EXCLUSIVE_AREA_03	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Motor_control.c:531:6:SchM_Exit_Motor_Control_MOTORCONTROL_EXCLUSIVE_AREA_03	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Motor_control.c:545:6:SchM_Enter_Motor_Control_MOTORCONTROL_EXCLUSIVE_AREA_04	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Motor_control.c:569:6:SchM_Exit_Motor_Control_MOTORCONTROL_EXCLUSIVE_AREA_04	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Motor_control.c:583:6:SchM_Enter_Motor_Control_MOTORCONTROL_EXCLUSIVE_AREA_05	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Motor_control.c:607:6:SchM_Exit_Motor_Control_MOTORCONTROL_EXCLUSIVE_AREA_05	8	static

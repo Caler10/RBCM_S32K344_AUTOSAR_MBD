@@ -1,0 +1,4 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_CortexM7.c:142:6:Power_Ip_CM7_DisableSleepOnExit	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_CortexM7.c:158:6:Power_Ip_CM7_EnableSleepOnExit	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_CortexM7.c:173:6:Power_Ip_CM7_DisableDeepSleep	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_CortexM7.c:186:6:Power_Ip_CM7_EnableDeepSleep	0	static

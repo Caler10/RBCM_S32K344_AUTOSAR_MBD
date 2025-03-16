@@ -1,0 +1,11 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Sbc_fs23.c:307:8:Sbc_fs23_schm_read_msr	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Sbc_fs23.c:391:6:SchM_Enter_Sbc_fs23_SBC_FS23_EXCLUSIVE_AREA_00	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Sbc_fs23.c:413:6:SchM_Exit_Sbc_fs23_SBC_FS23_EXCLUSIVE_AREA_00	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Sbc_fs23.c:427:6:SchM_Enter_Sbc_fs23_SBC_FS23_EXCLUSIVE_AREA_01	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Sbc_fs23.c:449:6:SchM_Exit_Sbc_fs23_SBC_FS23_EXCLUSIVE_AREA_01	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Sbc_fs23.c:463:6:SchM_Enter_Sbc_fs23_SBC_FS23_EXCLUSIVE_AREA_02	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Sbc_fs23.c:485:6:SchM_Exit_Sbc_fs23_SBC_FS23_EXCLUSIVE_AREA_02	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Sbc_fs23.c:499:6:SchM_Enter_Sbc_fs23_SBC_FS23_EXCLUSIVE_AREA_03	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Sbc_fs23.c:521:6:SchM_Exit_Sbc_fs23_SBC_FS23_EXCLUSIVE_AREA_03	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Sbc_fs23.c:535:6:SchM_Enter_Sbc_fs23_SBC_FS23_EXCLUSIVE_AREA_04	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/SchM_Sbc_fs23.c:557:6:SchM_Exit_Sbc_fs23_SBC_FS23_EXCLUSIVE_AREA_04	8	static

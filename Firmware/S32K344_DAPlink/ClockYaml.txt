@@ -1,0 +1,178 @@
+/* TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
+!!Configuration
+name: McuClockSettingConfig_0
+called_from_default_init: true
+outputs:
+- {id: ADC0_CLK.outFreq, value: 160 MHz}
+- {id: ADC1_CLK.outFreq, value: 160 MHz}
+- {id: ADC2_CLK.outFreq, value: 160 MHz}
+- {id: AIPS_PLAT_CLK.outFreq, value: 80 MHz}
+- {id: AIPS_SLOW_CLK.outFreq, value: 40 MHz}
+- {id: BCTU0_CLK.outFreq, value: 160 MHz}
+- {id: CLKOUT_RUN_CLK.outFreq, value: 8 MHz}
+- {id: CLKOUT_STANDBY_CLK.outFreq, value: 24 MHz}
+- {id: CMP0_CLK.outFreq, value: 40 MHz}
+- {id: CMP1_CLK.outFreq, value: 40 MHz}
+- {id: CMP2_CLK.outFreq, value: 40 MHz}
+- {id: CORE_CLK.outFreq, value: 160 MHz}
+- {id: CRC0_CLK.outFreq, value: 80 MHz}
+- {id: DCM0_CLK.outFreq, value: 40 MHz}
+- {id: DCM_CLK.outFreq, value: 40 MHz}
+- {id: DMAMUX0_CLK.outFreq, value: 160 MHz}
+- {id: DMAMUX1_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD0_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD10_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD11_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD12_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD13_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD14_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD15_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD16_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD17_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD18_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD19_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD1_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD20_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD21_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD22_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD23_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD24_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD25_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD26_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD27_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD28_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD29_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD2_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD30_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD31_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD3_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD4_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD5_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD6_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD7_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD8_CLK.outFreq, value: 160 MHz}
+- {id: EDMA0_TCD9_CLK.outFreq, value: 160 MHz}
+- {id: EIM0_CLK.outFreq, value: 80 MHz}
+- {id: EMAC0_RX_CLK.outFreq, value: 48 MHz}
+- {id: EMAC0_TS_CLK.outFreq, value: 48 MHz}
+- {id: EMAC0_TX_CLK.outFreq, value: 48 MHz}
+- {id: EMAC_RX_CLK.outFreq, value: 48 MHz}
+- {id: EMAC_TS_CLK.outFreq, value: 48 MHz}
+- {id: EMAC_TX_CLK.outFreq, value: 48 MHz}
+- {id: EMIOS0_CLK.outFreq, value: 160 MHz}
+- {id: EMIOS1_CLK.outFreq, value: 160 MHz}
+- {id: EMIOS2_CLK.outFreq, value: 160 MHz}
+- {id: ERM0_CLK.outFreq, value: 40 MHz}
+- {id: FIRCOUT.outFreq, value: 48 MHz}
+- {id: FLASH0_CLK.outFreq, value: 40 MHz}
+- {id: FLEXCAN0_CLK.outFreq, value: 40 MHz}
+- {id: FLEXCAN1_CLK.outFreq, value: 40 MHz}
+- {id: FLEXCAN2_CLK.outFreq, value: 40 MHz}
+- {id: FLEXCAN3_CLK.outFreq, value: 40 MHz}
+- {id: FLEXCAN4_CLK.outFreq, value: 40 MHz}
+- {id: FLEXCAN5_CLK.outFreq, value: 40 MHz}
+- {id: FLEXCANA_CLK.outFreq, value: 40 MHz}
+- {id: FLEXCANB_CLK.outFreq, value: 40 MHz}
+- {id: FLEXIO0_CLK.outFreq, value: 80 MHz}
+- {id: FXOSCOUT.outFreq, value: 16 MHz}
+- {id: HSE_CLK.outFreq, value: 80 MHz}
+- {id: INTM_CLK.outFreq, value: 80 MHz}
+- {id: LBIST_CLK.outFreq, value: 40 MHz}
+- {id: LCU0_CLK.outFreq, value: 160 MHz}
+- {id: LCU1_CLK.outFreq, value: 160 MHz}
+- {id: LPI2C0_CLK.outFreq, value: 40 MHz}
+- {id: LPI2C1_CLK.outFreq, value: 40 MHz}
+- {id: LPSPI0_CLK.outFreq, value: 80 MHz}
+- {id: LPSPI1_CLK.outFreq, value: 40 MHz}
+- {id: LPSPI2_CLK.outFreq, value: 40 MHz}
+- {id: LPSPI3_CLK.outFreq, value: 40 MHz}
+- {id: LPSPI4_CLK.outFreq, value: 40 MHz}
+- {id: LPSPI5_CLK.outFreq, value: 40 MHz}
+- {id: LPUART0_CLK.outFreq, value: 80 MHz}
+- {id: LPUART10_CLK.outFreq, value: 40 MHz}
+- {id: LPUART11_CLK.outFreq, value: 40 MHz}
+- {id: LPUART12_CLK.outFreq, value: 40 MHz}
+- {id: LPUART13_CLK.outFreq, value: 40 MHz}
+- {id: LPUART14_CLK.outFreq, value: 40 MHz}
+- {id: LPUART15_CLK.outFreq, value: 40 MHz}
+- {id: LPUART1_CLK.outFreq, value: 40 MHz}
+- {id: LPUART2_CLK.outFreq, value: 40 MHz}
+- {id: LPUART3_CLK.outFreq, value: 40 MHz}
+- {id: LPUART4_CLK.outFreq, value: 40 MHz}
+- {id: LPUART5_CLK.outFreq, value: 40 MHz}
+- {id: LPUART6_CLK.outFreq, value: 40 MHz}
+- {id: LPUART7_CLK.outFreq, value: 40 MHz}
+- {id: LPUART8_CLK.outFreq, value: 80 MHz}
+- {id: LPUART9_CLK.outFreq, value: 40 MHz}
+- {id: MSCM_CLK.outFreq, value: 80 MHz}
+- {id: PIT0_CLK.outFreq, value: 40 MHz}
+- {id: PIT1_CLK.outFreq, value: 40 MHz}
+- {id: PIT2_CLK.outFreq, value: 40 MHz}
+- {id: PLL_PHI0.outFreq, value: 160 MHz}
+- {id: PLL_PHI1.outFreq, value: 160 MHz}
+- {id: QSPI0_RAM_CLK.outFreq, value: 160 MHz}
+- {id: QSPI0_SFCK.outFreq, value: 48 MHz}
+- {id: QSPI0_TX_MEM_CLK.outFreq, value: 160 MHz}
+- {id: QSPI_MEM_CLK.outFreq, value: 160 MHz}
+- {id: QSPI_SFCK_CLK.outFreq, value: 48 MHz}
+- {id: RTC0_CLK.outFreq, value: 32.768 kHz}
+- {id: RTC_CLK.outFreq, value: 32.768 kHz}
+- {id: SAI0_CLK.outFreq, value: 40 MHz}
+- {id: SAI1_CLK.outFreq, value: 40 MHz}
+- {id: SCS_CLK.outFreq, value: 160 MHz}
+- {id: SEMA42_CLK.outFreq, value: 80 MHz}
+- {id: SIRCOUT.outFreq, value: 32 kHz}
+- {id: SIUL2_CLK.outFreq, value: 40 MHz}
+- {id: STCU0_CLK.outFreq, value: 40 MHz}
+- {id: STM0_CLK.outFreq, value: 48 MHz}
+- {id: STM1_CLK.outFreq, value: 48 MHz}
+- {id: STMA_CLK.outFreq, value: 48 MHz}
+- {id: STMB_CLK.outFreq, value: 48 MHz}
+- {id: SWT0_CLK.outFreq, value: 32 kHz}
+- {id: SXOSCOUT.outFreq, value: 32.768 kHz}
+- {id: TEMPSENSE_CLK.outFreq, value: 160 MHz}
+- {id: TRACE_CLK.outFreq, value: 48 MHz}
+- {id: TRGMUX0_CLK.outFreq, value: 40 MHz}
+- {id: TSENSE0_CLK.outFreq, value: 40 MHz}
+- {id: WKPU0_CLK.outFreq, value: 40 MHz}
+settings:
+- {id: ClockDisableFlashWaitStatesConfig, value: Enabled}
+- {id: ClockDisableRamWaitStatesConfig, value: Enabled}
+- {id: ClockGetFrequencyAPI, value: Enabled}
+- {id: CORE_MFD.scale, value: '120', locked: true}
+- {id: CORE_PLLODIV_0_DE, value: Enabled}
+- {id: CORE_PLLODIV_1_DE, value: Enabled}
+- {id: CORE_PLL_PD, value: Power_up}
+- {id: FXOSC_PM, value: Crystal_mode}
+- {id: MC_CGM_MUX_0.sel, value: PHI0}
+- {id: MC_CGM_MUX_0_DIV0.scale, value: '1', locked: true}
+- {id: MC_CGM_MUX_0_DIV0_Trigger, value: Common}
+- {id: MC_CGM_MUX_0_DIV1.scale, value: '2', locked: true}
+- {id: MC_CGM_MUX_0_DIV1_Trigger, value: Common}
+- {id: MC_CGM_MUX_0_DIV2.scale, value: '4', locked: true}
+- {id: MC_CGM_MUX_0_DIV2_Trigger, value: Common}
+- {id: MC_CGM_MUX_0_DIV3.scale, value: '2', locked: true}
+- {id: MC_CGM_MUX_0_DIV3_Trigger, value: Common}
+- {id: MC_CGM_MUX_0_DIV4.scale, value: '4', locked: true}
+- {id: MC_CGM_MUX_0_DIV4_Trigger, value: Common}
+- {id: MC_CGM_MUX_0_DIV5_Trigger, value: Common}
+- {id: MC_CGM_MUX_0_DIV6.scale, value: '1', locked: true}
+- {id: MC_CGM_MUX_0_DIV6_Trigger, value: Common}
+- {id: MC_CGM_MUX_6.sel, value: N/A}
+- {id: MC_CGM_MUX_6_DE0, value: Enabled}
+- {id: MC_CGM_MUX_6_DIV0.scale, value: '2', locked: true}
+- {id: MODULE_CLOCKS.MC_CGM_AUX3_DIV0.scale, value: '2', locked: true}
+- {id: MODULE_CLOCKS.MC_CGM_AUX3_MUX.sel, value: MC_CGM_MUX_0_DIV1}
+- {id: MODULE_CLOCKS.MC_CGM_AUX4_DIV0.scale, value: '2', locked: true}
+- {id: MODULE_CLOCKS.MC_CGM_AUX4_MUX.sel, value: MC_CGM_MUX_0_DIV1}
+- {id: PHI0.scale, value: '3', locked: true}
+- {id: PHI1.scale, value: '3', locked: true}
+- {id: PLL_PREDIV.scale, value: '2', locked: true}
+- {id: POSTDIV.scale, value: '2', locked: true}
+- {id: SXOSC_PM, value: Crystal_mode}
+sources:
+- {id: FXOSC_CLK.FXOSC_CLK.outFreq, value: 16 MHz, enabled: true}
+- {id: SXOSC_CLK.SXOSC_CLK.outFreq, value: 32.768 kHz, enabled: true}
+ * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
+   

@@ -1,0 +1,5 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Platform.c:155:6:Platform_Init	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Platform.c:206:16:Platform_SetIrq	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Platform.c:230:16:Platform_SetIrqPriority	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Platform.c:261:16:Platform_GetIrqPriority	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Platform.c:291:16:Platform_InstallIrqHandler	8	static

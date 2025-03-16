@@ -1,0 +1,126 @@
+*************************************************************
+FileName = PCB1.PcbDoc
+ODB++ directory structure
+*************************************************************
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\profile
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\stephdr
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\dielectric_1\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\dielectric_1\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\dielectric_4\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\dielectric_4\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\drill_non-plated_sig3-sig1\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\drill_non-plated_sig3-sig1\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\drill_non-plated_sig3-sig1\tools
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\bottom_overlay\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\bottom_overlay\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\dielectric_2\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\dielectric_2\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\dielectric_3\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\dielectric_3\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\dielectric_5\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\dielectric_5\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\drill_plated_sig3-sig1\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\drill_plated_sig3-sig1\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\drill_plated_sig3-sig1\tools
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\pwr\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\pwr\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\bottom_paste\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\bottom_paste\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\sig2\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\sig2\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\gnd1\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\gnd1\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\bottom_solder\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\bottom_solder\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\gnd2\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\gnd2\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\top_overlay\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\top_overlay\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\top_paste\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\top_paste\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\sig3\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\sig3\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\top_solder\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\top_solder\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\sig1\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\sig1\attrlist
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\comp_+_bot\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\comp_+_bot\components
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\comp_+_top\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\comp_+_top\components
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\rout\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\layers\rout\tools
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\steps\pcb\eda\data
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\matrix\matrix
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\symbols\uds_oval1099.9978x1999.996_offset0.0508x-0.0762\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\symbols\uds_oval1099.9978x1999.996_offset0.1016x-0.1016\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\symbols\uds_oval1099.9978x1999.996_offset0.0508x-0.0762\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\symbols\uds_oval1099.9978x1999.996_offset0.1016x-0.1016\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\symbols\uds_oval1099.9978x1999.996_offset0.0508x-0.0762\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\symbols\uds_oval1099.9978x1999.996_offset0.1016x-0.1016\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\symbols\uds_oval1099.9978x1999.996_offset0.0508x-0.0762\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\symbols\uds_oval1099.9978x1999.996_offset0.1016x-0.1016\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\symbols\uds_oval1099.9978x1999.996_offset0.0508x-0.0762\features
+
+Generated File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\Project Outputs for RBCM_Core\odb\symbols\uds_oval1099.9978x1999.996_offset0.1016x-0.1016\features
+

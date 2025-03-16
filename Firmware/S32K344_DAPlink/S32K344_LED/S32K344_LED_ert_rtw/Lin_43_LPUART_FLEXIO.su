@@ -1,0 +1,9 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lin_43_LPUART_FLEXIO.c:401:6:Lin_43_LPUART_FLEXIO_Init	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lin_43_LPUART_FLEXIO.c:504:16:Lin_43_LPUART_FLEXIO_CheckWakeup	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lin_43_LPUART_FLEXIO.c:580:16:Lin_43_LPUART_FLEXIO_GetStatus	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lin_43_LPUART_FLEXIO.c:657:16:Lin_43_LPUART_FLEXIO_GoToSleep	16	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lin_43_LPUART_FLEXIO.c:755:16:Lin_43_LPUART_FLEXIO_GoToSleepInternal	16	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lin_43_LPUART_FLEXIO.c:863:16:Lin_43_LPUART_FLEXIO_SendFrame	16	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lin_43_LPUART_FLEXIO.c:953:16:Lin_43_LPUART_FLEXIO_Wakeup	16	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lin_43_LPUART_FLEXIO.c:1011:16:Lin_43_LPUART_FLEXIO_WakeupInternal	16	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lin_43_LPUART_FLEXIO.c:1079:6:Lin_43_LPUART_FLEXIO_GetVersionInfo	0	static

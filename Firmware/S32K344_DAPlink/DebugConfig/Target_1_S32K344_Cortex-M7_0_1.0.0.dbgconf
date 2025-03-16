@@ -1,0 +1,14 @@
+// File: S32K3xx.dbgconf
+// Version: 1.0.0
+// Note: refer to ? manual
+//       refer to ? datasheet
+
+// <<< Use Configuration Wizard in Context Menu >>>
+
+
+// <h> RAM Initialize Options
+//   <o.0> RAM Initialize       <i> perform RAM initialization on debug start
+// </h>
+DoRAMInitialize = 0x00000001;
+
+// <<< end of configuration section >>>

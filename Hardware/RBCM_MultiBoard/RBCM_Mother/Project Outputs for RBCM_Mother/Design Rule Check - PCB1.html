@@ -1,0 +1,563 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD24\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2025/3/15</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">13:08:43</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:04</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc" class="file"><acronym title="E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc">E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">53</td></tr>
+</table>
+</td>
+</table><a name="ID0DHHJR4WTEOGFKATGJTMK5O4QGB3JLY14PPYWEN3N5DZS3C0WPE"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHZ5PABS5UQL2N3Q10JFM04LGTHOMGYI11D2UISI2XLUV1GW0TUSL">Clearance Constraint (Gap=11.811mil) ((HoleDiameter &gt; 0) And (PadIsPlated = 'False') AND (HoleDiameter &gt;= PadYSize_AllLayers)),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRMIIFLWPORXPLCCPOVZYLGQFKNT5J2RHKDVISBIOSUBNRZADDEIK">Clearance Constraint (Gap=0mil) (IsKeepOut),(InComponentClass('Opto'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMXJNFCO3F2MUIWUVD3G5PR0CKEPXUGOOLJVLHUJYOH4OGETN2JCE">Clearance Constraint (Gap=12mil) (InComponentClass('NetTie')),(InComponentClass('NetTie'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHI3SA0H3YMUTJOPF45ILWCZADIVFKOSKYN3CD3LF4KNBG4ACGRZC">Clearance Constraint (Gap=59.055mil) (InNetClass('450vNet')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYJXVUDYRD201LFFIUYJT5YPJ3HERZ533YCIBOJLNEEJNPLX55UTJ">Clearance Constraint (Gap=12mil) (All),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID54HHIBE5CENVOPHNHA5T3J1SBNPL03EI0PXIZ0IZ4JCTZYSZIOKM">Clearance Constraint (Gap=125.984mil) (Disabled)(InNetClass('450vNet')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOUUVHOYLDVPNHS215TRMLSFC3CYVHGYUDLWJALKXMLZQWBLNQFK">Clearance Constraint (Gap=25mil) ((InNetClass('PowerNet'))),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBFL4IQZV0KD3EKVEBV22EVPBJMHCLZECNYQIUHIAOSIRFUFHTC3H">Short-Circuit Constraint (Allowed=Yes) (InComponentClass('NetTie') OR((HoleDiameter &gt; 0) And (PadIsPlated = 'False') AND (HoleDiameter &gt;= PadYSize_AllLayers))),(InComponentClass('NetTie') OR ((HoleDiameter &gt; 0) And (PadIsPlated = 'False') AND (HoleDiameter &gt;= PadYSize_AllLayers)))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOKJO4HDQC2Z1MTTYHPPSUMTGHDMSD3TMY2TQ1VFZUUU2KTXR1JE">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOFLU1RV4QYVMDAUJ5ZVCBSXJCNDMX44ABSRBPVCZGZ0P4HEXHKJN">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">28</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0PHL3GDYJK5H52NSLM040XHKEF0CNUFFRCOIBCSNGHXIB2KESS">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDI042ZSYKSUDMN2PD3R1XAADPNIG0EB1XYIKYVNH4OB5MQAXXAXSN">Width Constraint (Min=4mil) (Max=200mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID15ZGMRT0QVKIEXCTH2N2TWYKDUJWLV5QU4OMFHMVAGVEH4DU5HN">SMD To Corner (Distance=3mil) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEWOPY5L0YPWCJP2KFMTLAJ5QBMSHG0RKLBSVONHT2DRFSZK1FZZI">SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Not Allowed) (Ignore First Corner = Allowed)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTZAWLFQFYHUOM0FUTXRBX54CENXZXKHA3G0ZAAL00PWO5UQ3BOFJ">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3AT5LT3OSVNVXWONU1FBWFQ5KYGHJDTTUEO2TIYX4XBDZM2E1ME">Minimum Annular Ring (Minimum=6mil) (NOT IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMK54REVUDWF4KSREVHOLINXRRMAE43EQBDYVSYDY3ITOXPHDO2ZJ">Minimum Annular Ring (Minimum=6mil) (All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMNGAESPGBZDKF10XJBRHY3DSUPBOO0ALAJSVWLUW5RHTFAK5AMO">Acute Angle Constraint [Tracks Only] (Minimum=30.000) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDL0BZ0XQN335KP35KLZDARGB23LTLURFPFXQA2BP43TXZ4IYMQ0UN">Hole Size Constraint (Min=7.874mil) (Max=39330.709mil) ((HoleDiameter &gt; 0) And (PadIsPlated = 'False') AND (HoleDiameter &gt;= PadYSize_AllLayers))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXM5CRV1YUUNPK1IX153EK2S5LGY14TBDWI4MQFM2IDH55A2VKZ0C">Hole Size Constraint (Min=7.874mil) (Max=236.22mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2NKFR0EXBTXNG4KOACV133GPGOE4TYKWFLWMRWLJJG4N3XZ3JL1O">Hole To Hole Clearance (Gap=0mil) (All),((HoleDiameter &gt; 0) And (PadIsPlated = 'False') AND (HoleDiameter &gt;= PadYSize_AllLayers))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYFGBNXA5YUDCIG2U0IXIJO34POBELLEXIJP00XDY35Z4D0G5PCQB">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQJKO2ONFWHZ2GQMPLL2WZEJZWNBHX31OICDKYYBBAARC1EBQP5QJ">Minimum Solder Mask Sliver (Gap=3mil) (All),(All)</a></td>
+<td class="column2">5</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYDYMUXIISCA2ELKRWPGUFNMZ54CLNVAWN05V3M44BCHRDCVF2XB">Silk To Solder Mask (Clearance=0mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2HPRAKZ2M3BEEJ0D235VYOPHDGK0QEUYUPR0Y0BPKFKNWB1HX02B">Silk to Silk (Clearance=1mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPPVE1CUBKVEMHWMCJF1C43MZMDCT5IXUZ0VW5DHFGOXQBRE1L3EB">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDIOFDUIJXYSOEKPPVKUD43RRY0EAHVAHZFEWY43O4UOV0WF5HRDFC">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">12</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOQ2YGTKFSTF5BWGMIHOE0IDILKKHLM4KYATU4RD5QMQDRFOIGGZ">Height Constraint (Min=0mil) (Max=1574.803mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">53</td>
+</tr>
+</table><br><a name="IDYJXVUDYRD201LFFIUYJT5YPJ3HERZ533YCIBOJLNEEJNPLX55UTJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=12mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8473.39mil|Location2.X=8486.64mil|Location1.Y=1031.754mil|Location2.Y=1045.004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8473.39mil|Location2.X=8486.64mil|Location1.Y=1031.754mil|Location2.Y=1045.004mil|Absolute=True">Clearance Constraint: (6.945mil &lt; 12mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad USB1-1(6695.511mil,328.505mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8696.822mil|Location2.X=8711.548mil|Location1.Y=1031.243mil|Location2.Y=1044.493mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8696.822mil|Location2.X=8711.548mil|Location1.Y=1031.243mil|Location2.Y=1044.493mil|Absolute=True">Clearance Constraint: (8.607mil &lt; 12mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad USB1-11(6915.991mil,328.505mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8705.029mil|Location2.X=8718.279mil|Location1.Y=1031.754mil|Location2.Y=1045.004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8705.029mil|Location2.X=8718.279mil|Location1.Y=1031.754mil|Location2.Y=1045.004mil|Absolute=True">Clearance Constraint: (6.945mil &lt; 12mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad USB1-12(6947.481mil,328.505mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8482.93mil|Location2.X=8497.735mil|Location1.Y=1031.244mil|Location2.Y=1044.494mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8482.93mil|Location2.X=8497.735mil|Location1.Y=1031.244mil|Location2.Y=1044.494mil|Absolute=True">Clearance Constraint: (8.606mil &lt; 12mil) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad USB1-2(6727.011mil,328.505mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDOFLU1RV4QYVMDAUJ5ZVCBSXJCNDMX44ABSRBPVCZGZ0P4HEXHKJN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2756mil|Location2.X=2998.772mil|Location1.Y=2098.984mil|Location2.Y=2214mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2756mil|Location2.X=2998.772mil|Location1.Y=2098.984mil|Location2.Y=2214mil|Absolute=True">Un-Routed Net Constraint: Net GLVMS- Between Via (995mil,1465mil) from Top Layer to Bottom Layer And Pad D4-1(1191.26mil,1409.291mil) on Top Layer [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3547.567mil|Location2.X=3622.433mil|Location1.Y=2603mil|Location2.Y=3088.495mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3547.567mil|Location2.X=3622.433mil|Location1.Y=2603mil|Location2.Y=3088.495mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD2_OUT0 Between Via (1810mil,1900mil) from Top Layer to Bottom Layer And Pad J14-2(1810mil,2319.999mil) on Bottom Layer [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2540mil|Location2.X=2743.937mil|Location1.Y=2954.999mil|Location2.Y=2619.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2540mil|Location2.X=2743.937mil|Location1.Y=2954.999mil|Location2.Y=2619.566mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD1_OUT3 Between Pad J15-1(865mil,2319.999mil) on Bottom Layer [Unplated] And Track (868.937mil,1784.566mil)(877.933mil,1775.57mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4115mil|Location2.X=4315mil|Location1.Y=2561.772mil|Location2.Y=3154.999mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4115mil|Location2.X=4315mil|Location1.Y=2561.772mil|Location2.Y=3154.999mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD3_OUT0 Between Track (2440mil,1926.772mil)(2505mil,1991.772mil) on Top Layer And Pad J25-2(2440mil,2319.999mil) on Bottom Layer [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3380mil|Location2.X=3583.937mil|Location1.Y=2955mil|Location2.Y=2619.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3380mil|Location2.X=3583.937mil|Location1.Y=2955mil|Location2.Y=2619.566mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD2_OUT1 Between Pad J28-2(1705mil,2320mil) on Bottom Layer [Unplated] And Track (1705mil,1784.566mil)(1708.937mil,1784.566mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3170mil|Location2.X=3373.937mil|Location1.Y=2954.999mil|Location2.Y=2619.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3170mil|Location2.X=3373.937mil|Location1.Y=2954.999mil|Location2.Y=2619.566mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD2_OUT3 Between Pad J36-2(1495mil,2319.999mil) on Bottom Layer [Unplated] And Track (1498.937mil,1784.566mil)(1533.567mil,1749.937mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3218.433mil|Location2.X=3354mil|Location1.Y=4285.756mil|Location2.Y=4384.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3218.433mil|Location2.X=3354mil|Location1.Y=4285.756mil|Location2.Y=4384.244mil|Absolute=True">Un-Routed Net Constraint: Net GLVMS- Between Pad J37-1(1484.803mil,3600mil) on Bottom Layer [Unplated] And Via (1565mil,3625mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5447.567mil|Location2.X=5522.433mil|Location1.Y=2598mil|Location2.Y=3088.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5447.567mil|Location2.X=5522.433mil|Location1.Y=2598mil|Location2.Y=3088.496mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD5_OUT0 Between Via (3710mil,1895mil) from Top Layer to Bottom Layer And Pad J40-2(3710mil,2320mil) on Bottom Layer [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5696mil|Location2.X=5911.173mil|Location1.Y=2175.756mil|Location2.Y=2274.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5696mil|Location2.X=5911.173mil|Location1.Y=2175.756mil|Location2.Y=2274.244mil|Absolute=True">Un-Routed Net Constraint: Net GLVMS- Between Via (3935mil,1465mil) from Top Layer to Bottom Layer And Pad J41-1(4094.803mil,1490mil) on Bottom Layer [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3967.567mil|Location2.X=4042.433mil|Location1.Y=2486.07mil|Location2.Y=3088.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3967.567mil|Location2.X=4042.433mil|Location1.Y=2486.07mil|Location2.Y=3088.496mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD3_OUT2 Between Pad J42-2(2230mil,1784.566mil) on Bottom Layer [Unplated] And Pad J42-1(2230mil,2320mil) on Bottom Layer [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4072.567mil|Location2.X=4225.484mil|Location1.Y=1280.894mil|Location2.Y=3088.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4072.567mil|Location2.X=4225.484mil|Location1.Y=1280.894mil|Location2.Y=3088.496mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD3_OUT1 Between Pad J43-2(2335mil,2320mil) on Bottom Layer [Unplated] And Pad J7-18(2393.858mil,602.52mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3794.567mil|Location2.X=4000mil|Location1.Y=3691.93mil|Location2.Y=2619.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3794.567mil|Location2.X=4000mil|Location1.Y=3691.93mil|Location2.Y=2619.566mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD3_OUT3 Between Track (2119.567mil,3056.93mil)(2121.063mil,3055.434mil) on Bottom Layer And Pad J46-1(2125mil,1784.566mil) on Bottom Layer [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5116mil|Location2.X=5226.173mil|Location1.Y=2175.756mil|Location2.Y=2274.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5116mil|Location2.X=5226.173mil|Location1.Y=2175.756mil|Location2.Y=2274.244mil|Absolute=True">Un-Routed Net Constraint: Net GLVMS- Between Via (3355mil,1465mil) from Top Layer to Bottom Layer And Pad J47-1(3409.803mil,1490mil) on Bottom Layer [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4516mil|Location2.X=4651.37mil|Location1.Y=2175.756mil|Location2.Y=2274.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4516mil|Location2.X=4651.37mil|Location1.Y=2175.756mil|Location2.Y=2274.244mil|Absolute=True">Un-Routed Net Constraint: Net GLVMS- Between Via (2755mil,1465mil) from Top Layer to Bottom Layer And Pad J47-2(2835mil,1490mil) on Bottom Layer [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3088.433mil|Location2.X=3239mil|Location1.Y=2175.756mil|Location2.Y=2274.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3088.433mil|Location2.X=3239mil|Location1.Y=2175.756mil|Location2.Y=2274.244mil|Absolute=True">Un-Routed Net Constraint: Net GLVMS- Between Pad J56-1(1354.803mil,1490mil) on Bottom Layer [Unplated] And Via (1450mil,1515mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4663.413mil|Location2.X=5417.433mil|Location1.Y=1123.413mil|Location2.Y=3088.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4663.413mil|Location2.X=5417.433mil|Location1.Y=1123.413mil|Location2.Y=3088.496mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD5_OUT1 Between Pad J7-26(2945.039mil,445.039mil) on Multi-Layer And Pad J57-1(3605mil,2320mil) on Bottom Layer [Unplated] </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4427.193mil|Location2.X=4540.445mil|Location1.Y=1280.894mil|Location2.Y=4051mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4427.193mil|Location2.X=4540.445mil|Location1.Y=1280.894mil|Location2.Y=4051mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD4_OUT3 Between Pad J7-16(2708.819mil,602.52mil) on Multi-Layer And Via (2721.26mil,3290mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2738.008mil|Location2.X=3831.784mil|Location1.Y=1123.413mil|Location2.Y=4060.004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2738.008mil|Location2.X=3831.784mil|Location1.Y=1123.413mil|Location2.Y=4060.004mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD1_OUT2 Between Via (989.008mil,3299.004mil) from Top Layer to Bottom Layer And Pad J7-32(2000.158mil,445.039mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2730mil|Location2.X=2953.937mil|Location1.Y=3935mil|Location2.Y=2619.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2730mil|Location2.X=2953.937mil|Location1.Y=3935mil|Location2.Y=2619.566mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD1_OUT1 Between Via (1055mil,3300mil) from Top Layer to Bottom Layer And Track (1075mil,1784.566mil)(1078.937mil,1784.566mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2858.937mil|Location2.X=3104.646mil|Location1.Y=3690.434mil|Location2.Y=2820mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2858.937mil|Location2.X=3104.646mil|Location1.Y=3690.434mil|Location2.Y=2820mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD1_OUT0 Between Track (1180mil,3055.434mil)(1183.937mil,3055.434mil) on Bottom Layer And Track (1229.646mil,1981.063mil)(1229.646mil,1985mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3285.433mil|Location2.X=3493.237mil|Location1.Y=2413.07mil|Location2.Y=4124.123mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3285.433mil|Location2.X=3493.237mil|Location1.Y=2413.07mil|Location2.Y=4124.123mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD2_OUT2 Between Track (1610.433mil,1744.567mil)(1610.433mil,1778.07mil) on Bottom Layer And Via (1618.237mil,3289.123mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3746.26mil|Location2.X=3952.48mil|Location1.Y=3925mil|Location2.Y=4265.591mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3746.26mil|Location2.X=3952.48mil|Location1.Y=3925mil|Location2.Y=4265.591mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD3_OUT3 Between Via (2071.26mil,3290mil) from Top Layer to Bottom Layer And Track (2077.48mil,3430.59mil)(2121.24mil,3474.35mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4548.937mil|Location2.X=4766.26mil|Location1.Y=2419.566mil|Location2.Y=4125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4548.937mil|Location2.X=4766.26mil|Location1.Y=2419.566mil|Location2.Y=4125mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD4_OUT2 Between Track (2870mil,1784.566mil)(2873.937mil,1784.566mil) on Bottom Layer And Via (2891.26mil,3290mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4634.729mil|Location2.X=4853.937mil|Location1.Y=3926.791mil|Location2.Y=2619.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4634.729mil|Location2.X=4853.937mil|Location1.Y=3926.791mil|Location2.Y=2619.566mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD4_OUT1 Between Via (2959.729mil,3291.791mil) from Top Layer to Bottom Layer And Track (2978.937mil,1784.566mil)(2985.433mil,1778.07mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4806.26mil|Location2.X=5020mil|Location1.Y=3925mil|Location2.Y=2826.772mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4806.26mil|Location2.X=5020mil|Location1.Y=3925mil|Location2.Y=2826.772mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD4_OUT0 Between Via (3131.26mil,3290mil) from Top Layer to Bottom Layer And Track (3145mil,1991.772mil)(3145mil,1995.709mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5063.504mil|Location2.X=5270mil|Location1.Y=2413.07mil|Location2.Y=3355mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5063.504mil|Location2.X=5270mil|Location1.Y=2413.07mil|Location2.Y=3355mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD5_OUT3 Between Track (3348.07mil,1778.07mil)(3388.504mil,1778.07mil) on Bottom Layer And Track (3395mil,2520.001mil)(3395mil,2520mil) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5185.433mil|Location2.X=5394.407mil|Location1.Y=2413.07mil|Location2.Y=4123.147mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5185.433mil|Location2.X=5394.407mil|Location1.Y=2413.07mil|Location2.Y=4123.147mil|Absolute=True">Un-Routed Net Constraint: Net lpHSD5_OUT2 Between Track (3510.433mil,1713.763mil)(3510.433mil,1778.07mil) on Bottom Layer And Via (3519.407mil,3288.147mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2691mil|Location2.X=2739mil|Location1.Y=2236mil|Location2.Y=4324mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2691mil|Location2.X=2739mil|Location1.Y=2236mil|Location2.Y=4324mil|Absolute=True">Un-Routed Net Constraint: Net GLVMS- Between Via (930mil,3575mil) from Top Layer to Bottom Layer And Via (950mil,1515mil) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDMK54REVUDWF4KSREVHOLINXRRMAE43EQBDYVSYDY3ITOXPHDO2ZJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=6mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6063.839mil|Location2.X=6068.839mil|Location1.Y=2952.972mil|Location2.Y=2957.972mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6063.839mil|Location2.X=6068.839mil|Location1.Y=2952.972mil|Location2.Y=2957.972mil|Absolute=True">Minimum Annular Ring: (No Ring) Via (4291.339mil,2220.472mil) from Top Layer to Bottom Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6063.839mil|Location2.X=6068.839mil|Location1.Y=4063.209mil|Location2.Y=4068.209mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6063.839mil|Location2.X=6068.839mil|Location1.Y=4063.209mil|Location2.Y=4068.209mil|Absolute=True">Minimum Annular Ring: (No Ring) Via (4291.339mil,3330.709mil) from Top Layer to Bottom Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8426.043mil|Location2.X=8431.043mil|Location1.Y=2952.972mil|Location2.Y=2957.972mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8426.043mil|Location2.X=8431.043mil|Location1.Y=2952.972mil|Location2.Y=2957.972mil|Absolute=True">Minimum Annular Ring: (No Ring) Via (6653.543mil,2220.472mil) from Top Layer to Bottom Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8426.043mil|Location2.X=8431.043mil|Location1.Y=4063.209mil|Location2.Y=4068.209mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8426.043mil|Location2.X=8431.043mil|Location1.Y=4063.209mil|Location2.Y=4068.209mil|Absolute=True">Minimum Annular Ring: (No Ring) Via (6653.543mil,3330.709mil) from Top Layer to Bottom Layer (Annular Ring missing on Top Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDQJKO2ONFWHZ2GQMPLL2WZEJZWNBHX31OICDKYYBBAARC1EBQP5QJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=3mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8824.648mil|Location2.X=8831.083mil|Location1.Y=1843.729mil|Location2.Y=1850.366mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8824.648mil|Location2.X=8831.083mil|Location1.Y=1843.729mil|Location2.Y=1850.366mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.741mil &lt; 3mil) Between Pad J63-3(7090mil,1140mil) on Multi-Layer And Via (7040mil,1105mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.741mil] / [Bottom Solder] Mask Sliver [0.741mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4089.49mil|Location2.X=4093.74mil|Location1.Y=4313.452mil|Location2.Y=4317.702mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4089.49mil|Location2.X=4093.74mil|Location1.Y=4313.452mil|Location2.Y=4317.702mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1mil &lt; 3mil) Between Track (2180mil,3600mil)(2270mil,3600mil) on Bottom Solder And Via (2330mil,3575mil) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [1mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4089.49mil|Location2.X=4093.74mil|Location1.Y=4352.298mil|Location2.Y=4356.548mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4089.49mil|Location2.X=4093.74mil|Location1.Y=4352.298mil|Location2.Y=4356.548mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (1mil &lt; 3mil) Between Track (2180mil,3600mil)(2270mil,3600mil) on Bottom Solder And Via (2330mil,3625mil) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [1mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4292.875mil|Location2.X=4299.457mil|Location1.Y=1543.168mil|Location2.Y=1549.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4292.875mil|Location2.X=4299.457mil|Location1.Y=1543.168mil|Location2.Y=1549.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (2.591mil &lt; 3mil) Between Track (2472.598mil,762.598mil)(2485mil,775mil) on Top Solder And Track (2555mil,850mil)(2555mil,1240mil) on Top Solder [Top Solder] Mask Sliver [2.591mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5042.875mil|Location2.X=5047.125mil|Location1.Y=1630.375mil|Location2.Y=1634.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5042.875mil|Location2.X=5047.125mil|Location1.Y=1630.375mil|Location2.Y=1634.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.156mil &lt; 3mil) Between Track (3225mil,890mil)(3230mil,895mil) on Top Solder And Track (3310mil,900mil)(3600mil,1190mil) on Top Solder [Top Solder] Mask Sliver [0.156mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDIOFDUIJXYSOEKPPVKUD43RRY0EAHVAHZFEWY43O4UOV0WF5HRDFC"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1677.694mil|Location2.X=1682.694mil|Location1.Y=1868.366mil|Location2.Y=1873.366mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1677.694mil|Location2.X=1682.694mil|Location1.Y=1868.366mil|Location2.Y=1873.366mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 6mil) Between Board Edge And Track (-187.48mil,1135.866mil)(180.63mil,1135.866mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1677.694mil|Location2.X=1682.694mil|Location1.Y=1258.13mil|Location2.Y=1263.13mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1677.694mil|Location2.X=1682.694mil|Location1.Y=1258.13mil|Location2.Y=1263.13mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 6mil) Between Board Edge And Track (-187.48mil,525.63mil)(180.63mil,525.63mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1585.02mil|Location2.X=1590.02mil|Location1.Y=1563.248mil|Location2.Y=1568.248mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1585.02mil|Location2.X=1590.02mil|Location1.Y=1563.248mil|Location2.Y=1568.248mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 6mil) Between Board Edge And Track (-187.48mil,525.63mil)(-187.48mil,1135.866mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7113.287mil|Location2.X=7118.287mil|Location1.Y=681.566mil|Location2.Y=686.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7113.287mil|Location2.X=7118.287mil|Location1.Y=681.566mil|Location2.Y=686.566mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 6mil) Between Board Edge And Track (5340.787mil,-96.456mil)(5340.787mil,25.591mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7162.5mil|Location2.X=7167.5mil|Location1.Y=636.044mil|Location2.Y=641.044mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7162.5mil|Location2.X=7167.5mil|Location1.Y=636.044mil|Location2.Y=641.044mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 6mil) Between Board Edge And Track (5340.787mil,-96.456mil)(5439.213mil,-96.456mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7211.713mil|Location2.X=7216.713mil|Location1.Y=681.566mil|Location2.Y=686.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7211.713mil|Location2.X=7216.713mil|Location1.Y=681.566mil|Location2.Y=686.566mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 6mil) Between Board Edge And Track (5439.213mil,-96.456mil)(5439.213mil,25.591mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9338.135mil|Location2.X=9343.135mil|Location1.Y=1872.5mil|Location2.Y=1877.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9338.135mil|Location2.X=9343.135mil|Location1.Y=1872.5mil|Location2.Y=1877.5mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 6mil) Between Board Edge And Track (7351.417mil,1140mil)(7646.693mil,1140mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9338.135mil|Location2.X=9343.135mil|Location1.Y=1262.5mil|Location2.Y=1267.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9338.135mil|Location2.X=9343.135mil|Location1.Y=1262.5mil|Location2.Y=1267.5mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 6mil) Between Board Edge And Track (7351.417mil,530mil)(7646.693mil,530mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9338.135mil|Location2.X=9343.135mil|Location1.Y=1462.5mil|Location2.Y=1467.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9338.135mil|Location2.X=9343.135mil|Location1.Y=1462.5mil|Location2.Y=1467.5mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 6mil) Between Board Edge And Track (7351.417mil,730mil)(7646.693mil,730mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9338.135mil|Location2.X=9343.135mil|Location1.Y=1672.5mil|Location2.Y=1677.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9338.135mil|Location2.X=9343.135mil|Location1.Y=1672.5mil|Location2.Y=1677.5mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 6mil) Between Board Edge And Track (7351.417mil,940mil)(7646.693mil,940mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9419.193mil|Location2.X=9424.193mil|Location1.Y=1362.5mil|Location2.Y=1367.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9419.193mil|Location2.X=9424.193mil|Location1.Y=1362.5mil|Location2.Y=1367.5mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 6mil) Between Board Edge And Track (7646.693mil,530mil)(7646.693mil,730mil) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9419.193mil|Location2.X=9424.193mil|Location1.Y=1772.5mil|Location2.Y=1777.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Mother\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9419.193mil|Location2.X=9424.193mil|Location1.Y=1772.5mil|Location2.Y=1777.5mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 6mil) Between Board Edge And Track (7646.693mil,940mil)(7646.693mil,1140mil) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

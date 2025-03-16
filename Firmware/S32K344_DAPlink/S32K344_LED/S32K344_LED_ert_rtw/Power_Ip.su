@@ -1,0 +1,11 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip.c:331:13:Power_Ip_PrepareSocStandby	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip.c:378:6:Power_Ip_SetMode	16	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip.c:481:24:Power_Ip_GetPreviousMode	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip.c:530:20:Power_Ip_GetResetReason	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip.c:586:23:Power_Ip_GetResetRawValue	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip.c:606:6:Power_Ip_Init	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip.c:693:6:Power_Ip_InstallNotificationsCallback	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip.c:710:6:Power_Ip_EnableSleepOnExit	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip.c:723:6:Power_Ip_DisableSleepOnExit	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip.c:740:6:Power_Ip_EnableLastMile	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip.c:753:6:Power_Ip_DisableLastMile	0	static

@@ -1,0 +1,8 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Spi_Ipw.c:682:13:Spi_Ipw_CallbackLpspi	32	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Spi_Ipw.c:270:6:Spi_Ipw_Init	4	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Spi_Ipw.c:306:6:Spi_Ipw_DeInit	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Spi_Ipw.c:328:16:Spi_Ipw_SyncTransmit	56	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Spi_Ipw.c:427:6:Spi_Ipw_IrqPoll	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Spi_Ipw.c:459:6:Spi_Ipw_IrqConfig	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Spi_Ipw.c:949:6:Spi_Ipw_JobTransfer	32	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Spi_Ipw.c:1134:6:Spi_Ipw_SlaveCancel	8	static

@@ -1,0 +1,7 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lcu_Ip.c:1952:13:Lcu_Ip_LogicInputInit.constprop	16	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lcu_Ip.c:1969:13:Lcu_Ip_LogicOutputInit.constprop	16	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lcu_Ip.c:348:19:Lcu_Ip_SetWriteProtect	16	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lcu_Ip.c:362:19:Lcu_Ip_GetWriteProtect	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lcu_Ip.c:1993:19:Lcu_Ip_Deinit	24	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lcu_Ip.c:239:19:Lcu_Ip_Init	32	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Lcu_Ip.c:2085:6:Lcu_Ip_IrqHandler	8	static

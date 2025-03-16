@@ -1,0 +1,9 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_Selector.c:156:13:Clock_Ip_CallbackSelectorEmpty	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_Selector.c:164:13:Clock_Ip_ResetCgmXCscCssClkswSwip	4	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_Selector.c:321:13:Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip	40	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_Selector.c:189:13:Clock_Ip_SetCgmXCscCssClkswSwip	40	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_Selector.c:493:13:Clock_Ip_SetCgmXCscCssCsGrip	40	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_Selector.c:429:13:Clock_Ip_ResetCgmXCscCssCsGrip	40	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_Selector.c:574:13:Clock_Ip_SetRtcRtccClksel	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_Selector.c:295:13:Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip	4	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_Selector.c:594:6:Clock_Ip_SetRtcRtccClksel_TrustedCall	0	static

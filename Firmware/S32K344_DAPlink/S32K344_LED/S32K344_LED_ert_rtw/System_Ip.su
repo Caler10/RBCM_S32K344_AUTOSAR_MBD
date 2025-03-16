@@ -1,0 +1,8 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/System_Ip.c:129:6:System_Ip_SetAhbSlavePriorityPrivileged	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/System_Ip.c:147:6:System_Ip_ConfigIrqPrivileged	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/System_Ip.c:177:6:System_Ip_ClearWriteAbortFlagPrivileged	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/System_Ip.c:189:8:System_Ip_GetPlatformRevisionPrivileged	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/System_Ip.c:214:6:System_Ip_SetAhbSlavePriority	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/System_Ip.c:235:6:System_Ip_ConfigIrq	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/System_Ip.c:254:6:System_Ip_ClearWriteAbortFlag	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/System_Ip.c:273:8:System_Ip_GetPlatformRevision	0	static

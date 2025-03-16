@@ -1,0 +1,114 @@
+SEGGER J-Link Commander V7.98b (Compiled Jul 31 2024 16:15:00)
+DLL version V7.98b, compiled Jul 31 2024 16:14:11
+
+
+J-Link Command File read successfully.
+Processing script file...
+J-Link>ExitOnError 1
+J-Link Commander will now exit on Error
+J-Link>r
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...O.K.
+Firmware: J-Link Pro V4 V11 PLUS Oct compiled 1 2024 13:26:26
+Hardware version: V11.00
+J-Link uptime (since boot): 0d 00h 03m 52s
+S/N: 601023401
+License(s): FlashBP, GDB, JFlash, FlashDL, RDI
+USB speed mode: High speed (480 MBit/s)
+IP-Addr: 255.255.255.255 (DHCP)
+VTref=3.290V
+Target connection not established yet but required for command.
+Device "S32K344" selected.
+
+
+Connecting to target via SWD
+ConfigTargetSettings() start
+ConfigTargetSettings() end - Took 35us
+InitTarget() start
+SDA_AP detected
+Checking if debug access is already enabled...
+  Core already enabled
+Checking if HSE firmware is installed...
+  HSE firmware not installed
+Checking if Cortex-M7_0 and Cortex-M7_1 are operating in lockstep mode
+  Lock step mode enabled
+InitTarget() end - Took 10.1ms
+Found SW-DP with ID 0x6BA02477
+DPIDR: 0x6BA02477
+CoreSight SoC-400 or earlier
+AP map detection skipped. Manually configured AP map found.
+AP[0]: MEM-AP (IDR: Not set)
+AP[1]: APB-AP (IDR: Not set)
+AP[2]: MEM-AP (IDR: Not set)
+AP[3]: AHB-AP (IDR: Not set)
+AP[4]: AHB-AP (IDR: Not set)
+AP[5]: AHB-AP (IDR: Not set)
+AP[6]: MEM-AP (IDR: Not set)
+AP[7]: MEM-AP (IDR: Not set)
+AP[4]: Skipped ROMBASE read. CoreBaseAddr manually set by user
+AP[4]: Core found
+CPUID register: 0x411FC272. Implementer code: 0x41 (ARM)
+Cache: L1 I/D-cache present
+Found Cortex-M7 r1p2, Little endian.
+FPUnit: 8 code (BP) slots and 0 literal slots
+ROM table scan skipped. CoreBaseAddr manually set by user: 0x40250400
+I-Cache L1: 8 KB, 128 Sets, 32 Bytes/Line, 2-Way
+D-Cache L1: 8 KB, 64 Sets, 32 Bytes/Line, 4-Way
+SetupTarget() start
+Initializing ECC RAM...
+  RAMCodeAddr: 0x20000000
+  RAMInitAddr: 0x20000010
+  RAMInitSize: 0x00007FF0
+  InitPattern: 0xDEADBEEF
+  ECC RAM initialized successfully
+Initializing ECC RAM...
+  RAMCodeAddr: 0x20000000
+  RAMInitAddr: 0x20400000
+  RAMInitSize: 0x00004000
+  InitPattern: 0xDEADBEEF
+  ECC RAM initialized successfully
+SetupTarget() end - Took 132ms
+Memory zones:
+  Zone: "Default" Description: Default access mode
+Cortex-M7 identified.
+Reset delay: 0 ms
+Reset type NORMAL: Resets core & peripherals via SYSRESETREQ & VECTRESET bit.
+ResetTarget() start
+-- Identifying target device...
+-- SWD selected. Executing JTAG -> SWD switching sequence...
+SDA_AP detected
+Checking if core is already enabled...
+  Core already enabled
+ResetTarget() end - Took 409ms
+J-Link>loadfile "E:\Workspace\MATLAB_workspace\S32K344_LED\S32K344_LED.bin" 0x00400000
+'loadfile': Performing implicit reset & halt of MCU.
+ResetTarget() start
+-- Identifying target device...
+-- SWD selected. Executing JTAG -> SWD switching sequence...
+SDA_AP detected
+Checking if core is already enabled...
+  Core already enabled
+ResetTarget() end - Took 408ms
+Downloading file [E:\Workspace\MATLAB_workspace\S32K344_LED\S32K344_LED.bin]...
+J-Link: Flash download: Bank 0 @ 0x00400000: 1 range affected (81920 bytes)
+J-Link: Flash download: Total: 0.776s (Prepare: 0.090s, Compare: 0.039s, Erase: 0.005s, Program & Verify: 0.596s, Restore: 0.044s)
+J-Link: Flash download: Program & Verify speed: 134 KB/s
+O.K.
+J-Link>verifybin "E:\Workspace\MATLAB_workspace\S32K344_LED\S32K344_LED.bin" 0x00400000
+Loading binary file E:\Workspace\MATLAB_workspace\S32K344_LED\S32K344_LED.bin
+Reading 102216 bytes data from target memory @ 0x00400000.
+Verify successful.
+J-Link>reset 4
+Reset delay: 0 ms
+Reset type NORMAL: Resets core & peripherals via SYSRESETREQ & VECTRESET bit.
+ResetTarget() start
+-- Identifying target device...
+-- SWD selected. Executing JTAG -> SWD switching sequence...
+SDA_AP detected
+Checking if core is already enabled...
+  Core already enabled
+ResetTarget() end - Took 410ms
+J-Link>qc
+
+Script processing completed.
+

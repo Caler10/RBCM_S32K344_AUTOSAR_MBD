@@ -1,0 +1,113 @@
+Protel Design System Design Rule Check
+PCB File : E:\Workspace\Altium Designer workspace\Projects\RBCM_MultiBoard\RBCM_Core\PCB1.PcbDoc
+Date     : 2025/1/18
+Time     : 0:29:16
+
+Processing Rule : Clearance Constraint (Gap=0.3mm) ((HoleDiameter > 0) And (PadIsPlated = 'False') AND (HoleDiameter >= PadYSize_AllLayers)),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mm) (IsKeepOut),(InComponentClass('Opto'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.305mm) (InComponentClass('NetTie')),(InComponentClass('NetTie'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=1.5mm) (InNetClass('450vNet')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.305mm) (All),(All)
+   Violation between Clearance Constraint: (0.176mm < 0.305mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad USB1-1(32.792mm,9.006mm) on SIG1 
+   Violation between Clearance Constraint: (0.219mm < 0.305mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad USB1-11(38.392mm,9.006mm) on SIG1 
+   Violation between Clearance Constraint: (0.176mm < 0.305mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad USB1-12(39.192mm,9.006mm) on SIG1 
+   Violation between Clearance Constraint: (0.219mm < 0.305mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad USB1-2(33.592mm,9.006mm) on SIG1 
+Rule Violations :4
+
+Processing Rule : Clearance Constraint (Gap=3.2mm) (Disabled)(InNetClass('450vNet')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.635mm) ((InNetClass('PowerNet'))),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=Yes) (InComponentClass('NetTie') OR((HoleDiameter > 0) And (PadIsPlated = 'False') AND (HoleDiameter >= PadYSize_AllLayers))),(InComponentClass('NetTie') OR ((HoleDiameter > 0) And (PadIsPlated = 'False') AND (HoleDiameter >= PadYSize_AllLayers)))
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net NetJ3_2 Between Track (3.44mm,30.328mm)(3.44mm,32.091mm) on SIG1 And Pad Free-5(5.664mm,30.253mm) on SIG1 
+Rule Violations :1
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.102mm) (Max=5.08mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Corner (Distance=0.076mm) (Disabled)(All)
+Rule Violations :0
+
+Processing Rule : SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Not Allowed) (Ignore First Corner = Allowed)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.25mm) (NOT IsVia)
+   Violation between Minimum Annular Ring: (0.2499mm (9.8379mil) < 0.25mm (9.842mil)) Pad USB1-13(31.667mm,8.456mm) on Multi-Layer (Annular Ring=0.25mm) On (Top Layer)
+   Violation between Minimum Annular Ring: (0.2498mm (9.8354mil) < 0.25mm (9.842mil)) Pad USB1-14(40.317mm,8.456mm) on Multi-Layer (Annular Ring=0.25mm) On (Top Layer)
+Rule Violations :2
+
+Processing Rule : Minimum Annular Ring (Minimum=0.05mm) (All)
+   Violation between Minimum Annular Ring: (No Ring) Via (66mm,38.1mm) from SIG1 to SIG3 (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Via (66mm,9.9mm) from SIG1 to SIG3 (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Via (6mm,38.1mm) from SIG1 to SIG3 (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Via (6mm,9.9mm) from SIG1 to SIG3 (Annular Ring missing on Top Layer)
+Rule Violations :4
+
+Processing Rule : Acute Angle Constraint [Tracks Only] (Minimum=30.000) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.2mm) (Max=6mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.2mm) (Max=999mm) ((HoleDiameter > 0) And (PadIsPlated = 'False') AND (HoleDiameter >= PadYSize_AllLayers))
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0mm) (All),((HoleDiameter > 0) And (PadIsPlated = 'False') AND (HoleDiameter >= PadYSize_AllLayers))
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.076mm) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (0.074mm < 0.076mm) Between Via (10.25mm,43.375mm) from SIG1 to SIG3 And Via (10.744mm,42.903mm) from SIG1 to SIG3 [Top Solder] Mask Sliver [0.074mm] / [Bottom Solder] Mask Sliver [0.074mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.068mm < 0.076mm) Between Via (10.744mm,42.903mm) from SIG1 to SIG3 And Via (11.225mm,42.425mm) from SIG1 to SIG3 [Top Solder] Mask Sliver [0.068mm] / [Bottom Solder] Mask Sliver [0.068mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.059mm < 0.076mm) Between Via (11.225mm,42.425mm) from SIG1 to SIG3 And Via (11.709mm,41.964mm) from SIG1 to SIG3 [Top Solder] Mask Sliver [0.059mm] / [Bottom Solder] Mask Sliver [0.059mm]
+Rule Violations :3
+
+Processing Rule : Silk To Solder Mask (Clearance=0.025mm) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.025mm) Between Arc (38.517mm,15.886mm) on Top Overlay And Pad R11-1(38.964mm,15.864mm) on SIG1 [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.025mm) Between Arc (38.517mm,15.886mm) on Top Overlay And Pad R11-1(38.964mm,15.864mm) on SIG1 [Top Overlay] to [Top Solder] clearance [0mm]
+Rule Violations :2
+
+Processing Rule : Silk to Silk (Clearance=0.025mm) (All),(All)
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.025mm) Between Text "C26" (28.544mm,41.534mm) on Top Overlay And Text "C38" (29.941mm,41.534mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+   Violation between Silk To Silk Clearance Constraint: (0.008mm < 0.025mm) Between Text "C38" (29.941mm,41.534mm) on Top Overlay And Text "C40" (31.409mm,41.55mm) on Top Overlay Silk Text to Silk Clearance [0.008mm]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.025mm) Between Text "R12" (50.836mm,12.985mm) on Top Overlay And Track (50.339mm,14.528mm)(51.839mm,13.028mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+   Violation between Silk To Silk Clearance Constraint: (Collision < 0.025mm) Between Text "R12" (50.836mm,12.985mm) on Top Overlay And Track (51.839mm,12.728mm)(51.839mm,13.028mm) on Top Overlay Silk Text to Silk Clearance [0mm]
+Rule Violations :4
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=40mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 20
+Waived Violations : 0
+Time Elapsed        : 00:00:02

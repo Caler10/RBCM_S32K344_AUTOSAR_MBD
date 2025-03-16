@@ -1,0 +1,2178 @@
+UNITS=MM
+#
+#Component attribute names
+#
+@0 .comp_mount_type
+@1 .comp_height
+
+# CMP 0
+CMP 8 61.3156 22.9108 270 N Q1 IPZ40N04S5L-7R4 ;0=1,1=0.0000
+PRP Add_into_BOM 'yes'
+PRP Continuous_Drain_Current_(Id) '-'
+PRP Convert_to_PCB 'yes'
+PRP Datasheet 'https://atta.szlcsc.com/upload/public/pdf/source/20200525/C537509_E051284C2A14EA783116935AFB10216D.pdf'
+PRP Device 'IPZ40N04S5L-7R4'
+PRP Drain_Source_On_Resistance_(RDS(on)@Vgs_Id) '-'
+PRP Drain_Source_Voltage_(Vdss) '-'
+PRP Gate_Threshold_Voltage_(Vgs(th)@Id) '-'
+PRP Input_Capacitance_(Ciss@Vds) '-'
+PRP JLCPCB_Part_Class 'Extended Part'
+PRP LCSC_Part_Name 'IPZ40N04S5L-7R4'
+PRP Manufacturer 'Infineon(英飞凌)'
+PRP Manufacturer_Part 'IPZ40N04S5L-7R4'
+PRP Power_Dissipation_(Pd) '-'
+PRP Reverse_Transfer_Capacitance_(Crss@Vds) '-'
+PRP Supplier 'LCSC'
+PRP Supplier_Footprint 'TSDSON-8-EP(3.3x3.3)'
+PRP Supplier_Part 'C537509'
+PRP Symbol 'IPZ40N04S5L-7R4'
+PRP Total_Gate_Charge_(Qg@Vgs) '-'
+PRP Type '-'
+TOP 0 62.54059882 22.58579938 270 N 130 5 1
+TOP 1 62.99059792 21.93580068 180 N 130 8 1
+TOP 2 62.99059792 22.58579938 180 N 130 7 2
+TOP 3 62.99059792 23.23580062 180 N 130 6 3
+TOP 4 62.76559964 23.88579932 180 N 131 4 4
+TOP 5 60.9156008 22.9108 270 N 8 4 5
+TOP 6 59.73560062 23.88579932 180 N 8 8 5
+TOP 7 59.73560062 23.23580062 180 N 8 7 6
+TOP 8 59.73560062 22.58579938 180 N 8 6 7
+TOP 9 59.73560062 21.93580068 180 N 8 5 8
+#
+# CMP 1
+CMP 15 13.2842 39.878 270 N R40 0Ω ;0=1,1=0.0000
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 13.2842 39.07799906 180 N 3 5 1
+TOP 1 13.2842 40.67800094 180 N 1 2 2
+#
+# CMP 2
+CMP 6 54.7878 29.21 90 N D4 SMAJ28CA ;0=1,1=0.0000
+PRP Arrow_Part_Number 'SMAJ28CA'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/smaj28ca/bourns?utm_currency=USD&region=nac'
+PRP Datasheet_Link 'https://www.bourns.com/data/global/pdfs/SMAJ.pdf'
+PRP Height '2.62mm'
+PRP Manufacturer_Name 'Bourns'
+PRP Manufacturer_Part_Number 'SMAJ28CA'
+PRP Mouser_Part_Number '652-SMAJ28CA'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Bourns/SMAJ28CA?qs=A3H9pljuJ8Rc2FOBsYvsOw%3D%3D'
+TOP 0 54.7878 31.35999824 90 N 199 209 1
+TOP 1 54.7878 27.06000176 90 N 8 3 2
+#
+# CMP 3
+CMP 0 53.7718 38.6588 0 N C7 100uF ;0=1,1=0.0000
+PRP Add_into_BOM 'yes'
+PRP Convert_to_PCB 'yes'
+PRP Datasheet 'https://atta.szlcsc.com/upload/public/pdf/source/20220426/5696DDB0B22BE88A3CF8D074D2573DF7.pdf'
+PRP Device 'KNM2100UF35V149EC0055'
+PRP Equivalent_Series_Resistance(ESR) '80mΩ@100kHz'
+PRP JLCPCB_Part_Class 'Extended Part'
+PRP L '7mm'
+PRP LCSC_Part_Name '100uF ±20% 35V'
+PRP Lead_Spacing '2.5mm'
+PRP Lifetime_@_Temp '2000hrs@105℃'
+PRP Manufacturer 'KNSCHA(科尼盛)'
+PRP Manufacturer_Part 'KNM2100UF35V149EC0055'
+PRP Operating_Temperature '-55℃~+105℃'
+PRP Rated_Voltage '35V'
+PRP Ripple_Current '1.516A@100kHz'
+PRP Supplier 'LCSC'
+PRP Supplier_Footprint 'SMD,D6.3xL7mm'
+PRP Supplier_Part 'C2982822'
+PRP Symbol 'KNM2100UF35V149EC0055'
+PRP Tolerance '±20%'
+PRP Value '100uF'
+PRP φD '6.3mm'
+TOP 0 53.7718 35.85880052 270 N 9 5 1
+TOP 1 53.7718 41.45879948 270 N 199 204 2
+#
+# CMP 4
+CMP 0 48.5394 9.7282 270 N C6 100uF ;0=1,1=0.0000
+PRP Add_into_BOM 'yes'
+PRP Convert_to_PCB 'yes'
+PRP Datasheet 'https://atta.szlcsc.com/upload/public/pdf/source/20220426/5696DDB0B22BE88A3CF8D074D2573DF7.pdf'
+PRP Device 'KNM2100UF35V149EC0055'
+PRP Equivalent_Series_Resistance(ESR) '80mΩ@100kHz'
+PRP JLCPCB_Part_Class 'Extended Part'
+PRP L '7mm'
+PRP LCSC_Part_Name '100uF ±20% 35V'
+PRP Lead_Spacing '2.5mm'
+PRP Lifetime_@_Temp '2000hrs@105℃'
+PRP Manufacturer 'KNSCHA(科尼盛)'
+PRP Manufacturer_Part 'KNM2100UF35V149EC0055'
+PRP Operating_Temperature '-55℃~+105℃'
+PRP Rated_Voltage '35V'
+PRP Ripple_Current '1.516A@100kHz'
+PRP Supplier 'LCSC'
+PRP Supplier_Footprint 'SMD,D6.3xL7mm'
+PRP Supplier_Part 'C2982822'
+PRP Symbol 'KNM2100UF35V149EC0055'
+PRP Tolerance '±20%'
+PRP Value '100uF'
+PRP φD '6.3mm'
+TOP 0 51.33940202 9.7282 180 N 162 6 1
+TOP 1 45.73939798 9.7282 180 N 199 207 2
+#
+# CMP 5
+CMP 2 3.5052 32.1818 90 N J3 BWIPX-1-001E ;0=1,1=0.0000
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/2012231509_BAT-WIRELESS-BWIPX-1-001E_C496552.pdf'
+PRP Height '1.45mm'
+PRP Manufacturer_Name 'BAT WIRELESS'
+PRP Manufacturer_Part_Number 'BWIPX-1-001E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 2.03019914 32.1818 90 N 199 244 1
+TOP 1 3.5052 30.65679924 90 N 3 6 2
+TOP 2 4.98020086 32.1818 90 N 199 245 3
+#
+# CMP 6
+CMP 5 51.9684 3.6576 180 N D2 SS34A ;0=1,1=0.0000
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-3/DSA-43252.pdf'
+PRP Height '2.62mm'
+PRP Manufacturer_Name 'HY Electronic'
+PRP Manufacturer_Part_Number 'SS34A'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 54.01840098 3.6576 180 N 9 1 1
+TOP 1 49.91839902 3.6576 180 N 192 5 2
+#
+# CMP 7
+CMP 5 60.2742 34.798 180 N D1 SS34A ;0=1,1=0.0000
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-3/DSA-43252.pdf'
+PRP Height '2.62mm'
+PRP Manufacturer_Name 'HY Electronic'
+PRP Manufacturer_Part_Number 'SS34A'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 62.32420098 34.798 180 N 9 4 1
+TOP 1 58.22419902 34.798 180 N 4 1 2
+#
+# CMP 8
+CMP 7 59.6392 40.9194 0 N J2 ___P2_2.54 ;0=2,1=0.0000
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/lcsc/2210192330_Ckmtw-Shenzhen-Cankemeng-B-2100S02P-A110_C124375.pdf'
+PRP Height '8.8mm'
+PRP Manufacturer_Name 'Ckmtw(Shenzhen Cankemeng)'
+PRP Manufacturer_Part_Number 'B-2100S02P-A110'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 59.6392 40.9194 0 N 188 4 1
+TOP 1 62.1792 40.9194 0 N 187 3 2
+#
+# CMP 9
+CMP 16 61.0108 37.6682 0 N F1 JK-nSMD050-30 ;0=1,1=0.0000
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-1206W4F1002T5E_C17902.pdf'
+PRP Height '0.65mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '1206W4F1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 59.56080036 37.6682 270 N 4 2 1
+TOP 1 62.46079964 37.6682 270 N 200 4 2
+#
+# CMP 10
+CMP 28 60.0456 29.6418 90 N L2 XAL6060-223MEC ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'http://www.mouser.com/datasheet/2/597/xal60xx-270658.pdf'
+PRP Height '6mm'
+PRP Manufacturer_Name 'COILCRAFT'
+PRP Manufacturer_Part_Number 'XAL6060-223MEC'
+PRP Mouser_Part_Number '994-XAL6060-223MEC'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Coilcraft/XAL6060-223MEC?qs=zCSbvcPd3paScsLbTnAUcA%3D%3D'
+TOP 0 60.0456 31.2117994 90 N 9 3 1
+TOP 1 60.0456 27.17179986 90 N 8 2 2
+#
+# CMP 11
+CMP 27 67.2338 20.8026 0 N L1 XAL5050-223MEC ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://www.coilcraft.com/getmedia/49bc46c8-4b2c-45b9-9b6c-2eaa235ea698/xal50xx.pdf'
+PRP Manufacturer_Name 'COILCRAFT'
+PRP Manufacturer_Part_Number 'XAL5050-223MEC'
+PRP Mouser_Part_Number '994-XAL5050-223MEC'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Coilcraft/XAL5050-223MEC?qs=zCSbvcPd3pZDBbGj4RTtgg%3D%3D'
+TOP 0 65.5787995 20.8026 270 N 173 0 1
+TOP 1 68.8888005 20.8026 270 N 13 8 2
+#
+# CMP 12
+CMP 5 56.769 21.7678 270 N D3 SS34A ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-3/DSA-43252.pdf'
+PRP Height '2.62mm'
+PRP Manufacturer_Name 'HY Electronic'
+PRP Manufacturer_Part_Number 'SS34A'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 56.769 19.71779902 270 N 162 5 1
+TOP 1 56.769 23.81780098 270 N 8 1 2
+#
+# CMP 13
+CMP 4 64.77 33.3756 180 N C8 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 65.43000122 33.3756 90 N 199 200 1
+TOP 1 64.10999878 33.3756 90 N 9 2 2
+#
+# CMP 14
+CMP 15 65.786 10.0076 0 N R14 NC ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 64.98599906 10.0076 270 N 12 1 1
+TOP 1 66.58600094 10.0076 270 N 199 197 2
+#
+# CMP 15
+CMP 15 65.8368 16.4846 0 N R6 NC ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 65.03679906 16.4846 270 N 202 1 1
+TOP 1 66.63680094 16.4846 270 N 13 6 2
+#
+# CMP 16
+CMP 4 67.7926 15.8496 270 N C3 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 67.7926 15.18959878 180 N 199 196 1
+TOP 1 67.7926 16.50960122 180 N 13 5 2
+#
+# CMP 17
+CMP 15 9.8806 14.859 270 N R34 10K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 9.8806 14.05899906 180 N 199 180 1
+TOP 1 9.8806 15.65900094 180 N 14 3 2
+#
+# CMP 18
+CMP 15 51.4858 24.8158 0 N R30 10K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 50.68579906 24.8158 270 N 157 1 1
+TOP 1 52.28580094 24.8158 270 N 194 95 2
+#
+# CMP 19
+CMP 15 51.4858 26.2382 0 N R29 10K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 50.68579906 26.2382 270 N 158 7 1
+TOP 1 52.28580094 26.2382 270 N 194 96 2
+#
+# CMP 20
+CMP 21 14.24939492 14.4526 0 N IC5 SN74LVC1G373DBVR ;0=1,1=0.4500
+PRP Arrow_Part_Number 'SN74LVC1G373DBVR'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/sn74lvc1g373dbvr/texas-instruments?region=nac'
+PRP Datasheet_Link 'http://www.ti.com/lit/gpn/sn74lvc1g373'
+PRP Height '1.45mm'
+PRP Manufacturer_Name 'Texas Instruments'
+PRP Manufacturer_Part_Number 'SN74LVC1G373DBVR'
+PRP Mouser_Part_Number '595-SN74LVC1G373DBVR'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN74LVC1G373DBVR?qs=pajgIaoyDUhGcf%252BSO1j05w%3D%3D'
+TOP 0 12.99939488 15.40260064 0 N 15 1 1
+TOP 1 12.99939488 14.4526 0 N 199 177 2
+TOP 2 12.99939488 13.50259936 0 N 14 2 3
+TOP 3 15.49939496 13.50259936 0 N 138 3 4
+TOP 4 15.49939496 14.4526 0 N 194 87 5
+TOP 5 15.49939496 15.40260064 0 N 199 176 6
+#
+# CMP 21
+CMP 4 51.4858 27.6606 0 N C20 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 50.82579878 27.6606 270 N 199 165 1
+TOP 1 52.14580122 27.6606 270 N 194 82 2
+#
+# CMP 22
+CMP 15 18.14239958 25.146 0 N R37 NC ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 17.34239864 25.146 270 N 182 3 1
+TOP 1 18.94240052 25.146 270 N 146 7 2
+#
+# CMP 23
+CMP 15 11.3284 14.8517991 270 N R35 10K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 11.3284 14.05179816 180 N 199 178 1
+TOP 1 11.3284 15.65180004 180 N 15 2 2
+#
+# CMP 24
+CMP 19 24.638 7.874 270 N Q2 BCP56-16TX ;0=1,1=0.4500
+PRP Arrow_Part_Number 'BCP56-16,115'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/bcp56-16115/nexperia?utm_currency=USD&region=europe'
+PRP Datasheet_Link 'https://assets.nexperia.com/documents/data-sheet/BCP56_BCX56_BC56PA.pdf'
+PRP Height '1.8mm'
+PRP Manufacturer_Name 'Nexperia'
+PRP Manufacturer_Part_Number 'BCP56-16,115'
+PRP Mouser_Part_Number '771-BCP56-16-T/R'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Nexperia/BCP56-16115?qs=me8TqzrmIYWgUkLKLwMxWw%3D%3D'
+TOP 0 22.33799952 4.87400092 270 N 197 5 1
+TOP 1 24.638 4.87400092 270 N 193 7 2
+TOP 2 26.93800048 4.87400092 270 N 195 8 3
+TOP 3 24.638 10.87399908 180 N 193 6 4
+#
+# CMP 25
+CMP 25 17.9832 18.796 270 N LED6 WS2812B-2020 ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://www.alldatasheet.com/datasheet-pdf/pdf/1134522/WORLDSEMI/WS2812B-2020.html'
+PRP Height '0.84mm'
+PRP Manufacturer_Name 'Worldsemi'
+PRP Manufacturer_Part_Number 'WS2812B-2020'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 18.5331989 19.71099944 270 N 0 2 1
+TOP 1 17.4332011 19.71099944 270 N 199 169 2
+TOP 2 17.4332011 17.88100056 270 N 143 1 3
+TOP 3 18.5331989 17.88100056 270 N 193 8 4
+#
+# CMP 26
+CMP 9 60.99452876 3.6576 270 N LED5 NCD0603W1 ;0=1,1=0.4500
+PRP Add_into_BOM 'yes'
+PRP Convert_to_PCB 'yes'
+PRP Datasheet 'https://atta.szlcsc.com/upload/public/pdf/source/20200820/C84265_479E6193713348A548E5CD6D9278BF16.pdf'
+PRP Device 'NCD0603W1'
+PRP Emitted_Color '白色'
+PRP Forward_Current '5mA'
+PRP Forward_Voltage_(VF) '2.6V~3.6V'
+PRP JLCPCB_Part_Class 'Extended Part'
+PRP LCSC_Part_Name 'NCD0603W1'
+PRP Lens_Color '雾状黄透镜'
+PRP Luminous_Intensity '200mcd~300mcd'
+PRP Manufacturer '国星光电'
+PRP Manufacturer_Part 'NCD0603W1'
+PRP Operating_Temperature '-30℃~+85℃'
+PRP Power_Dissipation '72mW'
+PRP Supplier 'LCSC'
+PRP Supplier_Footprint '0603'
+PRP Supplier_Part 'C84265'
+PRP Symbol 'FC-D1608WD-460H5'
+PRP Viewing_Angle '130°'
+TOP 0 60.99465576 2.858135 180 N 199 192 1
+TOP 1 60.99440176 4.457065 180 N 128 2 2
+#
+# CMP 27
+CMP 16 45.0088 3.3274 0 N F2 JK-nSMD050-30 ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-1206W4F1002T5E_C17902.pdf'
+PRP Height '0.65mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '1206W4F1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 43.55880036 3.3274 270 N 167 1 1
+TOP 1 46.45879964 3.3274 270 N 192 6 2
+#
+# CMP 28
+CMP 4 8.4074 15.02679748 270 N C54 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 8.4074 14.36679626 180 N 199 179 1
+TOP 1 8.4074 15.6867987 180 N 194 88 2
+#
+# CMP 29
+CMP 15 61.0362 7.4168 270 N R19 0Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 61.0362 6.61679906 180 N 198 21 1
+TOP 1 61.0362 8.21680094 180 N 174 1 2
+#
+# CMP 30
+CMP 15 59.6646 7.4168 270 N R17 0Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 59.6646 6.61679906 180 N 7 4 1
+TOP 1 59.6646 8.21680094 180 N 175 0 2
+#
+# CMP 31
+CMP 15 23.3934 23.2918 180 N R5 10K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 24.19340094 23.2918 90 N 198 20 1
+TOP 1 22.59339906 23.2918 90 N 194 81 2
+#
+# CMP 32
+CMP 4 6.096 23.241 0 N C53 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 5.43599878 23.241 270 N 199 183 1
+TOP 1 6.75600122 23.241 270 N 166 5 2
+#
+# CMP 33
+CMP 4 32.21445424 38.60620422 90 N C40 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 32.21445424 39.26620544 0 N 199 140 1
+TOP 1 32.21445424 37.946203 0 N 159 7 2
+#
+# CMP 34
+CMP 4 48.3362 27.6606 180 N C39 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 48.99620122 27.6606 90 N 199 156 1
+TOP 1 47.67619878 27.6606 90 N 159 9 2
+#
+# CMP 35
+CMP 4 30.85374068 38.60620422 90 N C38 2.2uF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 30.85374068 39.26620544 0 N 199 139 1
+TOP 1 30.85374068 37.946203 0 N 159 6 2
+#
+# CMP 36
+CMP 4 23.3934 32.258 0 N C37 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 22.73339878 32.258 270 N 199 158 1
+TOP 1 24.05340122 32.258 270 N 195 10 2
+#
+# CMP 37
+CMP 4 34.93588136 38.60620422 90 N C36 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 34.93588136 39.26620544 0 N 199 142 1
+TOP 1 34.93588136 37.946203 0 N 195 7 2
+#
+# CMP 38
+CMP 4 31.0896 14.36420038 0 N C30 10uF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 30.42959878 14.36420038 270 N 199 147 1
+TOP 1 31.74960122 14.36420038 270 N 203 4 2
+#
+# CMP 39
+CMP 4 23.3934 20.3708 0 N C29 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 22.73339878 20.3708 270 N 199 161 1
+TOP 1 24.05340122 20.3708 270 N 194 80 2
+#
+# CMP 40
+CMP 4 23.3934 30.8356 0 N C28 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 22.73339878 30.8356 270 N 199 159 1
+TOP 1 24.05340122 30.8356 270 N 194 78 2
+#
+# CMP 41
+CMP 4 26.7716 38.60620422 90 N C27 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 26.7716 39.26620544 0 N 199 136 1
+TOP 1 26.7716 37.946203 0 N 194 71 2
+#
+# CMP 42
+CMP 4 29.49302712 38.60620422 90 N C26 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 29.49302712 39.26620544 0 N 199 138 1
+TOP 1 29.49302712 37.946203 0 N 194 73 2
+#
+# CMP 43
+CMP 4 47.9044 29.7942 90 N C25 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 47.9044 30.45420122 0 N 199 203 1
+TOP 1 47.9044 29.13419878 0 N 194 106 2
+#
+# CMP 44
+CMP 4 48.3362 24.8158 0 N C24 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 47.67619878 24.8158 270 N 199 155 1
+TOP 1 48.99620122 24.8158 270 N 194 77 2
+#
+# CMP 45
+CMP 4 23.3934 21.844 0 N C4 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 22.73339878 21.844 270 N 199 162 1
+TOP 1 24.05340122 21.844 270 N 198 18 2
+#
+# CMP 46
+CMP 22 19.7358 26.67 0 N RT1 NCP18XH103F03RB ;0=1,1=0.4500
+PRP Arrow_Part_Number 'NCP18XH103F03RB'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/ncp18xh103f03rb/murata-manufacturing?utm_currency=USD&region=nac'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/NCP18XH103F03RB.pdf'
+PRP Height '0.95mm'
+PRP Manufacturer_Name 'Murata Electronics'
+PRP Manufacturer_Part_Number 'NCP18XH103F03RB'
+PRP Mouser_Part_Number '81-NCP18XH103F03RB'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Murata-Electronics/NCP18XH103F03RB?qs=k3rQb2PKXqkF9YvF09qsvw%3D%3D'
+TOP 0 18.98579896 26.67 0 N 142 4 1
+TOP 1 20.48580104 26.67 0 N 199 186 2
+#
+# CMP 47
+CMP 15 38.95099906 13.5841994 270 N R10 47Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 38.95099906 12.78419846 180 N 179 6 1
+TOP 1 38.95099906 14.38420034 180 N 196 2 2
+#
+# CMP 48
+CMP 15 25.6032 13.1318 0 N R9 0Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 24.80319906 13.1318 270 N 194 74 1
+TOP 1 26.40320094 13.1318 270 N 133 5 2
+#
+# CMP 49
+CMP 12 36.06981102 13.53999324 0 N X1 16MHz ;0=1,1=0.4500
+PRP Add_into_BOM 'yes'
+PRP Convert_to_PCB 'yes'
+PRP Crystal_Type '-'
+PRP Datasheet 'https://atta.szlcsc.com/upload/public/pdf/source/20180612/C194422_06565775B57778BDF1B4843308802948.pdf'
+PRP Device 'XRCHA16M000F0A01R0'
+PRP Equivalent_Series_Resistance_(ESR) '100Ω'
+PRP External_load_capacitor '8pF'
+PRP Frequency_Stability(Full_temperature_range) '±100ppm'
+PRP JLCPCB_Part_Class 'Extended Part'
+PRP LCSC_Part_Name '16MHz ±100ppm 8pF'
+PRP Manufacturer 'muRata(村田)'
+PRP Manufacturer_Part 'XRCHA16M000F0A01R0'
+PRP Normal_temperature_Frequency_Tolerance '±100ppm'
+PRP Operating_Temperature '-40℃~+125℃'
+PRP Supplier 'LCSC'
+PRP Supplier_Footprint 'SMD2520'
+PRP Supplier_Part 'C194421'
+PRP Symbol 'XRCHA16M000F0A01R0'
+PRP Value '16MHz'
+TOP 0 35.06971142 13.53999324 0 N 201 3 1
+TOP 1 37.06991062 13.53999324 0 N 179 4 2
+#
+# CMP 50
+CMP 15 47.9044 32.8422 270 N R24 4.7K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 47.9044 32.04219906 180 N 126 2 1
+TOP 1 47.9044 33.64220094 180 N 194 105 2
+#
+# CMP 51
+CMP 14 59.80700002 13.35360042 0 N IC2 TLF35584QVVS2 ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'http://www.farnell.com/datasheets/2820312.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'Infineon'
+PRP Manufacturer_Part_Number 'TLF35584QVVS2'
+PRP Mouser_Part_Number 'N/A'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/TLF35584QVVS2?qs=l9vRkkPGK2mbsGIT9lqTbg%3D%3D'
+TOP 0 56.4069992 16.1036 0 N 199 218 1
+TOP 1 56.4069992 15.603601 0 N 162 7 2
+TOP 2 56.4069992 15.10359946 0 N 199 219 3
+TOP 3 56.4069992 14.60360046 0 N 199 220 4
+TOP 4 56.4069992 14.10360146 0 N 180 2 5
+TOP 5 56.4069992 13.60359992 0 N 199 221 6
+TOP 6 56.4069992 13.10360092 0 N 199 222 7
+TOP 7 56.4069992 12.60359938 0 N 199 223 8
+TOP 8 56.4069992 12.10360038 0 N 199 224 9
+TOP 9 56.4069992 11.60360138 0 N 0 34 10
+TOP 10 56.4069992 11.10359984 0 N 0 35 11
+TOP 11 56.4069992 10.60360084 0 N 161 2 12
+TOP 12 57.05700044 9.9535996 270 N 178 1 13
+TOP 13 57.55699944 9.9535996 270 N 177 2 14
+TOP 14 58.05700098 9.9535996 270 N 176 2 15
+TOP 15 58.55699998 9.9535996 270 N 175 1 16
+TOP 16 59.05699898 9.9535996 270 N 174 2 17
+TOP 17 59.55700052 9.9535996 270 N 150 1 18
+TOP 18 60.05699952 9.9535996 270 N 0 36 19
+TOP 19 60.55700106 9.9535996 270 N 0 37 20
+TOP 20 61.05700006 9.9535996 270 N 0 38 21
+TOP 21 61.55699906 9.9535996 270 N 10 5 22
+TOP 22 62.0570006 9.9535996 270 N 199 225 23
+TOP 23 62.5569996 9.9535996 270 N 199 226 24
+TOP 24 63.20700084 10.60360084 0 N 12 2 25
+TOP 25 63.20700084 11.10359984 0 N 0 39 26
+TOP 26 63.20700084 11.60360138 0 N 199 227 27
+TOP 27 63.20700084 12.10360038 0 N 199 228 28
+TOP 28 63.20700084 12.60359938 0 N 0 40 29
+TOP 29 63.20700084 13.10360092 0 N 194 112 30
+TOP 30 63.20700084 13.60359992 0 N 193 14 31
+TOP 31 63.20700084 14.10360146 0 N 0 41 32
+TOP 32 63.20700084 14.60360046 0 N 0 42 33
+TOP 33 63.20700084 15.10359946 0 N 202 2 34
+TOP 34 63.20700084 15.603601 0 N 202 3 35
+TOP 35 63.20700084 16.1036 0 N 202 4 36
+TOP 36 62.5569996 16.75360124 270 N 202 5 37
+TOP 37 62.0570006 16.75360124 270 N 202 6 38
+TOP 38 61.55699906 16.75360124 270 N 199 229 39
+TOP 39 61.05700006 16.75360124 270 N 199 230 40
+TOP 40 60.55700106 16.75360124 270 N 199 231 41
+TOP 41 60.05699952 16.75360124 270 N 173 1 42
+TOP 42 59.55700052 16.75360124 270 N 173 2 43
+TOP 43 59.05699898 16.75360124 270 N 162 8 44
+TOP 44 58.55699998 16.75360124 270 N 162 9 45
+TOP 45 58.05700098 16.75360124 270 N 131 5 46
+TOP 46 57.55699944 16.75360124 270 N 130 9 47
+TOP 47 57.05700044 16.75360124 270 N 199 232 48
+TOP 48 59.80700002 13.35360042 270 N 199 233 49
+#
+# CMP 52
+CMP 23 17.9578 13.97 90 N SW5 TS-1088-AR02016 ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://www.xunpudianzi.com/uploads/pdf/TS-1088-ARXXX.pdf'
+PRP Height '2mm'
+PRP Manufacturer_Name 'XUNPU'
+PRP Manufacturer_Part_Number 'TS-1088-AR02016'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 17.9578 16.04499966 0 N 136 0 1
+TOP 1 17.9578 11.89500034 0 N 199 205 2
+#
+# CMP 53
+CMP 23 6.096 13.97 90 N SW4 TS-1088-AR02016 ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://www.xunpudianzi.com/uploads/pdf/TS-1088-ARXXX.pdf'
+PRP Height '2mm'
+PRP Manufacturer_Name 'XUNPU'
+PRP Manufacturer_Part_Number 'TS-1088-AR02016'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 6.096 16.04499966 0 N 137 1 1
+TOP 1 6.096 11.89500034 0 N 199 181 2
+#
+# CMP 54
+CMP 23 50.6222 31.5468 270 N SW3 TS-1088-AR02016 ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://www.xunpudianzi.com/uploads/pdf/TS-1088-ARXXX.pdf'
+PRP Height '2mm'
+PRP Manufacturer_Name 'XUNPU'
+PRP Manufacturer_Part_Number 'TS-1088-AR02016'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 50.6222 29.47180034 180 N 139 2 1
+TOP 1 50.6222 33.62179966 180 N 126 1 2
+#
+# CMP 55
+CMP 23 50.673 16.4846 0 N SW2 TS-1088-AR02016 ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://www.xunpudianzi.com/uploads/pdf/TS-1088-ARXXX.pdf'
+PRP Height '2mm'
+PRP Manufacturer_Name 'XUNPU'
+PRP Manufacturer_Part_Number 'TS-1088-AR02016'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 48.59800034 16.4846 270 N 140 2 1
+TOP 1 52.74799966 16.4846 270 N 127 2 2
+#
+# CMP 56
+CMP 23 23.3426 27.051 90 N SW1 TS-1088-AR02016 ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://www.xunpudianzi.com/uploads/pdf/TS-1088-ARXXX.pdf'
+PRP Height '2mm'
+PRP Manufacturer_Name 'XUNPU'
+PRP Manufacturer_Part_Number 'TS-1088-AR02016'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 23.3426 29.12599966 0 N 199 163 1
+TOP 1 23.3426 24.97600034 0 N 198 19 2
+#
+# CMP 57
+CMP 16 61.5696 19.1008 180 N R8 0.05Ω ;0=1,1=0.0000
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-1206W4F1002T5E_C17902.pdf'
+PRP Height '0.65mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '1206W4F1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 63.01959964 19.1008 90 N 199 208 1
+TOP 1 60.11960036 19.1008 90 N 130 4 2
+#
+# CMP 58
+CMP 17 35.99999912 26.30000074 270 N IC1 S32K344EHT1MPBST ;0=1,1=0.4500
+PRP Arrow_Part_Number 'S32K344EHT1MPBST'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/s32k344eht1mpbst/nxp-semiconductors?region=nac'
+PRP Datasheet_Link 'https://www.nxp.com/docs/en/data-sheet/S32K3xx.pdf'
+PRP Height '1.75mm'
+PRP Manufacturer_Name 'NXP'
+PRP Manufacturer_Part_Number 'S32K344EHT1MPBST'
+PRP Mouser_Part_Number '771-S32K344EHT1MPBST'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/NXP-Semiconductors/S32K344EHT1MPBST?qs=Rp5uXu7WBW8J9n%252BPyXjBKQ%3D%3D'
+TOP 0 29.1749988 17.0800014 270 N 117 4 1
+TOP 1 29.49999942 18.58000094 270 N 116 2 2
+TOP 2 29.82500004 17.0800014 270 N 115 2 3
+TOP 3 30.14999812 18.58000094 270 N 24 2 4
+TOP 4 30.47499874 17.0800014 270 N 25 2 5
+TOP 5 30.79999936 18.58000094 270 N 114 4 6
+TOP 6 31.12499998 17.0800014 270 N 60 1 7
+TOP 7 31.44999806 18.58000094 270 N 61 2 8
+TOP 8 31.77499868 17.0800014 270 N 28 1 9
+TOP 9 32.0999993 18.58000094 270 N 29 3 10
+TOP 10 32.42499992 17.0800014 270 N 197 7 11
+TOP 11 32.749998 18.58000094 270 N 33 3 12
+TOP 12 33.07499862 17.0800014 270 N 34 4 13
+TOP 13 33.39999924 18.58000094 270 N 113 3 14
+TOP 14 33.72499986 17.0800014 270 N 112 1 15
+TOP 15 34.04999794 18.58000094 270 N 133 7 16
+TOP 16 34.37499856 17.0800014 270 N 199 243 17
+TOP 17 34.69999918 18.58000094 270 N 194 120 18
+TOP 18 35.0249998 17.0800014 270 N 203 7 19
+TOP 19 35.34999788 18.58000094 270 N 195 17 20
+TOP 20 35.6749985 17.0800014 270 N 159 14 21
+TOP 21 35.99999912 18.58000094 270 N 199 242 22
+TOP 22 36.32499974 17.0800014 270 N 201 5 23
+TOP 23 36.65000036 18.58000094 270 N 199 241 24
+TOP 24 36.97499844 17.0800014 270 N 196 3 25
+TOP 25 37.29999906 18.58000094 270 N 26 3 26
+TOP 26 37.62499968 17.0800014 270 N 35 2 27
+TOP 27 37.9500003 18.58000094 270 N 111 4 28
+TOP 28 38.27499838 17.0800014 270 N 27 3 29
+TOP 29 38.599999 18.58000094 270 N 110 1 30
+TOP 30 38.92499962 17.0800014 270 N 49 2 31
+TOP 31 39.25000024 18.58000094 270 N 135 2 32
+TOP 32 39.57499832 17.0800014 270 N 134 3 33
+TOP 33 39.89999894 18.58000094 270 N 50 4 34
+TOP 34 40.22499956 17.0800014 270 N 51 2 35
+TOP 35 40.55000018 18.58000094 270 N 5 9 36
+TOP 36 40.87499826 17.0800014 270 N 199 240 37
+TOP 37 41.19999888 18.58000094 270 N 194 119 38
+TOP 38 41.5249995 17.0800014 270 N 141 3 39
+TOP 39 41.85000012 18.58000094 270 N 158 9 40
+TOP 40 42.1749982 17.0800014 270 N 157 3 41
+TOP 41 42.49999882 18.58000094 270 N 16 6 42
+TOP 42 42.82499944 17.0800014 270 N 140 3 43
+TOP 43 45.21999846 19.47500042 180 N 97 5 44
+TOP 44 43.71999892 19.80000104 180 N 96 4 45
+TOP 45 45.21999846 20.12500166 180 N 30 4 46
+TOP 46 43.71999892 20.44999974 180 N 104 2 47
+TOP 47 45.21999846 20.77500036 180 N 105 1 48
+TOP 48 43.71999892 21.10000098 180 N 85 4 49
+TOP 49 45.21999846 21.4250016 180 N 86 2 50
+TOP 50 43.71999892 21.74999968 180 N 7 5 51
+TOP 51 45.21999846 22.0750003 180 N 11 7 52
+TOP 52 43.71999892 22.40000092 180 N 10 6 53
+TOP 53 45.21999846 22.72500154 180 N 52 2 54
+TOP 54 43.71999892 23.04999962 180 N 53 2 55
+TOP 55 45.21999846 23.37500024 180 N 54 4 56
+TOP 56 43.71999892 23.70000086 180 N 194 118 57
+TOP 57 45.21999846 24.02500148 180 N 199 239 58
+TOP 58 43.71999892 24.34999956 180 N 159 13 59
+TOP 59 45.21999846 24.67500018 180 N 195 16 60
+TOP 60 43.71999892 25.0000008 180 N 87 2 61
+TOP 61 45.21999846 25.32500142 180 N 88 2 62
+TOP 62 43.71999892 25.6499995 180 N 55 3 63
+TOP 63 45.21999846 25.97500012 180 N 56 3 64
+TOP 64 43.71999892 26.30000074 180 N 73 4 65
+TOP 65 45.21999846 26.62500136 180 N 74 1 66
+TOP 66 43.71999892 26.95000198 180 N 95 3 67
+TOP 67 45.21999846 27.27500006 180 N 75 2 68
+TOP 68 43.71999892 27.60000068 180 N 94 2 69
+TOP 69 45.21999846 27.9250013 180 N 93 1 70
+TOP 70 43.71999892 28.25000192 180 N 76 4 71
+TOP 71 45.21999846 28.575 180 N 92 3 72
+TOP 72 43.71999892 28.90000062 180 N 139 3 73
+TOP 73 45.21999846 29.22500124 180 N 106 3 74
+TOP 74 43.71999892 29.55000186 180 N 91 3 75
+TOP 75 45.21999846 29.87499994 180 N 90 2 76
+TOP 76 43.71999892 30.20000056 180 N 194 117 77
+TOP 77 45.21999846 30.52500118 180 N 199 238 78
+TOP 78 43.71999892 30.8500018 180 N 107 3 79
+TOP 79 45.21999846 31.17499988 180 N 89 3 80
+TOP 80 43.71999892 31.5000005 180 N 77 4 81
+TOP 81 45.21999846 31.82500112 180 N 72 2 82
+TOP 82 43.71999892 32.15000174 180 N 78 2 83
+TOP 83 45.21999846 32.47499982 180 N 71 3 84
+TOP 84 43.71999892 32.80000044 180 N 70 4 85
+TOP 85 45.21999846 33.12500106 180 N 6 4 86
+TOP 86 42.82499944 35.52000008 270 N 69 4 87
+TOP 87 42.49999882 34.02000054 270 N 68 2 88
+TOP 88 42.1749982 35.52000008 270 N 67 3 89
+TOP 89 41.85000012 34.02000054 270 N 79 2 90
+TOP 90 41.5249995 35.52000008 270 N 66 1 91
+TOP 91 41.19999888 34.02000054 270 N 80 3 92
+TOP 92 40.87499826 35.52000008 270 N 65 2 93
+TOP 93 40.55000018 34.02000054 270 N 108 3 94
+TOP 94 40.22499702 35.52000008 270 N 109 1 95
+TOP 95 39.89999894 34.02000054 270 N 64 2 96
+TOP 96 39.57499832 35.52000008 270 N 81 3 97
+TOP 97 39.25000024 34.02000054 270 N 82 2 98
+TOP 98 38.92499708 35.52000008 270 N 63 3 99
+TOP 99 38.599999 34.02000054 270 N 189 4 100
+TOP 100 38.27499838 35.52000008 270 N 190 2 101
+TOP 101 37.94999776 34.02000308 270 N 191 5 102
+TOP 102 37.62499714 35.52000008 270 N 62 3 103
+TOP 103 37.29999906 34.02000054 270 N 31 1 104
+TOP 104 36.97499844 35.52000008 270 N 195 15 105
+TOP 105 36.64999782 34.02000308 270 N 159 12 106
+TOP 106 36.3249972 35.52000008 270 N 199 237 107
+TOP 107 35.99999912 34.02000054 270 N 194 116 108
+TOP 108 35.6749985 35.52000008 270 N 118 3 109
+TOP 109 35.34999788 34.02000054 270 N 155 4 110
+TOP 110 35.02499726 35.52000008 270 N 48 4 111
+TOP 111 34.69999918 34.02000054 270 N 154 3 112
+TOP 112 34.37499856 35.52000008 270 N 153 6 113
+TOP 113 34.04999794 34.02000054 270 N 156 5 114
+TOP 114 33.72499732 35.52000008 270 N 47 4 115
+TOP 115 33.39999924 34.02000054 270 N 98 3 116
+TOP 116 33.07499608 35.52000008 270 N 99 2 117
+TOP 117 32.749998 34.02000054 270 N 46 3 118
+TOP 118 32.42499992 35.52000008 270 N 57 1 119
+TOP 119 32.0999993 34.02000054 270 N 58 2 120
+TOP 120 31.77499614 35.52000008 270 N 59 1 121
+TOP 121 31.44999806 34.02000054 270 N 45 3 122
+TOP 122 31.12499998 35.52000008 270 N 122 3 123
+TOP 123 30.79999682 34.02000308 270 N 123 3 124
+TOP 124 30.4749962 35.52000008 270 N 44 3 125
+TOP 125 30.14999812 34.02000054 270 N 100 2 126
+TOP 126 29.82500004 35.52000008 270 N 199 236 127
+TOP 127 29.49999688 34.02000308 270 N 194 115 128
+TOP 128 29.17499626 35.52000008 270 N 101 5 129
+TOP 129 26.77999978 33.1250036 180 N 102 4 130
+TOP 130 28.27999678 32.80000298 180 N 43 4 131
+TOP 131 26.77999978 32.47499982 180 N 42 4 132
+TOP 132 28.27999932 32.15000174 180 N 103 3 133
+TOP 133 26.77999978 31.82500366 180 N 41 4 134
+TOP 134 28.27999678 31.50000304 180 N 124 4 135
+TOP 135 26.77999978 31.17499988 180 N 40 3 136
+TOP 136 28.27999932 30.8500018 180 N 125 3 137
+TOP 137 26.77999978 30.52500372 180 N 39 3 138
+TOP 138 28.27999932 30.20000056 180 N 38 3 139
+TOP 139 26.77999978 29.87499994 180 N 83 3 140
+TOP 140 28.27999932 29.55000186 180 N 84 2 141
+TOP 141 26.77999978 29.22500378 180 N 23 3 142
+TOP 142 28.27999932 28.90000062 180 N 151 7 143
+TOP 143 26.77999978 28.57500254 180 N 22 4 144
+TOP 144 28.27999932 28.25000192 180 N 152 4 145
+TOP 145 26.77999978 27.9250013 180 N 32 3 146
+TOP 146 28.27999932 27.60000068 180 N 36 2 147
+TOP 147 26.77999978 27.2750026 180 N 195 14 148
+TOP 148 28.27999932 26.95000198 180 N 159 11 149
+TOP 149 26.77999978 26.62500136 180 N 199 235 150
+TOP 150 28.27999932 26.30000074 180 N 194 114 151
+TOP 151 26.77999978 25.97500266 180 N 119 2 152
+TOP 152 28.27999678 25.65000204 180 N 21 3 153
+TOP 153 26.77999978 25.32500142 180 N 20 4 154
+TOP 154 28.27999932 25.0000008 180 N 120 3 155
+TOP 155 26.77999978 24.67500272 180 N 19 3 156
+TOP 156 28.27999678 24.3500021 180 N 18 3 157
+TOP 157 26.77999978 24.02500148 180 N 17 1 158
+TOP 158 28.27999932 23.70000086 180 N 121 3 159
+TOP 159 26.77999978 23.37500278 180 N 142 5 160
+TOP 160 28.27999932 23.04999962 180 N 168 6 161
+TOP 161 26.77999978 22.72500154 180 N 37 5 162
+TOP 162 28.27999932 22.40000092 180 N 14 4 163
+TOP 163 26.77999978 22.07500284 180 N 2 3 164
+TOP 164 28.27999932 21.74999968 180 N 169 6 165
+TOP 165 26.77999978 21.4250016 180 N 147 9 166
+TOP 166 28.27999932 21.10000098 180 N 198 23 167
+TOP 167 26.77999978 20.77500036 180 N 199 234 168
+TOP 168 28.27999932 20.44999974 180 N 194 113 169
+TOP 169 26.77999978 20.12500166 180 N 146 8 170
+TOP 170 28.27999932 19.80000104 180 N 15 3 171
+TOP 171 26.77999978 19.47500042 180 N 138 5 172
+#
+# CMP 59
+CMP 18 40.7924 40.0304 0 N IC3 TJA1042T_3_1J ;0=1,1=0.4500
+PRP Arrow_Part_Number 'TJA1042T/3/1J'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/tja1042t31j/nxp-semiconductors?utm_currency=USD&region=nac'
+PRP Datasheet_Link 'http://www.nxp.com/docs/en/data-sheet/TJA1042.pdf'
+PRP Height '1.75mm'
+PRP Manufacturer_Name 'NXP'
+PRP Manufacturer_Part_Number 'TJA1042T/3/1J'
+PRP Mouser_Part_Number '771-TJA1042T/3/1J'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/NXP-Semiconductors/TJA1042T-3-1J?qs=gNSudQoqUYC0yGbZKhqwlQ%3D%3D'
+TOP 0 38.09240032 41.9354 0 N 189 3 1
+TOP 1 38.09240032 40.6654 0 N 199 201 2
+TOP 2 38.09240032 39.3954 0 N 193 12 3
+TOP 3 38.09240032 38.1254 0 N 191 4 4
+TOP 4 43.49239968 38.1254 0 N 194 100 5
+TOP 5 43.49239968 39.3954 0 N 187 4 6
+TOP 6 43.49239968 40.6654 0 N 188 5 7
+TOP 7 43.49239968 41.9354 0 N 190 1 8
+#
+# CMP 60
+CMP 4 26.162 2.921 180 N C18 2.2uF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 26.82200122 2.921 90 N 199 210 1
+TOP 1 25.50199878 2.921 90 N 195 13 2
+#
+# CMP 61
+CMP 26 13.3858 27.2796 0 N Y1 X322540MPB4SI ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Yangxing-Tech-X322540MPB4SI_C9010.pdf'
+PRP Height '0.8mm'
+PRP Manufacturer_Name 'Yangxing Tech'
+PRP Manufacturer_Part_Number 'X322540MPB4SI'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 12.28579966 26.42959916 0 N 132 2 1
+TOP 1 14.48580034 26.42959916 0 N 199 174 2
+TOP 2 14.48580034 28.12960084 0 N 164 2 3
+TOP 3 12.28579966 28.12960084 0 N 199 173 4
+#
+# CMP 62
+CMP 24 35.9918 5.1308 0 N USB1 TYPE-C_16PIN_2MD(073) ;0=1,1=0.0000
+PRP Add_into_BOM 'yes'
+PRP Connect-Disconnect_Life '5千次'
+PRP Connector_Type 'Type-C'
+PRP Convert_to_PCB 'yes'
+PRP Core_Colour '黑色'
+PRP Current_Rating_-_Power_(Max) '5A'
+PRP Datasheet 'https://atta.szlcsc.com/upload/public/pdf/source/20211123/39B17C16241EAC15C5E277BDA434118E.pdf'
+PRP Device 'TYPE-C 16PIN 2MD(073)'
+PRP Gender '母'
+PRP JLCPCB_Part_Class 'Extended Part'
+PRP LCSC_Part_Name 'Type-C 母 卧贴'
+PRP Manufacturer 'SHOU HAN(首韩)'
+PRP Manufacturer_Part 'TYPE-C 16PIN 2MD(073)'
+PRP Mounting_Style '卧贴'
+PRP Number_of_Contacts '16P'
+PRP Number_of_Ports '1'
+PRP Operating_Temperature_Range '-25℃~+85℃'
+PRP Rated_Voltage_(Max) '5V'
+PRP Standard 'USB 3.1'
+PRP Supplier 'LCSC'
+PRP Supplier_Footprint 'SMD'
+PRP Supplier_Part 'C2765186'
+PRP Symbol 'TYPE-C 16PIN 2MD(073)'
+TOP 0 32.791781 7.505827 0 N 199 247 1
+TOP 1 33.591881 7.505827 0 N 167 3 2
+TOP 2 34.241867 7.505827 0 N 0 45 3
+TOP 3 34.741993 7.505827 0 N 186 2 4
+TOP 4 35.241865 7.505827 0 N 145 3 5
+TOP 5 35.741737 7.505827 0 N 144 2 6
+TOP 6 36.241863 7.505827 0 N 145 2 7
+TOP 7 36.741735 7.505827 0 N 144 1 8
+TOP 8 37.241861 7.505827 0 N 0 44 9
+TOP 9 37.741987 7.505827 0 N 185 2 10
+TOP 10 38.391973 7.505827 0 N 167 2 11
+TOP 11 39.191819 7.505827 0 N 199 246 12
+TOP 12 31.666815 2.755773 0 N 199 133 13
+TOP 13 31.6667642 6.9559932 0 N 199 135 13
+TOP 14 40.316785 2.755773 0 N 199 132 14
+TOP 15 40.3166834 6.9560186 0 N 199 134 14
+#
+# CMP 63
+CMP 20 18.5166 22.987 0 N S1 SGM3157 ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://pdf1.alldatasheet.com/datasheet-pdf/view/224033/SGMICRO/SGM3157YC6/TR.html'
+PRP Height '1.1mm'
+PRP Manufacturer_Name 'SGMICRO'
+PRP Manufacturer_Part_Number 'SGM3157YC6/TR'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 17.46659956 23.63700124 0 N 184 0 1
+TOP 1 17.46659956 22.987 0 N 199 168 2
+TOP 2 17.46659956 22.33699876 0 N 183 0 3
+TOP 3 19.56660044 22.33699876 0 N 146 6 4
+TOP 4 19.56660044 22.987 0 N 194 84 5
+TOP 5 19.56660044 23.63700124 0 N 182 2 6
+#
+# CMP 64
+CMP 3 15.2654 45.1612 90 N RF1 CA-C03 ;0=1,1=0.0000
+TOP 0 13.24840124 43.2912012 180 N 1 3 1
+TOP 1 18.70940124 43.2912012 180 N 0 43 2
+#
+# CMP 65
+CMP 15 10.6934 27.2542 270 N R33 22Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 10.6934 26.45419906 180 N 163 1 1
+TOP 1 10.6934 28.05420094 180 N 132 0 2
+#
+# CMP 66
+CMP 15 42.6974 7.366 90 N R36 5.1K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 42.6974 8.16600094 0 N 185 1 1
+TOP 1 42.6974 6.56599906 0 N 199 187 2
+#
+# CMP 67
+CMP 15 29.337 7.366 90 N R32 5.1K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 29.337 8.16600094 0 N 186 1 1
+TOP 1 29.337 6.56599906 0 N 199 153 2
+#
+# CMP 68
+CMP 15 62.5602 3.7338 90 N R28 3K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 62.5602 4.53380094 0 N 128 3 1
+TOP 1 62.5602 2.93379906 0 N 193 9 2
+#
+# CMP 69
+CMP 15 58.928 3.7084 90 N R26 3K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 58.928 4.50840094 0 N 129 3 1
+TOP 1 58.928 2.90839906 0 N 194 97 2
+#
+# CMP 70
+CMP 15 43.7896 13.589 90 N R25 2.2K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 43.7896 14.38900094 0 N 170 2 1
+TOP 1 43.7896 12.78899906 0 N 194 102 2
+#
+# CMP 71
+CMP 15 3.9878 28.2448 225 N R39 0Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 4.55348594 27.67911406 135 N 172 5 1
+TOP 1 3.42211406 28.81048594 135 N 3 4 2
+#
+# CMP 72
+CMP 15 6.6802 25.4508 225 N R38 0Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 7.24588594 24.88511406 135 N 181 2 1
+TOP 1 6.11451406 26.01648594 135 N 172 4 2
+#
+# CMP 73
+CMP 15 45.339 40.09540114 270 N R31 120Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 45.339 39.2954002 180 N 187 5 1
+TOP 1 45.339 40.89540208 180 N 188 6 2
+#
+# CMP 74
+CMP 15 22.7838 2.9718 0 N R27 2.2K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 21.98379906 2.9718 270 N 197 6 1
+TOP 1 23.58380094 2.9718 270 N 195 12 2
+#
+# CMP 75
+CMP 15 33.909 42.0382319 90 N R23 2.2K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 33.909 42.83823284 0 N 171 2 1
+TOP 1 33.909 41.23823096 0 N 194 103 2
+#
+# CMP 76
+CMP 15 48.5648 13.9192 180 N R22 4.7K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 49.36480094 13.9192 90 N 127 3 1
+TOP 1 47.76479906 13.9192 90 N 194 104 2
+#
+# CMP 77
+CMP 15 28.7782 42.037 90 N R21 2.2K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 28.7782 42.83700094 0 N 160 2 1
+TOP 1 28.7782 41.23699906 0 N 194 94 2
+#
+# CMP 78
+CMP 15 63.7794 7.4168 270 N R18 10K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 63.7794 6.61679906 180 N 194 101 1
+TOP 1 63.7794 8.21680094 180 N 10 4 2
+#
+# CMP 79
+CMP 15 62.4078 7.4168 270 N R20 0Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 62.4078 6.61679906 180 N 11 6 1
+TOP 1 62.4078 8.21680094 180 N 150 0 2
+#
+# CMP 80
+CMP 15 58.293 7.4168 270 N R16 100Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 58.293 6.61679906 180 N 155 3 1
+TOP 1 58.293 8.21680094 180 N 176 1 2
+#
+# CMP 81
+CMP 15 56.9214 7.4168 270 N R15 100Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 56.9214 6.61679906 180 N 156 4 1
+TOP 1 56.9214 8.21680094 180 N 177 1 2
+#
+# CMP 82
+CMP 15 55.5498 7.4168 270 N R13 100Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 55.5498 6.61679906 180 N 153 5 1
+TOP 1 55.5498 8.21680094 180 N 178 0 2
+#
+# CMP 83
+CMP 15 17.5768 27.4066 90 N R11 10K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 17.5768 28.20660094 0 N 194 93 1
+TOP 1 17.5768 26.60659906 0 N 142 3 2
+#
+# CMP 84
+CMP 15 53.6702 11.684 0 N R12 100Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 52.87019906 11.684 270 N 154 2 1
+TOP 1 54.47020094 11.684 270 N 161 1 2
+#
+# CMP 85
+CMP 15 47.2186 5.207 0 N R4 10K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 46.41859906 5.207 270 N 5 8 1
+TOP 1 48.01860094 5.207 270 N 199 188 2
+#
+# CMP 86
+CMP 15 44.2722 5.207 0 N R3 6.2K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 43.47219906 5.207 270 N 192 4 1
+TOP 1 45.07220094 5.207 270 N 5 7 2
+#
+# CMP 87
+CMP 15 23.3934 17.5768 180 N R1 0Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 24.19340094 17.5768 90 N 168 5 1
+TOP 1 22.59339906 17.5768 90 N 148 2 2
+#
+# CMP 88
+CMP 15 9.6266 9.8552 180 N R7 10K ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 10.42660094 9.8552 90 N 199 212 1
+TOP 1 8.82659906 9.8552 90 N 147 8 2
+#
+# CMP 89
+CMP 15 23.3934 18.9738 180 N R2 0Ω ;0=1,1=0.4500
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1002T5E_C25804.pdf'
+PRP Height '0.55mm'
+PRP Manufacturer_Name 'UNI-ROYAL(Uniroyal Elec)'
+PRP Manufacturer_Part_Number '0603WAF1002T5E'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 24.19340094 18.9738 90 N 169 5 1
+TOP 1 22.59339906 18.9738 90 N 149 3 2
+#
+# CMP 90
+CMP 9 57.3532 3.7338 270 N LED4 NCD0603W1 ;0=1,1=0.0000
+PRP Add_into_BOM 'yes'
+PRP Convert_to_PCB 'yes'
+PRP Datasheet 'https://atta.szlcsc.com/upload/public/pdf/source/20200820/C84265_479E6193713348A548E5CD6D9278BF16.pdf'
+PRP Device 'NCD0603W1'
+PRP Emitted_Color '白色'
+PRP Forward_Current '5mA'
+PRP Forward_Voltage_(VF) '2.6V~3.6V'
+PRP JLCPCB_Part_Class 'Extended Part'
+PRP LCSC_Part_Name 'NCD0603W1'
+PRP Lens_Color '雾状黄透镜'
+PRP Luminous_Intensity '200mcd~300mcd'
+PRP Manufacturer '国星光电'
+PRP Manufacturer_Part 'NCD0603W1'
+PRP Operating_Temperature '-30℃~+85℃'
+PRP Power_Dissipation '72mW'
+PRP Supplier 'LCSC'
+PRP Supplier_Footprint '0603'
+PRP Supplier_Part 'C84265'
+PRP Symbol 'FC-D1608WD-460H5'
+PRP Viewing_Angle '130°'
+TOP 0 57.35332446 2.934335 180 N 199 191 1
+TOP 1 57.35307554 4.533265 180 N 129 2 2
+#
+# CMP 91
+CMP 9 42.0878 13.2842 90 N LED3 NCD0603B1 ;0=1,1=0.4500
+PRP Add_into_BOM 'yes'
+PRP Convert_to_PCB 'yes'
+PRP Datasheet 'https://atta.szlcsc.com/upload/public/pdf/source/20200820/C84266_6A3CDBEFA72C6CAD68EDA53474ADAE6C.pdf'
+PRP Device 'NCD0603B1'
+PRP Dominant_Wavelength '463nm~475nm'
+PRP Emitted_Color '蓝色'
+PRP Forward_Current '10mA'
+PRP Forward_Voltage_(VF) '2.6V~3.6V'
+PRP JLCPCB_Part_Class 'Extended Part'
+PRP LCSC_Part_Name 'NCD0603B1'
+PRP Lens_Color '无色透明透镜'
+PRP Luminous_Intensity '80mcd~220mcd'
+PRP Manufacturer '国星光电'
+PRP Manufacturer_Part 'NCD0603B1'
+PRP Operating_Temperature '-30℃~+85℃'
+PRP Power_Dissipation '72mW'
+PRP Supplier 'LCSC'
+PRP Supplier_Footprint '0603'
+PRP Supplier_Part 'C84266'
+PRP Symbol 'FC-DA1608BK-470H10'
+PRP Viewing_Angle '130°'
+TOP 0 42.08767554 14.083665 0 N 141 2 1
+TOP 1 42.08792446 12.484735 0 N 170 3 2
+#
+# CMP 92
+CMP 10 35.6108 42.13831044 270 N LED2 NCD0603G1 ;0=1,1=0.0000
+PRP Add_into_BOM 'yes'
+PRP Convert_to_PCB 'yes'
+PRP Datasheet 'https://atta.szlcsc.com/upload/public/pdf/source/20200820/C84267_04BA7703640BAC111D09F5EFB971FBF3.pdf'
+PRP Device 'NCD0603G1'
+PRP Dominant_Wavelength '515nm~530nm'
+PRP Emitted_Color '翠绿色'
+PRP Forward_Current '10mA'
+PRP Forward_Voltage_(VF) '2.6V~3.6V'
+PRP JLCPCB_Part_Class 'Extended Part'
+PRP LCSC_Part_Name 'NCD0603G1'
+PRP Lens_Color '无色透明透镜'
+PRP Luminous_Intensity '330mcd~900mcd'
+PRP Manufacturer '国星光电'
+PRP Manufacturer_Part 'NCD0603G1'
+PRP Operating_Temperature '-30℃~+85℃'
+PRP Power_Dissipation '72mW'
+PRP Supplier 'LCSC'
+PRP Supplier_Footprint '0603'
+PRP Supplier_Part 'C84267'
+PRP Symbol 'FC-D1608UGK-520D10'
+PRP Viewing_Angle '130°'
+TOP 0 35.6108 41.28829944 180 N 134 2 1
+TOP 1 35.6108 42.98832144 180 N 171 3 2
+#
+# CMP 93
+CMP 9 30.4546 42.0878 270 N LED1 NCD0603R1 ;0=1,1=0.0000
+PRP Add_into_BOM 'yes'
+PRP Color_Temperature '-'
+PRP Convert_to_PCB 'yes'
+PRP Datasheet 'https://atta.szlcsc.com/upload/public/pdf/source/20200820/C84263_DABC6A75E58F576973B407FDBA283D60.pdf'
+PRP Device 'NCD0603R1_C84263'
+PRP Diode_Configuration '独立二极管'
+PRP Dominant_Wavelength '615nm~630nm'
+PRP Emitted_Color '红色'
+PRP Forward_Current '20mA'
+PRP Forward_Voltage_(VF) '1.6V~2.6V'
+PRP JLCPCB_Part_Class 'Extended Part'
+PRP Lamp_Holder_Type '-'
+PRP LCSC_Part_Name 'NCD0603R1'
+PRP Lens_Color '无色透明透镜'
+PRP Luminous_Intensity '80mcd~220mcd'
+PRP Manufacturer '国星光电'
+PRP Manufacturer_Part 'NCD0603R1'
+PRP Mounting_Sytle '-'
+PRP Operating_Temperature '-30℃~+85℃'
+PRP Peak_Wavelength '-'
+PRP Power_Dissipation '65mW'
+PRP Supplier 'LCSC'
+PRP Supplier_Footprint '0603'
+PRP Supplier_Part 'C84263'
+PRP Symbol 'FC-DA1608HRK-620D'
+PRP Viewing_Angle '130°'
+TOP 0 30.45472446 41.288335 180 N 135 1 1
+TOP 1 30.45447554 42.887265 180 N 160 3 2
+#
+# CMP 94
+CMP 11 6.096 21.8694 0 N L3 2.4nH ;0=1,1=0.4500
+PRP Arrow_Part_Number 'LQM18FN100M00D'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/lqm18fn100m00d/murata-manufacturing?region=nac'
+PRP Datasheet_Link 'https://psearch.en.murata.com/inductor/product/LQM18FN100M00%23.html'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'Murata Electronics'
+PRP Manufacturer_Part_Number 'LQM18FN100M00D'
+PRP Mouser_Part_Number '81-LQM18FN100M00D'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Murata-Electronics/LQM18FN100M00D?qs=2%252BM72CStpDR8E8wEVXa5xw%3D%3D'
+TOP 0 5.42100008 21.8694 270 N 194 92 1
+TOP 1 6.77099992 21.8694 270 N 166 6 2
+#
+# CMP 95
+CMP 11 4.9784 26.4922 315 N L4 3nH ;0=1,1=0.4500
+PRP Arrow_Part_Number 'LQM18FN100M00D'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/lqm18fn100m00d/murata-manufacturing?region=nac'
+PRP Datasheet_Link 'https://psearch.en.murata.com/inductor/product/LQM18FN100M00%23.html'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'Murata Electronics'
+PRP Manufacturer_Part_Number 'LQM18FN100M00D'
+PRP Mouser_Part_Number '81-LQM18FN100M00D'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Murata-Electronics/LQM18FN100M00D?qs=2%252BM72CStpDR8E8wEVXa5xw%3D%3D'
+TOP 0 4.50110352 26.01490352 225 N 199 213 1
+TOP 1 5.45569648 26.96949648 225 N 172 6 2
+#
+# CMP 96
+CMP 29 18.9992 6.7564 180 N J1 ___P4*2_2.54 ;0=2,1=0.0000
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://www.lcsc.com/datasheet/lcsc_datasheet_2311221544_Megastar-ZX-PZ2-54-2-5PZZ_C7501276.pdf'
+PRP Height '8.7mm'
+PRP Manufacturer_Name 'Megastar'
+PRP Manufacturer_Part_Number 'ZX-PZ2.54-2-5PZZ'
+PRP Mouser_Part_Number ''
+PRP Mouser_Price/Stock ''
+TOP 0 18.9992 6.7564 180 N 192 3 1
+TOP 1 18.9992 4.2164 180 N 168 4 2
+TOP 2 16.4592 6.7564 180 N 194 70 3
+TOP 3 16.4592 4.2164 180 N 169 4 4
+TOP 4 13.9192 6.7564 180 N 199 131 5
+TOP 5 13.9192 4.2164 180 N 198 17 6
+TOP 6 11.3792 6.7564 180 N 146 5 7
+TOP 7 11.3792 4.2164 180 N 151 5 8
+TOP 8 8.8392 6.7564 180 N 147 6 9
+TOP 9 8.8392 4.2164 180 N 152 2 10
+#
+# CMP 97
+CMP 13 11.9888 21.0058 0 N IC6 ESP32-S3FH4R2 ;0=1,1=0.0000
+PRP Arrow_Part_Number ''
+PRP Arrow_Price/Stock ''
+PRP Datasheet_Link 'https://eu.mouser.com/datasheet/2/891/esp32_s3_datasheet_en-2946743.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'Espressif Systems'
+PRP Manufacturer_Part_Number 'ESP32-S3FH4R2'
+PRP Mouser_Part_Number '356-ESP32-S3FH4R2'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Espressif-Systems/ESP32-S3FH4R2?qs=tlsG%2FOw5FFjPrwkmZSBQNA%3D%3D'
+TOP 0 8.53879928 23.60579988 0 N 181 3 1
+TOP 1 8.53879928 23.20580068 0 N 166 3 2
+TOP 2 8.53879928 22.80579894 0 N 166 4 3
+TOP 3 8.53879928 22.40579974 0 N 138 4 4
+TOP 4 8.53879928 22.00580054 0 N 137 2 5
+TOP 5 8.53879928 21.6057988 0 N 0 3 6
+TOP 6 8.53879928 21.2057996 0 N 0 4 7
+TOP 7 8.53879928 20.8058004 0 N 0 5 8
+TOP 8 8.53879928 20.4058012 0 N 0 6 9
+TOP 9 8.53879928 20.00579946 0 N 0 7 10
+TOP 10 8.53879928 19.60580026 0 N 0 8 11
+TOP 11 8.53879928 19.20580106 0 N 0 9 12
+TOP 12 8.53879928 18.80579932 0 N 0 10 13
+TOP 13 8.53879928 18.40580012 0 N 0 11 14
+TOP 14 9.38880012 17.55579928 270 N 0 12 15
+TOP 15 9.78879932 17.55579928 270 N 0 13 16
+TOP 16 10.18880106 17.55579928 270 N 0 14 17
+TOP 17 10.58880026 17.55579928 270 N 0 15 18
+TOP 18 10.98879946 17.55579928 270 N 0 16 19
+TOP 19 11.3888012 17.55579928 270 N 194 107 20
+TOP 20 11.7888004 17.55579928 270 N 0 17 21
+TOP 21 12.1887996 17.55579928 270 N 0 18 22
+TOP 22 12.5887988 17.55579928 270 N 0 19 23
+TOP 23 12.98880054 17.55579928 270 N 0 20 24
+TOP 24 13.38879974 17.55579928 270 N 145 1 25
+TOP 25 13.78879894 17.55579928 270 N 144 0 26
+TOP 26 14.18880068 17.55579928 270 N 136 1 27
+TOP 27 14.58879988 17.55579928 270 N 0 21 28
+TOP 28 15.43880072 18.40580012 0 N 165 2 29
+TOP 29 15.43880072 18.80579932 0 N 0 22 30
+TOP 30 15.43880072 19.20580106 0 N 0 23 31
+TOP 31 15.43880072 19.60580026 0 N 0 24 32
+TOP 32 15.43880072 20.00579946 0 N 0 25 33
+TOP 33 15.43880072 20.4058012 0 N 0 26 34
+TOP 34 15.43880072 20.8058004 0 N 0 27 35
+TOP 35 15.43880072 21.2057996 0 N 143 2 36
+TOP 36 15.43880072 21.6057988 0 N 183 1 37
+TOP 37 15.43880072 22.00580054 0 N 0 28 38
+TOP 38 15.43880072 22.40579974 0 N 0 29 39
+TOP 39 15.43880072 22.80579894 0 N 184 1 40
+TOP 40 15.43880072 23.20580068 0 N 182 4 41
+TOP 41 15.43880072 23.60579988 0 N 147 7 42
+TOP 42 14.58879988 24.45580072 270 N 148 3 43
+TOP 43 14.18880068 24.45580072 270 N 149 4 44
+TOP 44 13.78879894 24.45580072 270 N 198 22 45
+TOP 45 13.38879974 24.45580072 270 N 194 108 46
+TOP 46 12.98880054 24.45580072 270 N 151 6 47
+TOP 47 12.5887988 24.45580072 270 N 152 3 48
+TOP 48 12.1887996 24.45580072 270 N 0 30 49
+TOP 49 11.7888004 24.45580072 270 N 0 31 50
+TOP 50 11.3888012 24.45580072 270 N 0 32 51
+TOP 51 10.98879946 24.45580072 270 N 0 33 52
+TOP 52 10.58880026 24.45580072 270 N 164 4 53
+TOP 53 10.18880106 24.45580072 270 N 163 2 54
+TOP 54 9.78879932 24.45580072 270 N 194 109 55
+TOP 55 9.38880012 24.45580072 270 N 194 110 56
+TOP 56 11.9888 21.0058 270 N 199 206 57
+#
+# CMP 98
+CMP 18 50.7746 21.0566 0 N IC4 AT24C02D-SSHM-B ;0=1,1=0.0000
+PRP Arrow_Part_Number 'AT24C02D-SSHM-B'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/at24c02d-sshm-b/microchip-technology?region=europe'
+PRP Datasheet_Link 'http://www.atmel.com/images/Atmel-8871-SEEPROM-AT24C01D-02D-Datasheet.pdf'
+PRP Height '1.75mm'
+PRP Manufacturer_Name 'Microchip'
+PRP Manufacturer_Part_Number 'AT24C02D-SSHM-B'
+PRP Mouser_Part_Number '556-AT24C02D-SSHM-B'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Microchip-Technology/AT24C02D-SSHM-B?qs=l5F7KFZg3O5xH%2Fgf1EqmGg%3D%3D'
+TOP 0 48.07460032 22.9616 0 N 199 214 1
+TOP 1 48.07460032 21.6916 0 N 199 215 2
+TOP 2 48.07460032 20.4216 0 N 199 216 3
+TOP 3 48.07460032 19.1516 0 N 199 217 4
+TOP 4 53.47459968 19.1516 0 N 157 2 5
+TOP 5 53.47459968 20.4216 0 N 158 8 6
+TOP 6 53.47459968 21.6916 0 N 16 5 7
+TOP 7 53.47459968 22.9616 0 N 194 111 8
+#
+# CMP 99
+CMP 4 14.9098 29.6418 180 N C47 15pF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 15.56980122 29.6418 90 N 199 175 1
+TOP 1 14.24979878 29.6418 90 N 164 3 2
+#
+# CMP 100
+CMP 4 6.096 20.5359 0 N C52 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 5.43599878 20.5359 270 N 199 185 1
+TOP 1 6.75600122 20.5359 270 N 194 91 2
+#
+# CMP 101
+CMP 4 6.096 19.18335 0 N C51 1uF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 5.43599878 19.18335 270 N 199 184 1
+TOP 1 6.75600122 19.18335 270 N 194 90 2
+#
+# CMP 102
+CMP 4 6.096 17.8308 0 N C50 10uF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 5.43599878 17.8308 270 N 199 182 1
+TOP 1 6.75600122 17.8308 270 N 194 89 2
+#
+# CMP 103
+CMP 4 19.9644 18.7706 90 N C49 1uF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 19.9644 19.43060122 0 N 199 166 1
+TOP 1 19.9644 18.11059878 0 N 165 1 2
+#
+# CMP 104
+CMP 4 17.9578 21.0058 0 N C48 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 17.29779878 21.0058 270 N 199 167 1
+TOP 1 18.61780122 21.0058 270 N 194 83 2
+#
+# CMP 105
+CMP 4 11.8364 29.6418 180 N C46 15pF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 12.49640122 29.6418 90 N 132 1 1
+TOP 1 11.17639878 29.6418 90 N 199 172 2
+#
+# CMP 106
+CMP 4 16.129 27.2542 270 N C45 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 16.129 26.59419878 180 N 194 79 1
+TOP 1 16.129 27.91420122 180 N 199 160 2
+#
+# CMP 107
+CMP 4 9.2964 27.2542 270 N C44 10nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 9.2964 26.59419878 180 N 194 85 1
+TOP 1 9.2964 27.91420122 180 N 199 170 2
+#
+# CMP 108
+CMP 4 7.9502 27.2542 90 N C43 1uF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 7.9502 27.91420122 0 N 199 171 1
+TOP 1 7.9502 26.59419878 0 N 194 86 2
+#
+# CMP 109
+CMP 4 33.0708 13.75919778 270 N C42 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 33.0708 13.09919656 180 N 199 148 1
+TOP 1 33.0708 14.419199 180 N 159 8 2
+#
+# CMP 110
+CMP 4 23.3934 33.7058 0 N C41 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 22.73339878 33.7058 270 N 199 157 1
+TOP 1 24.05340122 33.7058 270 N 159 10 2
+#
+# CMP 111
+CMP 4 40.34799906 13.75919778 270 N C23 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 40.34799906 13.09919656 180 N 199 151 1
+TOP 1 40.34799906 14.419199 180 N 194 76 2
+#
+# CMP 112
+CMP 4 27.7622 13.75919778 270 N C22 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 27.7622 13.09919656 180 N 199 145 1
+TOP 1 27.7622 14.419199 180 N 194 75 2
+#
+# CMP 113
+CMP 4 28.13231356 38.60620422 90 N C21 10uF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 28.13231356 39.26620544 0 N 199 137 1
+TOP 1 28.13231356 37.946203 0 N 194 72 2
+#
+# CMP 114
+CMP 4 36.29659492 38.60620422 270 N C19 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 36.29659492 37.946203 180 N 193 5 1
+TOP 1 36.29659492 39.26620544 180 N 199 143 2
+#
+# CMP 115
+CMP 4 48.3362 26.2382 180 N C35 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 48.99620122 26.2382 90 N 199 164 1
+TOP 1 47.67619878 26.2382 90 N 195 11 2
+#
+# CMP 116
+CMP 4 29.1084 13.75919778 270 N C34 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 29.1084 13.09919656 180 N 199 146 1
+TOP 1 29.1084 14.419199 180 N 195 9 2
+#
+# CMP 117
+CMP 4 33.5751678 38.60620422 90 N C33 10uF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 33.5751678 39.26620544 0 N 199 141 1
+TOP 1 33.5751678 37.946203 0 N 195 6 2
+#
+# CMP 118
+CMP 4 31.0896 11.7602 0 N C32 1nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 30.42959878 11.7602 270 N 199 154 1
+TOP 1 31.74960122 11.7602 270 N 203 6 2
+#
+# CMP 119
+CMP 4 31.0896 13.0556 0 N C31 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 30.42959878 13.0556 270 N 199 152 1
+TOP 1 31.74960122 13.0556 270 N 203 5 2
+#
+# CMP 120
+CMP 4 18.288 9.8552 180 N C17 1uF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 18.94800122 9.8552 90 N 193 13 1
+TOP 1 17.62799878 9.8552 90 N 199 211 2
+#
+# CMP 121
+CMP 4 34.69679878 11.176 0 N C16 8pF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 34.03679756 11.176 270 N 199 149 1
+TOP 1 35.3568 11.176 270 N 201 4 2
+#
+# CMP 122
+CMP 4 65.151 12.0396 270 N C14 4.7uF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 65.151 11.37959878 180 N 199 198 1
+TOP 1 65.151 12.69960122 180 N 194 98 2
+#
+# CMP 123
+CMP 4 66.421 12.0396 270 N C15 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 66.421 11.37959878 180 N 199 199 1
+TOP 1 66.421 12.69959868 180 N 194 99 2
+#
+# CMP 124
+CMP 4 37.46460122 11.176 180 N C13 8pF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 38.12460244 11.176 90 N 199 150 1
+TOP 1 36.8046 11.176 90 N 179 5 2
+#
+# CMP 125
+CMP 4 53.84519838 13.0556 0 N C12 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 53.18519716 13.0556 270 N 199 189 1
+TOP 1 54.5051996 13.0556 270 N 180 1 2
+#
+# CMP 126
+CMP 4 65.151 14.5796 270 N C10 4.7uF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 65.151 13.91959878 180 N 193 10 1
+TOP 1 65.151 15.23960122 180 N 199 193 2
+#
+# CMP 127
+CMP 4 66.421 14.5796 270 N C11 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 66.421 13.91959878 180 N 193 11 1
+TOP 1 66.421 15.23960122 180 N 199 194 2
+#
+# CMP 128
+CMP 4 53.84519838 14.4526 0 N C9 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 53.18519716 14.4526 270 N 199 190 1
+TOP 1 54.5051996 14.4526 270 N 162 4 2
+#
+# CMP 129
+CMP 4 25.781 14.36420038 180 N C5 100nF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 26.44100122 14.36420038 90 N 133 6 1
+TOP 1 25.12099878 14.36420038 90 N 199 144 2
+#
+# CMP 130
+CMP 0 67.2592 28.97540306 0 N C1 6SVQP100M ;0=1,1=0.0000
+PRP Arrow_Part_Number '6SVQP100M'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/6svqp100m/panasonic?region=nac'
+PRP Datasheet_Link 'http://industrial.panasonic.com/cdbs/www-data/pdf/AAB8000/AAB8000C225.pdf'
+PRP Height '6mm'
+PRP Manufacturer_Name 'Panasonic'
+PRP Manufacturer_Part_Number '6SVQP100M'
+PRP Mouser_Part_Number '667-6SVQP100M'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Panasonic/6SVQP100M?qs=Gd3Cm49KlLNMtA4%252BBRbdEg%3D%3D'
+TOP 0 67.2592 26.17540104 270 N 13 7 1
+TOP 1 67.2592 31.7754 270 N 199 202 2
+#
+# CMP 131
+CMP 4 69.1134 15.8496 270 N C2 22uF ;0=1,1=0.4500
+PRP Arrow_Part_Number 'CC0603KRX7R9BB104'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/cc0603krx7r9bb104/yageo?region=europe'
+PRP Datasheet_Link 'https://componentsearchengine.com/Datasheets/2/CC0603KRX7R9BB104.pdf'
+PRP Height '0.9mm'
+PRP Manufacturer_Name 'YAGEO'
+PRP Manufacturer_Part_Number 'CC0603KRX7R9BB104'
+PRP Mouser_Part_Number '603-CC603KRX7R9BB104'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/YAGEO/CC0603KRX7R9BB104?qs=vTakOoo5QyLvVCYM2ge8LQ%3D%3D'
+TOP 0 69.1134 15.18959878 180 N 199 195 1
+TOP 1 69.1134 16.50960122 180 N 13 4 2
+#

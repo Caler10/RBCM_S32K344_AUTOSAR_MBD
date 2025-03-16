@@ -1,0 +1,3 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_DividerTrigger.c:135:13:Clock_Ip_Callback_DividerTriggerEmpty	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_DividerTrigger.c:142:13:Clock_Ip_ConfigureCgmXDivTrigCtrlTctlHhenUpdStat	4	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_DividerTrigger.c:170:13:Clock_Ip_TriggerUpdateCgmXDivTrigCtrlTctlHhenUpdStat	32	static

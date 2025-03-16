@@ -1,0 +1,8 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Dio_Ipw.c:270:15:Dio_Ipw_ReadChannel	4	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Dio_Ipw.c:310:6:Dio_Ipw_WriteChannel	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Dio_Ipw.c:358:15:Dio_Ipw_FlipChannel	16	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Dio_Ipw.c:418:19:Dio_Ipw_ReadPort	4	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Dio_Ipw.c:458:6:Dio_Ipw_WritePort	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Dio_Ipw.c:491:19:Dio_Ipw_ReadChannelGroup	8	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Dio_Ipw.c:539:6:Dio_Ipw_WriteChannelGroup	12	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Dio_Ipw.c:582:6:Dio_Ipw_MaskedWritePort	8	static

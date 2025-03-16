@@ -1,0 +1,14 @@
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_s32k3xx_lpuart.c:119:19:_FMSTR_S32K3XX_Init	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_s32k3xx_lpuart.c:240:19:_FMSTR_S32K3XX_IsTransmitRegEmpty	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_s32k3xx_lpuart.c:251:19:_FMSTR_S32K3XX_IsReceiveRegFull	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_s32k3xx_lpuart.c:268:19:_FMSTR_S32K3XX_IsTransmitterActive	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_s32k3xx_lpuart.c:280:13:_FMSTR_S32K3XX_PutChar	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_s32k3xx_lpuart.c:290:19:_FMSTR_S32K3XX_GetChar	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_s32k3xx_lpuart.c:303:13:_FMSTR_S32K3XX_Flush	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_s32k3xx_lpuart.c:140:13:_FMSTR_S32K3XX_EnableTransmit	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_s32k3xx_lpuart.c:160:13:_FMSTR_S32K3XX_EnableReceive	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_s32k3xx_lpuart.c:180:13:_FMSTR_S32K3XX_EnableTransmitInterrupt	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_s32k3xx_lpuart.c:200:13:_FMSTR_S32K3XX_EnableTransmitCompleteInterrupt	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_s32k3xx_lpuart.c:220:13:_FMSTR_S32K3XX_EnableReceiveInterrupt	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_s32k3xx_lpuart.c:313:6:FMSTR_SerialSetBaseAddress	0	static
+E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_s32k3xx_lpuart.c:324:6:FMSTR_SerialIsr	0	static
