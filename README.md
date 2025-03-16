@@ -26,9 +26,9 @@
 
 ## 硬件说明
 
-![RBCM_Architecture.png](Hardware/RBCM_Architecture.png)
-
 硬件采用核心板和底板分板设计，板对板连接器连接
+
+![RBCM_Architecture.png](Hardware/RBCM_Architecture.png)
 
 ### RBCM核心板：
 
@@ -46,15 +46,15 @@
 
 ### RBCM底板：
 
-![RBCM_Mother_2D.png](Hardware/RBCM_Mother_2D.png)
-
-![RBCM_Mother_3D.png](Hardware/RBCM_Mother_3D.png)
-
 低压配电保护与诊断管理方面基于infineon的智能高边驱动芯片BTT6200-4ESA和BTT6050-2ERA实现
+
+![RBCM_Mother_2D.png](Hardware/RBCM_Mother_2D.png)
 
 4G模块采用的是移远的EC800M模块，自弹式SIM卡设计
 
 支持12V和24V低压平台，核心板供电支持范围为：5V-36V（经验证）
+
+![RBCM_Mother_3D.png](Hardware/RBCM_Mother_3D.png)
 
 低压配电方面，理论上可支持最大 56A/1344W 的配电功率输出（24V低压平台下）
 
