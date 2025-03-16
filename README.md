@@ -76,7 +76,7 @@ MBD模型展示：
 
 ![RBCM_MBD.png](Firmware/AUTOSAR_MBD/RBCM_MBD.png)
 
-软件还在开发完善中...
+软件还在开发中...
 
 ## 数传上位机说明
 
