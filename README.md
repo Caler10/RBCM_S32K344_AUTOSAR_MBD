@@ -20,6 +20,8 @@
 
 本项目针对[武汉理工大学WUTE车队](https://space.bilibili.com/1177337861?spm_id_from=333.337.0.0)(👈戳我了解)25赛季E03电动方程式赛车开发，包含后车身域控制器的硬件设计及MBD软件开发，以及QT数传上位机的设计与开发。
 
+![RBCM_MultiBoard.png](Hardware/RBCM_MultiBoard.png)
+
 ---
 
 # 设计说明
@@ -35,8 +37,6 @@
 ![RBCM_Core_2D.png](Hardware/RBCM_Core_2D.png)
 
 ![RBCM_Core_3D.png](Hardware/RBCM_Core_3D.png)
-
-![RBCM_MultiBoard.png](Hardware/RBCM_MultiBoard.png)
 
 主控采用NXP的车规级微控制器S32K344，符合ASIL D的功能安全等级和ISO 26262标准
 
@@ -76,9 +76,9 @@ MBD模型展示：
 
 ![RBCM_MBD.png](Firmware/AUTOSAR_MBD/RBCM_MBD.png)
 
-软件还在开发完善中...
+软件还在开发中...
 
-## 上位机说明
+## 数传上位机说明
 
 基于QT6.5的Qt Quick开发，详细介绍说明请见软件内的'关于本项目'
 
