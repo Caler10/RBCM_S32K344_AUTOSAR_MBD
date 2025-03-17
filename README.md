@@ -42,7 +42,7 @@
 
 核心供电采用的是infineon的车规级电源管理芯片TLF35584，满足ASIL D的功能安全等级和ISO 26262标准
 
-采用ESP32S3作为调试芯片，基于DAPlink调试方案[方案实现参考]（https://oshwhub.com/ylj2000/dap_hs_esp_open）(👈戳我了解)，支持无线串口和2.4G无线调试与标定功能
+采用ESP32S3作为调试芯片，基于DAPlink调试方案，[DAPlink方案实现参考](https://oshwhub.com/ylj2000/dap_hs_esp_open)(👈戳我了解)，支持无线串口和2.4G无线调试与标定功能
 
 ### RBCM底板：
 
@@ -94,7 +94,7 @@ MBD模型展示：
 
 需配合MQTT服务器使用，本项目MQTT服务器是基于华为云IoTDA搭建的
 
-项目前端基于<诺谦>的开源界面框架开发[github地址]：（"https://github.com/nuoqian-lgtm/QianWindow"）(👈戳我了解)
+项目前端基于<诺谦>的开源界面框架开发，[github地址]("https://github.com/nuoqian-lgtm/QianWindow")(👈戳我了解)
 
 ---
 

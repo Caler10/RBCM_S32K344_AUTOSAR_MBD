@@ -1,13 +1,17 @@
-# QianWindow
-<BR>使用Qt5.14.2编译 or Qt5.15一键编译
-<BR>已经测试windows/linux多平台编译完成
-<BR>最新版本视频地址： <a href="https://space.bilibili.com/82157618/channel/seriesdetail?sid=3264958&ctype=0">B站演示入口</a>
+# WUTE-MQTT-Dashboard
+<BR>使用Qt6.5.7编译
+<BR>已经测试windows平台编译完成
+<BR>最新版本视频地址： 
 
-## Linux编译部分截图
-![image](preview/linux.png)
+## 部分界面展示：
 
-## Windows编译部分截图
-![image](preview/windwos.png)
+![WUTE-MQTT-DashBoard1.png](Software/WUTE-MQTT-DashBoard1.png)
+
+![WUTE-MQTT-DashBoard2.png](Software/WUTE-MQTT-DashBoard2.png)
+
+![WUTE-MQTT-DashBoard3.png](Software/WUTE-MQTT-DashBoard3.png)
+
+![WUTE-MQTT-DashBoard4.png](Software/WUTE-MQTT-DashBoard4.png)
 
 ## 修改日志
 修改部分名稱
