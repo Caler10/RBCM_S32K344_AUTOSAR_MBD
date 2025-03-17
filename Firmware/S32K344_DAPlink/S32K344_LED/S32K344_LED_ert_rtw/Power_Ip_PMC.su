@@ -1,4 +1,0 @@
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_PMC.c:253:6:Power_Ip_PMC_PowerInit	32	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_PMC.c:417:6:Power_Ip_PMC_PrepareLowPowerEntry	4	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_PMC.c:778:6:Power_Ip_PMC_EnableLastMile	32	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_PMC.c:843:6:Power_Ip_PMC_DisableLastMile	0	static

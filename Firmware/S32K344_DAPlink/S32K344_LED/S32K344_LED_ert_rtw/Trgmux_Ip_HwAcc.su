@@ -1,4 +1,0 @@
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Trgmux_Ip_HwAcc.c:128:22:hwAcc_Init	4	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Trgmux_Ip_HwAcc.c:157:6:hwAcc_SetInputForOutput	4	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Trgmux_Ip_HwAcc.c:169:6:hwAcc_SetLockForOutput	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Trgmux_Ip_HwAcc.c:175:9:hwAcc_GetLockForOutput	0	static

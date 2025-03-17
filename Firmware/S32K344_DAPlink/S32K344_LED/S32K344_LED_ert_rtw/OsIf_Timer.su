@@ -1,5 +1,0 @@
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/OsIf_Timer.c:267:6:OsIf_Init	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/OsIf_Timer.c:297:8:OsIf_GetCounter	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/OsIf_Timer.c:331:8:OsIf_GetElapsed	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/OsIf_Timer.c:365:6:OsIf_SetTimerFrequency	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/OsIf_Timer.c:394:8:OsIf_MicrosToTicks	0	static

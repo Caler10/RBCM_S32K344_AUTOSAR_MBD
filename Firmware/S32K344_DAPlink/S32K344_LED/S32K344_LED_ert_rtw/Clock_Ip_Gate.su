@@ -1,4 +1,0 @@
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_Gate.c:140:13:Clock_Ip_ClockSetGateEmpty	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_Gate.c:145:13:Clock_Ip_ClockUpdateGateEmpty	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_Gate.c:153:13:Clock_Ip_ClockSetGateMcMePartitionCollectionClockRequest	48	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Clock_Ip_Gate.c:246:13:Clock_Ip_ClockUpdateGateMcMePartitionCollectionClockRequest	16	static

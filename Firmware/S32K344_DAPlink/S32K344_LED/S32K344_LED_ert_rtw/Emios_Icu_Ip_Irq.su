@@ -1,4 +1,0 @@
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Emios_Icu_Ip_Irq.c:472:22:Emios_Icu_Ip_ReadCounterBus	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Emios_Icu_Ip_Irq.c:996:6:Emios_Icu_Ip_SignalMeasurementHandler.part.0	56	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Emios_Icu_Ip_Irq.c:996:6:Emios_Icu_Ip_SignalMeasurementHandler	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Emios_Icu_Ip_Irq.c:1042:6:Emios_Icu_Ip_IrqHandler	48	static

@@ -1,5 +1,0 @@
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Port.c:164:6:Port_Init	8	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Port.c:219:6:Port_SetPinDirection	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Port.c:320:6:Port_SetPinMode	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Port.c:362:6:Port_RefreshPortDirection	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Port.c:399:6:Port_GetVersionInfo	0	static

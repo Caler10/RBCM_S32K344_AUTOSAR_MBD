@@ -1,4 +1,0 @@
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/nvic.c:92:6:NVIC_SetPriorityGrouping	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/nvic.c:104:6:NVIC_EnableIRQ	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/nvic.c:115:6:NVIC_DisableIRQ	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/nvic.c:127:6:NVIC_SetPriority	0	static

@@ -1,5 +1,0 @@
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/system.c:267:6:startup_go_to_user_mode	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/system.c:280:6:default_interrupt_routine	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/system.c:399:7:Sys_GetCoreID	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/system.c:411:6:SystemInit	20	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/Project_Settings/Startup_Code/system.c:705:6:Enable_FPU	0	static

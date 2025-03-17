@@ -1,5 +1,0 @@
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_serial.c:280:13:_FMSTR_Listen	16	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_serial.c:343:13:_FMSTR_SerialSendResponse	32	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_serial.c:607:19:_FMSTR_SerialInit	16	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_serial.c:674:13:_FMSTR_SerialPoll	40	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/src/freemaster_serial.c:180:6:FMSTR_ProcessSerial	32	static

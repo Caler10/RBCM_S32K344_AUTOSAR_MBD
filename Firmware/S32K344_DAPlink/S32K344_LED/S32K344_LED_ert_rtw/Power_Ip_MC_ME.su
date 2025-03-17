@@ -1,8 +1,0 @@
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_MC_ME.c:345:13:Power_Ip_MC_ME_ConfigurePartitionClock	32	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_MC_ME.c:556:6:Power_Ip_MC_ME_ConfigCoreCOFBClock	80	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_MC_ME.c:605:6:Power_Ip_MC_ME_EnablePartitionClock	16	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_MC_ME.c:646:6:Power_Ip_MC_ME_DisablePartitionClock	16	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_MC_ME.c:677:6:Power_Ip_MC_ME_SocTriggerResetEvent	0	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_MC_ME.c:712:6:Power_Ip_MC_ME_CoreStandbyEntry	8	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_MC_ME.c:751:6:Power_Ip_MC_ME_SocStandbyEntry	8	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Power_Ip_MC_ME.c:797:24:Power_Ip_MC_ME_GetPreviousMode	0	static

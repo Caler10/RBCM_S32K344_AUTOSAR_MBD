@@ -1,8 +1,0 @@
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/CDD_I2c.c:484:6:I2c_Init	8	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/CDD_I2c.c:525:6:I2c_DeInit	16	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/CDD_I2c.c:572:16:I2c_PrepareSlaveBuffer	24	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/CDD_I2c.c:617:16:I2c_SyncTransmit	32	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/CDD_I2c.c:682:16:I2c_AsyncTransmit	32	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/CDD_I2c.c:748:17:I2c_StartListening	16	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/CDD_I2c.c:793:16:I2c_GetStatus	8	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/CDD_I2c.c:847:6:I2c_GetVersionInfo	0	static

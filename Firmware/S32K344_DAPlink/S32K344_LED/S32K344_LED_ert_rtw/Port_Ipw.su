@@ -1,4 +1,0 @@
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Port_Ipw.c:507:6:Port_Ipw_Init	24	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Port_Ipw.c:644:16:Port_Ipw_SetPinDirection	16	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Port_Ipw.c:1174:16:Port_Ipw_SetPinMode	40	static
-E:/Workspace/MATLAB_workspace/S32K344_LED/S32K344_LED_Config/RTD/src/Port_Ipw.c:1449:6:Port_Ipw_RefreshPortDirection	32	static
