@@ -24,9 +24,17 @@ Item {
         clientid: clientidField.text
         password: passwordField.text
 
-        state: {
-            if (client.state === MqttClient.Connected) {
-                message('success', "connected to server!")
+        onStateChanged: {
+            switch(state) {
+            case MqttClient.Connecting:
+                message('info', "正在连接服务器...")
+                break
+            case MqttClient.Connected:
+                message('success', "连接成功!")
+                break
+            case MqttClient.Disconnected:
+                message('warning', "连接已断开")
+                break
             }
         }
     }
@@ -37,7 +45,7 @@ Item {
 
     function addMessage(payload)
     {
-        messageModel.insert(0, {"payload" : payload})
+        messageModel.insert(0, {"payload" : payload,"clientState": client.state})   // 记录当前状态
 
         if (messageModel.count >= 100)
             messageModel.remove(99)
@@ -61,23 +69,44 @@ Item {
                     Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
                 }
                 //连接按钮
-                SkinBaseButton {
+                BaseButton {
                     id: connectButton
                     width: 60; height: 30
                     implicitHeight: 32
+
+                    text: client.state === MqttClient.Connected ? "Disconnect" : "Connect"
+                    Layout.preferredHeight: 28
+                    Layout.preferredWidth: 80
                     font.pixelSize:  14
                     backRadius: 4
-                    text: client.state === MqttClient.Connected ? "Disconnect" : "Connect"
+                    // bckcolor: "#4785FF"
+                    // bckcolor: {
+                    //     switch(client.state) {
+                    //     case MqttClient.Connected: "#1AAD19"
+                    //     case MqttClient.Connecting: "#0081FF"
+                    //     case MqttClient.Disconnected: "#FBB72E"
+                    //     default: "#FF0000"
+                    //     }
+                    // }
+
                     onClicked:{
-                        if (client.state === MqttClient.Connected) {
+                        if (client.state === MqttClient.Connected)
+                        {
                             client.disconnectFromHost()
                             messageModel.clear()
-                            root.tempSubscription.destroy()
+                            //root.tempSubscription.destroy()
+                            //安全销毁订阅对象
+                            if (root.tempSubscription)
+                            {
+                                root.tempSubscription.unsubscribe()
+                                root.tempSubscription = null
+                            }
                             root.tempSubscription = 0
                             root.tempPublication.destroy()
                             root.tempPublication = 0
                         }
-                        else if(client.state !== MqttClient.Connected){
+                        else if(client.state !== MqttClient.Connected)
+                        {
                             client.connectToHost()
                         }
                     }
@@ -269,7 +298,7 @@ Item {
                     Layout.fillWidth: true
                     enabled: client.state === MqttClient.Connected && root.tempSubscription === 0
                 }
-                SkinBaseButton {
+                BaseButton {
                     id: subButton
                     text: "Subscribe"
                     visible: client.state === MqttClient.Connected && root.tempSubscription === 0
@@ -277,14 +306,23 @@ Item {
                     implicitHeight: 32
                     font.pixelSize:  14
                     backRadius: 4
+                    // onClicked: {
+                    //     if (subField.text.length === 0) {
+                    //         console.log("No topic specified to subscribe to.")
+                    //         message('info', "No topic specified to subscribe to.")
+                    //         return
+                    //     }
+                    //     tempSubscription = client.subscribe(subField.text)
+                    //     tempSubscription.messageReceived.connect(addMessage) //tempSubscription.messageReceived.connect(addMessage)
+                    // }
                     onClicked: {
-                        if (subField.text.length === 0) {
-                            console.log("No topic specified to subscribe to.")
-                            message('info', "No topic specified to subscribe to.")
+                        if (subField.text === "") {
+                            message('error', "请填写订阅Topic")
                             return
                         }
-                        tempSubscription = client.subscribe(subField.text)
-                        tempSubscription.messageReceived.connect(addMessage) //tempSubscription.messageReceived.connect(addMessage)
+                        const sub = client.subscribe(subField.text)
+                        sub.messageReceived.connect((msg) => {addMessage(subField.text, msg)})
+                        root.tempSubscription = sub
                     }
                 }
             }
@@ -317,7 +355,7 @@ Item {
                     enabled: client.state === MqttClient.Connected && root.tempPublication === 0
                 }
 
-                SkinBaseButton {
+                BaseButton {
                     id: pubButton
                     text: "  Publish  "
                     visible: client.state === MqttClient.Connected && root.tempPublication === 0
@@ -325,14 +363,24 @@ Item {
                     implicitHeight: 32
                     font.pixelSize:  14
                     backRadius: 4
+
                     onClicked: {
-                        if (subField.text.length === 0) {
-                            console.log("No topic specified to publish to.")
-                            message('info', "No topic specified to publish to.")
+                        if (pubField.text.length === 0) {
+                            message('error', "请输入发布Topic")
                             return
                         }
-                        tempPublication = client.subscribe(subField.text)
-                        tempPublication.messageReceived.connect(addMessage)
+                        // 创建要发送的JSON数据
+                        const payload = JSON.stringify({
+                                                           timestamp: new Date().toISOString(),
+                                                           message: "测试消息"
+                                                       })
+                        // 发送JSON数据
+                        tempPublication = client.publish(pubField.text, '{ "text" : "the message need to send" }')
+                        // 在日志中添加发布记录
+                        addMessage("发布成功", {
+                                       topic: pubField.text,
+                                       payload: payload
+                                   })
                     }
                 }
             }
@@ -353,7 +401,7 @@ Item {
                 Layout.topMargin: 6
 
             }
-            ColumnLayout {  //ColumnLayout
+            ColumnLayout {
                 spacing: 20
                 Rectangle {
                     id:background1
@@ -377,12 +425,14 @@ Item {
                             id: delegatedRectangle
                             required property int index
                             required property string payload
+                            required property int clientState // 通过外层传递状态
                             width: ListView.view.width
                             height: 30
                             color: index % 2 ? "#DDDDDD" : "#888888"
                             radius: 5
 
-                            function stateToString(value) {
+                            function stateToString(value)
+                            {
                                 if (value === 0)
                                     return "Disconnected"
                                 else if (value === 1)
@@ -394,7 +444,7 @@ Item {
                             }
 
                             Text {
-                                text: "Status: " + stateToString(client.state) + "(" + client.state + ") " + delegatedRectangle.payload
+                                text: "Status: " + stateToString(clientState) + "(" + clientState + ") " + delegatedRectangle.payload
                                 // elide: text.wrap    //自动换行 有问题
                                 anchors.centerIn: parent
                             }

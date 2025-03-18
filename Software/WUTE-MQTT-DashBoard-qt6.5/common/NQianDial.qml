@@ -5,14 +5,28 @@ import "qrc:/common"
 Dial {
     id:dial;
 
-    property real fromData: 0                        // 起始值
-    property real toData: 50                         // 结束值
+    // 禁用交互
+    //interactive: false          // 核心属性：禁用拖动
+    hoverEnabled: false         // 移除悬停效果
+    wheelEnabled: false         // 禁用滚轮
+
+    // 拦截所有鼠标/触摸事件
+    MouseArea {
+            anchors.fill: parent
+            enabled: true
+            onPressed: {}  // 空实现以吞噬事件
+            onWheel: {}    // 吞噬滚轮事件
+        }
+
+    property real fromData: 0                           // 起始值
+    property real toData: 50                            // 结束值
     property real valueScope: toData - fromData
-    property int decimalCnt: 0                       // 小数点数量
-    property string unit: "°C"                       // 值单位
+    property int decimalCnt: 0                          // 小数点数量
+    property string unit: "°C"                          // 值单位
     property color color: "#FBB72E"
-    property alias pixelSize : _text.font.pixelSize  // 数字大小,根据位数个人自定义
+    property alias pixelSize : _text.font.pixelSize     // 数字大小,根据位数个人自定义
     property real lineWidth : dial.background.width * 0.075     // 动态设定,无需更改
+    property color ringBackgroundColor: "#bcbcbc"       // 新增圆环底色属性
 
     readonly  property real currentData: (dial.value * valueScope + fromData).toFixed(decimalCnt)  // 实时值(只读)
 
@@ -63,6 +77,7 @@ Dial {
           }
       ]
     }
+
     background: Item {
         x: dial.width / 2 - width / 2
         y: dial.height / 2 - height / 2
@@ -77,7 +92,7 @@ Dial {
             smooth: true
 
             function fillDialPlate(ctx) {
-                ctx.strokeStyle  = "#323232"
+                ctx.strokeStyle  = dial.ringBackgroundColor  // 使用动态属性
                 ctx.lineWidth  = dial.lineWidth
                 ctx.lineCap = "round"
                 ctx.beginPath()
@@ -152,5 +167,14 @@ Dial {
     width: 200;
     height: 200;
 
+    // 动画平滑性控制
+    Behavior on value {
+        NumberAnimation { duration: 300; easing.type: Easing.OutCubic }
+    }
+
+    // 异步更新支持
+    function asyncUpdateData(newValue) {
+        Qt.callLater(() => setData(newValue))
+    }
 
 }

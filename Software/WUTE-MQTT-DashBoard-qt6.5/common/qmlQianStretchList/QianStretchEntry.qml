@@ -12,7 +12,7 @@ Item {
 
     property var itemsArrays: [
         {
-            name: "电气系统",
+            name: "车况信息",
             stretch: true,
             subItem: [
                 {

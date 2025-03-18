@@ -4,8 +4,9 @@ import QtQuick.Layouts 1.12
 import QtQuick.Controls 2.14
 import QtQuick.Controls.Material 2.12
 import "qrc:/common"
-//import Qt.MqttClient 1.0
-//import "ConnectConfigPage.qml" as Other
+import Qt.JsonDataProvider 1.0
+
+//颜色统一：黄色：#FBB72E  橙色：#FF5900   蓝色：#0081FF  红色：#FF2C1E  绿色：#82FD45  灰色:#909090
 
 Item {
     property int leftWidth: 150
@@ -33,7 +34,7 @@ Item {
                     NQianDial {
                         unit: "V"
                         fromData: 0
-                        toData: 50
+                        toData: 500
                         color: "#FBB72E"
 
                         Layout.preferredWidth: 125
@@ -41,10 +42,7 @@ Item {
                         Layout.alignment: Qt.AlignBottom | Qt.AlignRight
                         pixelSize: 40
 
-                        Component.onCompleted:  setData(23)
-                        onCurrentDataChanged: {
-                            console.log("温度改变: ", currentData);
-                        }
+                        value: JsonDataProvider.AccuV / (toData - fromData)
                     }
                     YaheiText {
                         font.pixelSize: 15
@@ -58,7 +56,7 @@ Item {
                     Layout.rightMargin: 60
                     NQianDial {
                         unit: "A"
-                        fromData: 100
+                        fromData: 0
                         toData: 200
                         color: "#0081FF"
 
@@ -67,12 +65,7 @@ Item {
                         Layout.alignment: Qt.AlignBottom | Qt.AlignRight
                         pixelSize: 40
 
-                        value: 0.6
-                        //Component.onCompleted: setData(carSpeed)
-
-                        // onCurrentDataChanged: {
-                        //     console.log("电阻改变: ", currentData);
-                        // }
+                        value: JsonDataProvider.AccuI / (toData - fromData)
                     }
                     YaheiText {
                         font.pixelSize: 15
@@ -86,8 +79,8 @@ Item {
                     Layout.rightMargin: 60
                     NQianDial {
                         unit: "°C"
-                        fromData: 10
-                        toData: 100
+                        fromData: 0
+                        toData: 80
                         decimalCnt: 1
                         color: "#121923"
 
@@ -95,8 +88,6 @@ Item {
                         Layout.preferredHeight: 125
                         Layout.alignment: Qt.AlignBottom | Qt.AlignRight
                         pixelSize: 40
-
-                        Component.onCompleted:  setData(60)
 
                         gradientList: [
                             {
@@ -116,14 +107,13 @@ Item {
                                 color: "#FF2C1E"
                             }
                         ]
-                        onCurrentDataChanged: {
-                            console.log("电压改变: ", currentData);
-                        }
+
+                        value: JsonDataProvider.AccuTcmax / (toData - fromData)
                     }
                     YaheiText {
                         font.pixelSize: 15
                         font.family: "Microsoft Yahei"
-                        text: "最高温度"
+                        text: "单体最高温度"
                         Layout.alignment: Qt.AlignBottom | Qt.AlignHCenter
                     }
                 }
@@ -132,7 +122,7 @@ Item {
                     NQianDial {
                         unit: "mV"
                         fromData: 0
-                        toData: 50
+                        toData: 100
                         color: "#FBB72E"
 
                         Layout.preferredWidth: 125
@@ -140,10 +130,7 @@ Item {
                         Layout.alignment: Qt.AlignBottom | Qt.AlignRight
                         pixelSize: 40
 
-                        Component.onCompleted:  setData(23)
-                        onCurrentDataChanged: {
-                            console.log("温度改变: ", currentData);
-                        }
+                        value: JsonDataProvider.AccudVmax / (toData - fromData)
                     }
                     YaheiText {
                         font.pixelSize: 15
@@ -177,7 +164,7 @@ Item {
                     Layout.rightMargin: 60
                     NQianDial {
                         unit: "°C"
-                        fromData: 10
+                        fromData: 0
                         toData: 100
                         decimalCnt: 1
                         color: "#121923"
@@ -186,8 +173,6 @@ Item {
                         Layout.preferredHeight: 150
                         Layout.alignment: Qt.AlignBottom | Qt.AlignRight
                         pixelSize: 40
-
-                        Component.onCompleted:  setData(60)
 
                         gradientList: [
                             {
@@ -207,9 +192,8 @@ Item {
                                 color: "#FF2C1E"
                             }
                         ]
-                        onCurrentDataChanged: {
-                            console.log("电压改变: ", currentData);
-                        }
+
+                        value: JsonDataProvider.McuT / (toData - fromData)
                     }
                     YaheiText {
                         font.pixelSize: 15
@@ -235,9 +219,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
                             text: "23.456W"
-                            enabled: disable
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
@@ -266,9 +251,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
                             text: "23.456W"
-                            enabled: disable
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
@@ -297,9 +283,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
                             text: "23.456W"
-                            enabled: disable
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
@@ -340,7 +327,7 @@ Item {
                     NQianDial {
                         unit: "rpm"
                         fromData: 0
-                        toData: 50
+                        toData: 8000
                         color: "#FBB72E"
 
                         Layout.preferredWidth: 150
@@ -348,15 +335,12 @@ Item {
                         Layout.alignment: Qt.AlignBottom | Qt.AlignHCenter
                         pixelSize: 40
 
-                        Component.onCompleted:  setData(23)
-                        onCurrentDataChanged: {
-                            console.log("温度改变: ", currentData);
-                        }
+                        value: JsonDataProvider.MotorRpm / (toData - fromData)
                     }
                     YaheiText {
                         font.pixelSize: 15
                         font.family: "Microsoft Yahei"
-                        text: "转速"
+                        text: "电机转速"
                         Layout.alignment: Qt.AlignBottom | Qt.AlignHCenter
                     }
                 }
@@ -365,8 +349,8 @@ Item {
                     Layout.rightMargin: 40
                     NQianDial {
                         unit: "N*m"
-                        fromData: 100
-                        toData: 200
+                        fromData: 0
+                        toData: 2000
                         color: "#0081FF"
 
                         Layout.preferredWidth: 150
@@ -374,17 +358,12 @@ Item {
                         Layout.alignment: Qt.AlignBottom | Qt.AlignHCenter
                         pixelSize: 40
 
-                        value: 0.6
-                        //Component.onCompleted: setData(carSpeed)
-
-                        // onCurrentDataChanged: {
-                        //     console.log("电阻改变: ", currentData);
-                        // }
+                        value: JsonDataProvider.MotorTorque / (toData - fromData)
                     }
                     YaheiText {
                         font.pixelSize: 15
                         font.family: "Microsoft Yahei"
-                        text: "转矩"
+                        text: "电机转矩"
                         Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
                     }
                 }
@@ -392,7 +371,7 @@ Item {
                     Layout.rightMargin: 40
                     NQianDial {
                         unit: "°C"
-                        fromData: 10
+                        fromData: 0
                         toData: 100
                         decimalCnt: 1
                         color: "#121923"
@@ -401,8 +380,6 @@ Item {
                         Layout.preferredHeight: 150
                         Layout.alignment: Qt.AlignBottom | Qt.AlignRight
                         pixelSize: 40
-
-                        Component.onCompleted:  setData(60)
 
                         gradientList: [
                             {
@@ -422,14 +399,13 @@ Item {
                                 color: "#FF2C1E"
                             }
                         ]
-                        onCurrentDataChanged: {
-                            console.log("电压改变: ", currentData);
-                        }
+
+                        value: JsonDataProvider.MotorTemp / (toData - fromData)
                     }
                     YaheiText {
                         font.pixelSize: 15
                         font.family: "Microsoft Yahei"
-                        text: "温度"
+                        text: "电机温度"
                         Layout.alignment: Qt.AlignBottom | Qt.AlignHCenter
                     }
                 }

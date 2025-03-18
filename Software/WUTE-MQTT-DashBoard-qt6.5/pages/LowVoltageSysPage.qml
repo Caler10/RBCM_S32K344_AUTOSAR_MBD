@@ -6,7 +6,7 @@ import QtQuick.Controls.Material 2.12
 import "qrc:/common"
 import Qt.JsonDataProvider 1.0
 
-//颜色统一：黄色：#FBB72E  橙色：#FF5900   蓝色：#0081FF  红色：#FF2C1E  绿色：#82FD45  灰色:#909090
+//颜色统一：黄色：#FBB72E  橙色：#FF5900   蓝色：#0081FF 红色：#FF2C1E  绿色：#82FD45 #55ee55 #1AAD19  灰色:#909090
 Item {
     property int leftWidth: 150
     property int fontsize: 19
@@ -33,7 +33,7 @@ Item {
                     NQianDial {
                         unit: "V"
                         fromData: 0
-                        toData: 50
+                        toData: 36
                         color: "#FBB72E"
 
                         Layout.preferredWidth: 160
@@ -41,10 +41,7 @@ Item {
                         Layout.alignment: Qt.AlignBottom | Qt.AlignRight
                         pixelSize: 40
 
-                        Component.onCompleted:  setData(23)
-                        onCurrentDataChanged: {
-                            console.log("温度改变: ", currentData);
-                        }
+                        value: JsonDataProvider.LvBatsV / (toData - fromData)
                     }
                     YaheiText {
                         font.pixelSize: 15
@@ -58,8 +55,8 @@ Item {
                     Layout.rightMargin: 60
                     NQianDial {
                         unit: "A"
-                        fromData: 100
-                        toData: 200
+                        fromData: 0
+                        toData: 30
                         color: "#0081FF"
 
                         Layout.preferredWidth: 160
@@ -67,12 +64,7 @@ Item {
                         Layout.alignment: Qt.AlignBottom | Qt.AlignRight
                         pixelSize: 40
 
-                        value: 0.6
-                        //Component.onCompleted: setData(carSpeed)
-
-                        // onCurrentDataChanged: {
-                        //     console.log("电阻改变: ", currentData);
-                        // }
+                        value: JsonDataProvider.LvBatsI / (toData - fromData)
                     }
                     YaheiText {
                         font.pixelSize: 15
@@ -86,7 +78,7 @@ Item {
                     Layout.rightMargin: 60
                     NQianDial {
                         unit: "°C"
-                        fromData: 10
+                        fromData: 0
                         toData: 100
                         decimalCnt: 1
                         color: "#121923"
@@ -95,8 +87,6 @@ Item {
                         Layout.preferredHeight: 160
                         Layout.alignment: Qt.AlignBottom | Qt.AlignRight
                         pixelSize: 40
-
-                        Component.onCompleted:  setData(60)
 
                         gradientList: [
                             {
@@ -116,9 +106,8 @@ Item {
                                 color: "#FF2C1E"
                             }
                         ]
-                        onCurrentDataChanged: {
-                            console.log("电压改变: ", currentData);
-                        }
+
+                        value: JsonDataProvider.LvBatsT / (toData - fromData)
                     }
                     YaheiText {
                         font.pixelSize: 15
@@ -169,15 +158,15 @@ Item {
                             font.pixelSize: 14
                             color: "#ffffff"
                             font.family: "Microsoft Yahei"
-                            text: "运行"
-                            enabled: disable
+                            text: JsonDataProvider.VcuState ? ( JsonDataProvider.VcuState-1 ? "过流" : "运行" ) : "停止"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
                             background: Rectangle {
                                 border.width: 1
                                 border.color: accentColor
-                                color: "#0081FF"  // 设置背景颜色
+                                color: JsonDataProvider.VcuState ? ( JsonDataProvider.VcuState-1 ? "#FF5900" : "#0081FF" ) : "#909090"  // 设置背景颜色
                                 radius: 5  // 设置圆角半径
                             }
                         }
@@ -200,15 +189,15 @@ Item {
                             font.pixelSize: 14
                             font.family: "Microsoft Yahei"
                             color: "#ffffff"
-                            text: "过流"
-                            enabled: disable
+                            text: JsonDataProvider.BmsState ? ( JsonDataProvider.BmsState-1 ? "过流" : "运行" ) : "停止"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
                             background: Rectangle {
                                 border.width: 1
                                 border.color: accentColor
-                                color: "#FF5900"  // 设置背景颜色
+                                color: JsonDataProvider.BmsState ? ( JsonDataProvider.BmsState-1 ? "#FF5900" : "#0081FF" ) : "#909090"  // 设置背景颜色
                                 radius: 5  // 设置圆角半径
                             }
                         }
@@ -231,15 +220,15 @@ Item {
                             font.pixelSize: 14
                             font.family: "Microsoft Yahei"
                             color: "#ffffff"
-                            text: "停止"
-                            enabled: disable
+                            text: JsonDataProvider.McuState ? ( JsonDataProvider.McuState-1 ? "过流" : "运行" ) : "停止"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
                             background: Rectangle {
                                 border.width: 1
                                 border.color: accentColor
-                                color: "#909090"  // 设置背景颜色
+                                color: JsonDataProvider.McuState ? ( JsonDataProvider.McuState-1 ? "#FF5900" : "#0081FF" ) : "#909090"  // 设置背景颜色
                                 radius: 5  // 设置圆角半径
                             }
                         }
@@ -264,15 +253,15 @@ Item {
                             font.pixelSize: 14
                             color: "#ffffff"
                             font.family: "Microsoft Yahei"
-                            text: "运行"
-                            enabled: disable
+                            text: JsonDataProvider.BduState ? ( JsonDataProvider.BduState-1 ? "过流" : "运行" ) : "停止"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
                             background: Rectangle {
                                 border.width: 1
                                 border.color: accentColor
-                                color: "#0081FF"  // 设置背景颜色
+                                color: JsonDataProvider.BduState ? ( JsonDataProvider.BduState-1 ? "#FF5900" : "#0081FF" ) : "#909090"  // 设置背景颜色
                                 radius: 5  // 设置圆角半径
                             }
                         }
@@ -295,15 +284,15 @@ Item {
                             font.pixelSize: 14
                             font.family: "Microsoft Yahei"
                             color: "#ffffff"
-                            text: "过流"
-                            enabled: disable
+                            text: JsonDataProvider.BspdState ? ( JsonDataProvider.BspdState-1 ? "过流" : "运行" ) : "停止"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
                             background: Rectangle {
                                 border.width: 1
                                 border.color: accentColor
-                                color: "#FF5900"  // 设置背景颜色
+                                color: JsonDataProvider.BspdState ? ( JsonDataProvider.BspdState-1 ? "#FF5900" : "#0081FF" ) : "#909090"  // 设置背景颜色
                                 radius: 5  // 设置圆角半径
                             }
                         }
@@ -326,15 +315,15 @@ Item {
                             font.pixelSize: 14
                             font.family: "Microsoft Yahei"
                             color: "#ffffff"
-                            text: "停止"
-                            enabled: disable
+                            text: JsonDataProvider.TsalrState ? ( JsonDataProvider.TsalrState-1 ? "过流" : "运行" ) : "停止"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
                             background: Rectangle {
                                 border.width: 1
                                 border.color: accentColor
-                                color: "#909090"  // 设置背景颜色
+                                color: JsonDataProvider.TsalrState ? ( JsonDataProvider.TsalrState-1 ? "#FF5900" : "#0081FF" ) : "#909090"  // 设置背景颜色
                                 radius: 5  // 设置圆角半径
                             }
                         }
@@ -358,15 +347,15 @@ Item {
                             font.pixelSize: 14
                             color: "#ffffff"
                             font.family: "Microsoft Yahei"
-                            text: "运行"
-                            enabled: disable
+                            text: JsonDataProvider.PumpState ? ( JsonDataProvider.PumpState-1 ? "过流" : "运行" ) : "停止"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
                             background: Rectangle {
                                 border.width: 1
                                 border.color: accentColor
-                                color: "#0081FF"  // 设置背景颜色
+                                color: JsonDataProvider.PumpState ? ( JsonDataProvider.PumpState-1 ? "#FF5900" : "#0081FF" ) : "#909090"  // 设置背景颜色
                                 radius: 5  // 设置圆角半径
                             }
                         }
@@ -389,15 +378,15 @@ Item {
                             font.pixelSize: 14
                             font.family: "Microsoft Yahei"
                             color: "#ffffff"
-                            text: "过流"
-                            enabled: disable
+                            text: JsonDataProvider.Fan1State ? ( JsonDataProvider.Fan1State-1 ? "过流" : "运行" ) : "停止"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
                             background: Rectangle {
                                 border.width: 1
                                 border.color: accentColor
-                                color: "#FF5900"  // 设置背景颜色
+                                color: JsonDataProvider.Fan1State ? ( JsonDataProvider.Fan1State-1 ? "#FF5900" : "#0081FF" ) : "#909090"  // 设置背景颜色
                                 radius: 5  // 设置圆角半径
                             }
                         }
@@ -420,15 +409,15 @@ Item {
                             font.pixelSize: 14
                             font.family: "Microsoft Yahei"
                             color: "#ffffff"
-                            text: "停止"
-                            enabled: disable
+                            text: JsonDataProvider.Fan2State ? ( JsonDataProvider.Fan2State-1 ? "过流" : "运行" ) : "停止"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
                             background: Rectangle {
                                 border.width: 1
                                 border.color: accentColor
-                                color: "#909090"  // 设置背景颜色
+                                color: JsonDataProvider.Fan2State ? ( JsonDataProvider.Fan2State-1 ? "#FF5900" : "#0081FF" ) : "#909090"  // 设置背景颜色
                                 radius: 5  // 设置圆角半径
                             }
                         }
@@ -453,15 +442,15 @@ Item {
                             font.pixelSize: 14
                             color: "#ffffff"
                             font.family: "Microsoft Yahei"
-                            text: "运行"
-                            enabled: disable
+                            text: JsonDataProvider.TaillightState ? ( JsonDataProvider.TaillightState-1 ? "过流" : "运行" ) : "停止"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
                             background: Rectangle {
                                 border.width: 1
                                 border.color: accentColor
-                                color: "#0081FF"  // 设置背景颜色
+                                color: JsonDataProvider.TaillightState ? ( JsonDataProvider.TaillightState-1 ? "#FF5900" : "#0081FF" ) : "#909090"  // 设置背景颜色
                                 radius: 5  // 设置圆角半径
                             }
                         }
@@ -484,15 +473,15 @@ Item {
                             font.pixelSize: 14
                             font.family: "Microsoft Yahei"
                             color: "#ffffff"
-                            text: "过流"
-                            enabled: disable
+                            text: JsonDataProvider.BuzzerState ? ( JsonDataProvider.BuzzerState-1 ? "过流" : "运行" ) : "停止"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
                             background: Rectangle {
                                 border.width: 1
                                 border.color: accentColor
-                                color: "#FF5900"  // 设置背景颜色
+                                color: JsonDataProvider.BuzzerState ? ( JsonDataProvider.BuzzerState-1 ? "#FF5900" : "#0081FF" ) : "#909090"  // 设置背景颜色
                                 radius: 5  // 设置圆角半径
                             }
                         }
@@ -515,15 +504,15 @@ Item {
                             font.pixelSize: 14
                             font.family: "Microsoft Yahei"
                             color: "#ffffff"
-                            text: "停止"
-                            enabled: disable
+                            text: JsonDataProvider.DrsState ? ( JsonDataProvider.DrsState-1 ? "过流" : "运行" ) : "停止"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
                             background: Rectangle {
                                 border.width: 1
                                 border.color: accentColor
-                                color: "#909090"  // 设置背景颜色
+                                color: JsonDataProvider.DrsState ? ( JsonDataProvider.DrsState-1 ? "#FF5900" : "#0081FF" ) : "#909090"  // 设置背景颜色
                                 radius: 5  // 设置圆角半径
                             }
                         }
@@ -571,9 +560,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
-                            text: JsonDataProvider.data1 + "W"
-                            enabled: disable
+                            text: JsonDataProvider.VcuValue*24/100.0 + "W"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
@@ -606,9 +596,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
-                            text: "23.456W"
-                            enabled: disable
+                            text: JsonDataProvider.BmsValue + "W"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
@@ -637,9 +628,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
-                            text: "23.456W"
-                            enabled: disable
+                            text: JsonDataProvider.McuValue*24/100.0 + "W"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
@@ -670,9 +662,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
-                            text: "23.456W"
-                            enabled: disable
+                            text: JsonDataProvider.BduValue*24/100.0 + "W"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
@@ -701,9 +694,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
-                            text: "23.456W"
-                            enabled: disable
+                            text: JsonDataProvider.BspdValue*24/100.0 + "W"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
@@ -732,9 +726,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
-                            text: "23.456W"
-                            enabled: disable
+                            text: JsonDataProvider.TsalrValue*24/100.0 + "W"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
@@ -765,9 +760,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
-                            text: "23.456W"
-                            enabled: disable
+                            text: JsonDataProvider.PumpValue*24/100.0 + "W"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
@@ -796,9 +792,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
-                            text: "23.456W"
-                            enabled: disable
+                            text: JsonDataProvider.Fan1Value*24/100.0 + "W"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
@@ -827,9 +824,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
-                            text: "23.456W"
-                            enabled: disable
+                            text: JsonDataProvider.Fan2Value*24/100.0 + "W"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
@@ -860,9 +858,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
-                            text: "23.456W"
-                            enabled: disable
+                            text: JsonDataProvider.TaillightValue*24/100.0 + "W"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
@@ -891,9 +890,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
-                            text: "23.456W"
-                            enabled: disable
+                            text: JsonDataProvider.BuzzerValue*24/100.0 + "W"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true
@@ -922,9 +922,10 @@ Item {
                             implicitWidth: 80
                             Layout.topMargin: 8
                             font.pixelSize: 14
+                            color: accentColor
                             font.family: "Microsoft Yahei"
-                            text: "23.456W"
-                            enabled: disable
+                            text: JsonDataProvider.DrsValue*24/100.0 + "W"
+                            enabled: false
                             cursorVisible: false    //光标不可见
                             selectByMouse: false    //不可选中文本
                             readOnly: true

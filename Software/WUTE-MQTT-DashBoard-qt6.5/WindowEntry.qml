@@ -46,10 +46,9 @@ Rectangle {
     //     }
     // }
 
-    Component.onCompleted: {
-        skinQianDialog.dialogOpen()
-    }
-
+    // Component.onCompleted: {
+    //     skinQianDialog.dialogOpen()
+    // }
 
 
     layer.enabled: skin.windowShadow && !appStartAnimation.running && !rootWindow.maximized? true : false
