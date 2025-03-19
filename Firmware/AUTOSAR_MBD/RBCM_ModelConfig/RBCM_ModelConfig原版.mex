@@ -1746,44 +1746,14 @@
                                  <setting name="DioPortId" value="0"/>
                                  <array name="DioChannel">
                                     <struct name="0">
-                                       <setting name="Name" value="lpHSD3_IN0_PTA0"/>
-                                       <setting name="DioChannelId" value="0"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="1">
-                                       <setting name="Name" value="lpHSD4_IN3_PTA1"/>
-                                       <setting name="DioChannelId" value="1"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="2">
-                                       <setting name="Name" value="lpHSD5_IN1_PTA2"/>
-                                       <setting name="DioChannelId" value="2"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="3">
-                                       <setting name="Name" value="lpHSD5_DSEL0_PTA3"/>
-                                       <setting name="DioChannelId" value="3"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="4">
                                        <setting name="Name" value="ESP32S3_EN"/>
                                        <setting name="DioChannelId" value="8"/>
                                        <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
                                        <array name="DioChannelEcucPartitionRef"/>
                                     </struct>
-                                    <struct name="5">
+                                    <struct name="1">
                                        <setting name="Name" value="ESP32S3_EN_RESET"/>
                                        <setting name="DioChannelId" value="9"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="6">
-                                       <setting name="Name" value="hpHSD6_IN0_PTA12"/>
-                                       <setting name="DioChannelId" value="11"/>
                                        <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
                                        <array name="DioChannelEcucPartitionRef"/>
                                     </struct>
@@ -1794,68 +1764,7 @@
                               <struct name="1">
                                  <setting name="Name" value="PTA_H"/>
                                  <setting name="DioPortId" value="1"/>
-                                 <array name="DioChannel">
-                                    <struct name="0">
-                                       <setting name="Name" value="hpHSD2_IN0_PTA17"/>
-                                       <setting name="DioChannelId" value="1"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="1">
-                                       <setting name="Name" value="hpHSD6_IN1_PTA18"/>
-                                       <setting name="DioChannelId" value="2"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="2">
-                                       <setting name="Name" value="hpHSD5_IN0_PTA19"/>
-                                       <setting name="DioChannelId" value="3"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="3">
-                                       <setting name="Name" value="hpHSD4_DSEL_PTA20"/>
-                                       <setting name="DioChannelId" value="4"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="4">
-                                       <setting name="Name" value="hpHSD5_IN1_PTA21"/>
-                                       <setting name="DioChannelId" value="5"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="5">
-                                       <setting name="Name" value="hpHSD3_IN1_PTA27"/>
-                                       <setting name="DioChannelId" value="11"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="6">
-                                       <setting name="Name" value="Vvar4_Ctrl_PTA28"/>
-                                       <setting name="DioChannelId" value="12"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="7">
-                                       <setting name="Name" value="RGBLED0_RED"/>
-                                       <setting name="DioChannelId" value="13"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="8">
-                                       <setting name="Name" value="RGBLED0_GREEN"/>
-                                       <setting name="DioChannelId" value="14"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="9">
-                                       <setting name="Name" value="RGBLED0_BLUE"/>
-                                       <setting name="DioChannelId" value="15"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                 </array>
+                                 <array name="DioChannel"/>
                                  <array name="DioChannelGroup"/>
                                  <array name="DioPortEcucPartitionRef"/>
                               </struct>
@@ -1864,62 +1773,20 @@
                                  <setting name="DioPortId" value="2"/>
                                  <array name="DioChannel">
                                     <struct name="0">
-                                       <setting name="Name" value="lpHSD2_IN3_PTB2"/>
-                                       <setting name="DioChannelId" value="2"/>
+                                       <setting name="Name" value="RGBLED0_RED"/>
+                                       <setting name="DioChannelId" value="13"/>
                                        <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
                                        <array name="DioChannelEcucPartitionRef"/>
                                     </struct>
                                     <struct name="1">
-                                       <setting name="Name" value="lpHSD2_IN1_PTB3"/>
-                                       <setting name="DioChannelId" value="3"/>
+                                       <setting name="Name" value="RGBLED0_GREEN"/>
+                                       <setting name="DioChannelId" value="14"/>
                                        <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
                                        <array name="DioChannelEcucPartitionRef"/>
                                     </struct>
                                     <struct name="2">
-                                       <setting name="Name" value="Vvar2_Ctrl_PTB4"/>
-                                       <setting name="DioChannelId" value="4"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="3">
-                                       <setting name="Name" value="OE1_PTB5"/>
-                                       <setting name="DioChannelId" value="5"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="4">
-                                       <setting name="Name" value="lpHSD4_IN2_PTB8"/>
-                                       <setting name="DioChannelId" value="8"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="5">
-                                       <setting name="Name" value="lpHSD4_IN0_PTB9"/>
-                                       <setting name="DioChannelId" value="9"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="6">
-                                       <setting name="Name" value="lpHSD5_DSEL1_PTB10"/>
-                                       <setting name="DioChannelId" value="10"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="7">
-                                       <setting name="Name" value="hpHSD1_IN1_PTB11"/>
-                                       <setting name="DioChannelId" value="11"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="8">
-                                       <setting name="Name" value="hpHSD1_IN0_PTB12"/>
-                                       <setting name="DioChannelId" value="12"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="9">
-                                       <setting name="Name" value="hpHSD2_IN1_PTB13"/>
-                                       <setting name="DioChannelId" value="13"/>
+                                       <setting name="Name" value="RGBLED0_BLUE"/>
+                                       <setting name="DioChannelId" value="15"/>
                                        <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
                                        <array name="DioChannelEcucPartitionRef"/>
                                     </struct>
@@ -1932,44 +1799,14 @@
                                  <setting name="DioPortId" value="3"/>
                                  <array name="DioChannel">
                                     <struct name="0">
-                                       <setting name="Name" value="USER_SW1"/>
+                                       <setting name="Name" value="USER_SW0"/>
                                        <setting name="DioChannelId" value="3"/>
                                        <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
                                        <array name="DioChannelEcucPartitionRef"/>
                                     </struct>
                                     <struct name="1">
-                                       <setting name="Name" value="CAN1_STB"/>
-                                       <setting name="DioChannelId" value="8"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="2">
-                                       <setting name="Name" value="lpHSD2_IN0_PTB25"/>
-                                       <setting name="DioChannelId" value="9"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="3">
-                                       <setting name="Name" value="USER_SW0"/>
+                                       <setting name="Name" value="USER_SW1"/>
                                        <setting name="DioChannelId" value="10"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="4">
-                                       <setting name="Name" value="lpHSD2_DSEL0_PTB27"/>
-                                       <setting name="DioChannelId" value="11"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="5">
-                                       <setting name="Name" value="lpHSD2_IN2_PTB28"/>
-                                       <setting name="DioChannelId" value="12"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="6">
-                                       <setting name="Name" value="lpHSD2_DSEL1_PTB29"/>
-                                       <setting name="DioChannelId" value="13"/>
                                        <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
                                        <array name="DioChannelEcucPartitionRef"/>
                                     </struct>
@@ -1980,44 +1817,7 @@
                               <struct name="4">
                                  <setting name="Name" value="PTC_L"/>
                                  <setting name="DioPortId" value="4"/>
-                                 <array name="DioChannel">
-                                    <struct name="0">
-                                       <setting name="Name" value="DS18B20_DQ1_PTC0"/>
-                                       <setting name="DioChannelId" value="0"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="1">
-                                       <setting name="Name" value="DS18B20_DQ2_PTC1"/>
-                                       <setting name="DioChannelId" value="1"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="2">
-                                       <setting name="Name" value="lpHSD1_DSEL0_PTC12"/>
-                                       <setting name="DioChannelId" value="12"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="3">
-                                       <setting name="Name" value="lpHSD1_IN0_PTC13"/>
-                                       <setting name="DioChannelId" value="13"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="4">
-                                       <setting name="Name" value="AutoActiveSig_PTC14"/>
-                                       <setting name="DioChannelId" value="14"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="5">
-                                       <setting name="Name" value="CAN2_STB"/>
-                                       <setting name="DioChannelId" value="15"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                 </array>
+                                 <array name="DioChannel"/>
                                  <array name="DioChannelGroup"/>
                                  <array name="DioPortEcucPartitionRef"/>
                               </struct>
@@ -2026,38 +1826,8 @@
                                  <setting name="DioPortId" value="5"/>
                                  <array name="DioChannel">
                                     <struct name="0">
-                                       <setting name="Name" value="lpHSD1_IN1_PTC18"/>
-                                       <setting name="DioChannelId" value="2"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="1">
-                                       <setting name="Name" value="lpHSD1_IN2_PTC19"/>
-                                       <setting name="DioChannelId" value="3"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="2">
-                                       <setting name="Name" value="lpHSD1_IN3_PTC20"/>
-                                       <setting name="DioChannelId" value="4"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="3">
-                                       <setting name="Name" value="lpHSD1_DSEL1_PTC21"/>
-                                       <setting name="DioChannelId" value="5"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="4">
                                        <setting name="Name" value="CAN0_STB"/>
                                        <setting name="DioChannelId" value="14"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="5">
-                                       <setting name="Name" value="OE6_PTC31"/>
-                                       <setting name="DioChannelId" value="15"/>
                                        <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
                                        <array name="DioChannelEcucPartitionRef"/>
                                     </struct>
@@ -2068,106 +1838,14 @@
                               <struct name="6">
                                  <setting name="Name" value="PTD_L"/>
                                  <setting name="DioPortId" value="6"/>
-                                 <array name="DioChannel">
-                                    <struct name="0">
-                                       <setting name="Name" value="hpHSD5_DSEL_PTD1"/>
-                                       <setting name="DioChannelId" value="1"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="1">
-                                       <setting name="Name" value="lpHSD5_IN3_PTD2"/>
-                                       <setting name="DioChannelId" value="2"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="2">
-                                       <setting name="Name" value="hpHSD1_DSEL_PTD4"/>
-                                       <setting name="DioChannelId" value="4"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="3">
-                                       <setting name="Name" value="DCDC_Ctrl_PTD8"/>
-                                       <setting name="DioChannelId" value="8"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="4">
-                                       <setting name="Name" value="LED0_PTD10"/>
-                                       <setting name="DioChannelId" value="10"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="5">
-                                       <setting name="Name" value="OE2_PTD15"/>
-                                       <setting name="DioChannelId" value="15"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                 </array>
+                                 <array name="DioChannel"/>
                                  <array name="DioChannelGroup"/>
                                  <array name="DioPortEcucPartitionRef"/>
                               </struct>
                               <struct name="7">
                                  <setting name="Name" value="PTD_H"/>
                                  <setting name="DioPortId" value="7"/>
-                                 <array name="DioChannel">
-                                    <struct name="0">
-                                       <setting name="Name" value="Vvar3_Ctrl_PTD16"/>
-                                       <setting name="DioChannelId" value="0"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="1">
-                                       <setting name="Name" value="OE3_PTD17"/>
-                                       <setting name="DioChannelId" value="1"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="2">
-                                       <setting name="Name" value="hpHSD2_DSEL_PTD21"/>
-                                       <setting name="DioChannelId" value="5"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="3">
-                                       <setting name="Name" value="lpHSD5_IN2_PTD23"/>
-                                       <setting name="DioChannelId" value="7"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="4">
-                                       <setting name="Name" value="lpHSD5_IN0_PTD24"/>
-                                       <setting name="DioChannelId" value="8"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="5">
-                                       <setting name="Name" value="lpHSD4_IN1_PTD26"/>
-                                       <setting name="DioChannelId" value="10"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="6">
-                                       <setting name="Name" value="lpHSD4_DSEL0_PTD27"/>
-                                       <setting name="DioChannelId" value="11"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="7">
-                                       <setting name="Name" value="lpHSD4_DSEL1_PTD29"/>
-                                       <setting name="DioChannelId" value="13"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="8">
-                                       <setting name="Name" value="lpHSD3_IN1_PTD30"/>
-                                       <setting name="DioChannelId" value="14"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                 </array>
+                                 <array name="DioChannel"/>
                                  <array name="DioChannelGroup"/>
                                  <array name="DioPortEcucPartitionRef"/>
                               </struct>
@@ -2181,72 +1859,6 @@
                                        <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
                                        <array name="DioChannelEcucPartitionRef"/>
                                     </struct>
-                                    <struct name="1">
-                                       <setting name="Name" value="lpHSD3_DSEL1_PTE2"/>
-                                       <setting name="DioChannelId" value="2"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="2">
-                                       <setting name="Name" value="Vvar5_Ctrl_PTE3"/>
-                                       <setting name="DioChannelId" value="3"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="3">
-                                       <setting name="Name" value="hpHSD3_DSEL_PTE4"/>
-                                       <setting name="DioChannelId" value="4"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="4">
-                                       <setting name="Name" value="lpHSD3_IN3_PTE6"/>
-                                       <setting name="DioChannelId" value="6"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="5">
-                                       <setting name="Name" value="Vvar6_Ctrl_PTE7"/>
-                                       <setting name="DioChannelId" value="7"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="6">
-                                       <setting name="Name" value="Vvar1_Ctrl_PTE8"/>
-                                       <setting name="DioChannelId" value="8"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="7">
-                                       <setting name="Name" value="hpHSD3_IN0_PTE10"/>
-                                       <setting name="DioChannelId" value="10"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="8">
-                                       <setting name="Name" value="hpHSD4_IN1_PTE11"/>
-                                       <setting name="DioChannelId" value="11"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="9">
-                                       <setting name="Name" value="OE4_PTE12"/>
-                                       <setting name="DioChannelId" value="12"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="10">
-                                       <setting name="Name" value="OE5_PTE14"/>
-                                       <setting name="DioChannelId" value="14"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="11">
-                                       <setting name="Name" value="hpHSD4_IN0_PTE15"/>
-                                       <setting name="DioChannelId" value="15"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
                                  </array>
                                  <array name="DioChannelGroup"/>
                                  <array name="DioPortEcucPartitionRef"/>
@@ -2254,26 +1866,7 @@
                               <struct name="9">
                                  <setting name="Name" value="PTE_H"/>
                                  <setting name="DioPortId" value="9"/>
-                                 <array name="DioChannel">
-                                    <struct name="0">
-                                       <setting name="Name" value="lpHSD3_DSEL0_PTE17"/>
-                                       <setting name="DioChannelId" value="1"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="1">
-                                       <setting name="Name" value="lpHSD3_IN2_PTE18"/>
-                                       <setting name="DioChannelId" value="2"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                    <struct name="2">
-                                       <setting name="Name" value="hpHSD6_DSEL_PTE26"/>
-                                       <setting name="DioChannelId" value="10"/>
-                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
-                                       <array name="DioChannelEcucPartitionRef"/>
-                                    </struct>
-                                 </array>
+                                 <array name="DioChannel"/>
                                  <array name="DioChannelGroup"/>
                                  <array name="DioPortEcucPartitionRef"/>
                               </struct>
@@ -4312,27 +3905,6 @@
                                           <setting name="0" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/AdcThresholdControl_0"/>
                                        </array>
                                        <setting name="AdcWdogNotification" value="Adc_Adc1WdogNotification"/>
-                                    </struct>
-                                    <struct name="1">
-                                       <setting name="Name" value="lpHSD1_IS_PTB1"/>
-                                       <setting name="AdcLogicalChannelId" value="1"/>
-                                       <setting name="AdcChannelName" value="S15_ChanNum39"/>
-                                       <setting name="AdcChannelId" value="39"/>
-                                       <array name="AdcChannelConvTime"/>
-                                       <array name="AdcChannelLimitCheck"/>
-                                       <array name="AdcChannelHighLimit">
-                                          <setting name="0" value="65535"/>
-                                       </array>
-                                       <array name="AdcChannelLowLimit"/>
-                                       <array name="AdcChannelRangeSelect"/>
-                                       <array name="AdcChannelRefVoltsrcHigh"/>
-                                       <array name="AdcChannelRefVoltsrcLow"/>
-                                       <array name="AdcChannelResolution"/>
-                                       <array name="AdcChannelSampTime"/>
-                                       <setting name="AdcEnablePresampling" value="false"/>
-                                       <setting name="AdcEnableThresholds" value="false"/>
-                                       <array name="AdcThresholdRegister"/>
-                                       <setting name="AdcWdogNotification" value="NULL_PTR"/>
                                     </struct>
                                  </array>
                                  <array name="AdcGroup">
