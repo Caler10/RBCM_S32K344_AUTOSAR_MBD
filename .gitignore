@@ -4,8 +4,9 @@ RBCM_Model_ert_rtw/
 .metadata/
 generate/
 slprj/
-.user
-.autosave
-.slxc
-.log
+*.user
+*.autosave
+*.original
+*.slxc
+*.log
 
