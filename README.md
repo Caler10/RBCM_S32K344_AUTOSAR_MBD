@@ -112,10 +112,10 @@ MBD模型展示：
 
 采用MQTT的json数据格式
 
-json数据包格式：（仅为参考，可自行修改）
+json测试数据包：（当前版本）
 {
-  "ActButtonState":0,"ILValue":1345,
-  "ReadyButtonState":0,"McuReadyState":0,"DriveReadyState":0,
+  "ActButtonState":1,"ILValue":1345,
+  "ReadyButtonState":1,"McuReadyState":0,"DriveReadyState":1,
 
   "LvBatsV":27,"LvBatsI":23,"LvBatsT":62,
 
@@ -127,7 +127,7 @@ json数据包格式：（仅为参考，可自行修改）
   "VcuValue":102,"BmsValue":10,"McuValue":40,
   "BduValue":40,"BspdValue":40,"TsalrValue":40,
   "PumpValue":40,"Fan1Value":40,"Fan2Value":40,
-  "TaillightValue":40,"BuzzerValueBuzzerValue":40,"DrsValue":40,
+  "TaillightValue":40,"BuzzerValue":40,"DrsValue":40,
 
   "AccuV":40,"AccuI":40,"AccuTcmax":40,"AccudVmax":40,
   "McuT":40,

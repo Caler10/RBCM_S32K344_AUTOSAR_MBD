@@ -1,6 +1,6 @@
 ExitOnError 1 
 r 
-loadfile "D:\Workspace\MATLAB_workspace\RBCM_MBD\RBCM_Model.bin" 0x00400000 
-verifybin "D:\Workspace\MATLAB_workspace\RBCM_MBD\RBCM_Model.bin" 0x00400000 
+loadfile "E:\Myworkspace\RBCM_S32K344_AUTOSAR_MBD\Firmware\AUTOSAR_MBD\RBCM_MBD\RBCM_Model.bin" 0x00400000 
+verifybin "E:\Myworkspace\RBCM_S32K344_AUTOSAR_MBD\Firmware\AUTOSAR_MBD\RBCM_MBD\RBCM_Model.bin" 0x00400000 
 reset 4 
 qc 

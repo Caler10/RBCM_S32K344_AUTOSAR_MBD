@@ -1,0 +1,14 @@
+SEGGER J-Link Commander V7.98b (Compiled Jul 31 2024 16:15:00)
+DLL version V7.98b, compiled Jul 31 2024 16:14:11
+
+
+J-Link Command File read successfully.
+Processing script file...
+J-Link>ExitOnError 1
+J-Link Commander will now exit on Error
+J-Link>r
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...FAILED: Cannot connect to J-Link.
+
+Script processing completed.
+

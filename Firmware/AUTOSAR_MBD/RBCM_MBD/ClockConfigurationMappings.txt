@@ -1,2 +1,2 @@
-1,,MBDT
+1,,
 MBDT,PC,McuClockSettingConfig_0
