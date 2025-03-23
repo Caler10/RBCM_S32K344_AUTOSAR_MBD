@@ -67,8 +67,10 @@
 软件部分基于NXP的工具链开发，包括：
 
 1. AUTOSAR MCAL层配置工具：S32 Config Tool
-2. MBD开发工具箱：NXP_MBDToolbox_S32K3xx
+2. AUTOSAR应用层开发工具：MBD开发工具箱（基于simulink平台）：NXP_MBDToolbox_S32K3xx
 3. 观测与标定工具：FreeMaster
+
+开发的功能包括
 
 详细的开发记录请见 ..\Firmware\AUTOSAR_MBD\RBCM_MBD\RBCM_Model.md 文件
 
@@ -76,7 +78,11 @@ MBD模型展示：
 
 ![RBCM_MBD.png](Firmware/AUTOSAR_MBD/RBCM_MBD.png)
 
-软件还在开发中...
+### 关于CAN应用层协议架构
+
+CAN发送部分将报文分成了三组，分别负责MBCM核心数据、诊断数据、采集的传感器数据报文发送至CAN总线上
+
+当前MCAL层已完成RBCM适配，MBD应用层开发已接近完成...
 
 ## 数传上位机说明
 
@@ -94,25 +100,17 @@ MBD模型展示：
 
 需配合MQTT服务器使用，本项目MQTT服务器是基于华为云IoTDA搭建的
 
-项目前端基于<诺谦>的开源界面框架开发，[github地址](https://github.com/nuoqian-lgtm/QianWindow)(👈戳我了解)
+上位机前端基于<诺谦>的开源界面框架开发，[github地址](https://github.com/nuoqian-lgtm/QianWindow)(👈戳我了解)
 
----
+后端MQTT连接至服务器、topic订阅与发布功能基于QT自带的MQTT API开发实现
 
-# 使用说明
+前后端通信部分数传数据采用数据模型和后端注册的方式实现
 
-## WUTE-MQTT-DashBoard上位机使用说明
-
-请先在<连接配置>界面连接上位机至MQTT服务器
-
-订阅车身域控制器的赛车数据相关Topic
-
-回到<车况信息>下的<关键信息><低压系统><高压系统>界面即可看到相关数据的实时刷新显示
-
-### 关于数传协议
+### MQTT数传协议架构
 
 采用MQTT的json数据格式
 
-json测试数据包：（当前版本）
+json测试数据包：
 {
   "ActButtonState":1,"ILValue":1345,
   "ReadyButtonState":1,"McuReadyState":0,"DriveReadyState":1,
@@ -133,10 +131,30 @@ json测试数据包：（当前版本）
   "McuT":40,
   "MotorRpm":40,"MotorTorque":40,"MotorTemp":40
   }
+  
+---
+
+# 使用说明
+
+## WUTE-MQTT-DashBoard上位机使用说明
+
+请先在<连接配置>界面连接上位机至MQTT服务器
+
+订阅车身域控制器的赛车数据相关Topic
+
+回到<车况信息>下的<关键信息><低压系统><高压系统>界面即可看到相关数据的实时刷新显示
 
 ## 无线烧录使用说明
 
-还在编写中...
+1. 请先配置S32K344对ESP32S3电源使能引脚，使ESP32S3调试芯片正常供电
+2. 使用烧录软件，通过USB烧录接口烧录../Firmware/Esp
+2s3/.bin到ESP32S3中
+3. 制作ESP32S3小板
+   > 烧录流程同上
+4. 配置信道，实现无线连接
+5. 连接COM口，烧录标定
+
+施工中...
 
 
 # 未完待续。。。
