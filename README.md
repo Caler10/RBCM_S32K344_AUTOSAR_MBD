@@ -60,7 +60,7 @@
 
 具备过压保护，浪涌保护，反接保护，过流保护，温度电流监测等防护功能
 
-硬件BOM配单还在整理中...
+硬件BOM配单整理中...
 
 ## 软件说明
 
@@ -70,9 +70,11 @@
 2. AUTOSAR应用层开发工具：MBD开发工具箱（基于simulink平台）：NXP_MBDToolbox_S32K3xx
 3. 观测与标定工具：FreeMaster
 
-开发的功能包括
+采用自下而上的AUTOSAR SWC开发方式，先在simulink开发模型组件，再生成ARXML（AUTOSAR描述文件）组件描述并与simulink模型绑定
 
-详细的开发记录请见 ..\Firmware\AUTOSAR_MBD\RBCM_MBD\RBCM_Model.md 文件
+本项目MBD模型采用模块化的搭建方式，将软件功能划分为了几个子系统搭建
+
+部分开发记录请见 ..\Firmware\AUTOSAR_MBD\RBCM_MBD\RBCM_Model.md 文件
 
 MBD模型展示：
 
@@ -111,6 +113,9 @@ CAN发送部分将报文分成了三组，分别负责MBCM核心数据、诊断�
 采用MQTT的json数据格式
 
 json测试数据包：
+
+```
+
 {
   "ActButtonState":1,"ILValue":1345,
   "ReadyButtonState":1,"McuReadyState":0,"DriveReadyState":1,
@@ -131,7 +136,9 @@ json测试数据包：
   "McuT":40,
   "MotorRpm":40,"MotorTorque":40,"MotorTemp":40
   }
-  
+
+```
+
 ---
 
 # 使用说明
@@ -146,15 +153,19 @@ json测试数据包：
 
 ## 无线烧录使用说明
 
-1. 请先配置S32K344对ESP32S3电源使能引脚，使ESP32S3调试芯片正常供电
-2. 使用烧录软件，通过USB烧录接口烧录../Firmware/Esp
-2s3/.bin到ESP32S3中
-3. 制作ESP32S3小板
-   > 烧录流程同上
-4. 配置信道，实现无线连接
-5. 连接COM口，烧录标定
+请先配置S32K344对ESP32S3电源使能引脚，使ESP32S3调试芯片正常供电
 
-施工中...
+运行../Firmware/ESP32S3_Firmware/flash_download_tool_3.9.5_0烧录软件，连接RBCM核心板的USB烧录接口与电脑，烧录../Firmware/ESP32S3_Firmware/DAP_HS_ESP_20231027.bin到ESP32S3中
+
+制作ESP32S3小板，连接在电脑上用于与RBCM核心板上的ESP32S3建立远程连接
+
+> 烧录流程同上
+
+配置通信信道和烧录模式，建立无线连接
+
+配置COM口，烧录标定
 
 
-# 未完待续。。。
+
+
+施工中。。。
