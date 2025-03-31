@@ -56,7 +56,7 @@
                <pin_label pin_num="137" pin_signal="PTA0" label="lpHSD3_IN0_PTA0" identifier="lpHSD3_IN0_PTA0"/>
                <pin_label pin_num="90" pin_signal="PTC11" label="PWM5" identifier="PWM5"/>
                <pin_label pin_num="92" pin_signal="PTC10" label="PWM4" identifier="PWM4"/>
-               <pin_label pin_num="120" pin_signal="PTD3" label="lpHSD5_IS_PTD3" identifier="lpHSD5_DSEL1_PTD3"/>
+               <pin_label pin_num="120" pin_signal="PTD3" label="lpHSD5_IS_PTD3" identifier="lpHSD5_IS_PTD3"/>
                <pin_label pin_num="124" pin_signal="PTA2" label="lpHSD5_IN1_PTA2" identifier="lpHSD5_IN1_PTA2"/>
                <pin_label pin_num="123" pin_signal="PTA3" label="lpHSD5_DSEL0_PTA3" identifier="lpHSD5_DSEL0_PTA3"/>
                <pin_label pin_num="121" pin_signal="PTD2" label="lpHSD5_IN3_PTD2" identifier="lpHSD5_IN3_PTD2"/>
@@ -66,7 +66,7 @@
                <pin_label pin_num="79" pin_signal="PTB2" label="lpHSD2_IN3_PTB2" identifier="lpHSD2_IN3_PTB2"/>
                <pin_label pin_num="74" pin_signal="PTB3" label="lpHSD2_IN1_PTB3" identifier="lpHSD2_IN1_PTB3"/>
                <pin_label pin_num="130" pin_signal="PTB9" label="lpHSD4_IN0_PTB9" identifier="lpHSD4_IN0_PTB9"/>
-               <pin_label pin_num="129" pin_signal="PTB10" label="lpHSD5_DSEL1_PTB10" identifier="lpHSD5_IS_PTB10"/>
+               <pin_label pin_num="129" pin_signal="PTB10" label="lpHSD5_DSEL1_PTB10" identifier="lpHSD5_DSEL1_PTB10"/>
                <pin_label pin_num="76" pin_signal="PTB28" label="lpHSD2_IN2_PTB28" identifier="lpHSD2_IN2_PTB28"/>
                <pin_label pin_num="75" pin_signal="PTB27" label="lpHSD2_DSEL0_PTB27" identifier="lpHSD2_DSEL0_PTB27"/>
                <pin_label pin_num="131" pin_signal="PTD26" label="lpHSD4_IN1_PTD26" identifier="lpHSD4_IN1_PTD26"/>
@@ -4283,39 +4283,8 @@
                                  <array name="AdcAlternateConvTimings"/>
                                  <array name="AdcChannel">
                                     <struct name="0">
-                                       <setting name="Name" value="AdcChannel_0"/>
-                                       <setting name="AdcLogicalChannelId" value="0"/>
-                                       <setting name="AdcChannelName" value="P0_ChanNum0"/>
-                                       <setting name="AdcChannelId" value="0"/>
-                                       <array name="AdcChannelConvTime"/>
-                                       <array name="AdcChannelLimitCheck">
-                                          <setting name="0" value="false"/>
-                                       </array>
-                                       <array name="AdcChannelHighLimit">
-                                          <setting name="0" value="4095"/>
-                                       </array>
-                                       <array name="AdcChannelLowLimit">
-                                          <setting name="0" value="0"/>
-                                       </array>
-                                       <array name="AdcChannelRangeSelect">
-                                          <setting name="0" value="ADC_RANGE_ALWAYS"/>
-                                       </array>
-                                       <array name="AdcChannelRefVoltsrcHigh"/>
-                                       <array name="AdcChannelRefVoltsrcLow"/>
-                                       <array name="AdcChannelResolution">
-                                          <setting name="0" value="14"/>
-                                       </array>
-                                       <array name="AdcChannelSampTime"/>
-                                       <setting name="AdcEnablePresampling" value="true"/>
-                                       <setting name="AdcEnableThresholds" value="false"/>
-                                       <array name="AdcThresholdRegister">
-                                          <setting name="0" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/AdcThresholdControl_0"/>
-                                       </array>
-                                       <setting name="AdcWdogNotification" value="Adc_Adc1WdogNotification"/>
-                                    </struct>
-                                    <struct name="1">
                                        <setting name="Name" value="lpHSD1_IS_PTB1"/>
-                                       <setting name="AdcLogicalChannelId" value="1"/>
+                                       <setting name="AdcLogicalChannelId" value="0"/>
                                        <setting name="AdcChannelName" value="S15_ChanNum39"/>
                                        <setting name="AdcChannelId" value="39"/>
                                        <array name="AdcChannelConvTime"/>
@@ -4329,7 +4298,112 @@
                                        <array name="AdcChannelRefVoltsrcLow"/>
                                        <array name="AdcChannelResolution"/>
                                        <array name="AdcChannelSampTime"/>
-                                       <setting name="AdcEnablePresampling" value="false"/>
+                                       <setting name="AdcEnablePresampling" value="true"/>
+                                       <setting name="AdcEnableThresholds" value="false"/>
+                                       <array name="AdcThresholdRegister"/>
+                                       <setting name="AdcWdogNotification" value="NULL_PTR"/>
+                                    </struct>
+                                    <struct name="1">
+                                       <setting name="Name" value="lpHSD2_IS_PTB0"/>
+                                       <setting name="AdcLogicalChannelId" value="1"/>
+                                       <setting name="AdcChannelName" value="S14_ChanNum38"/>
+                                       <setting name="AdcChannelId" value="38"/>
+                                       <array name="AdcChannelConvTime"/>
+                                       <array name="AdcChannelLimitCheck"/>
+                                       <array name="AdcChannelHighLimit">
+                                          <setting name="0" value="65535"/>
+                                       </array>
+                                       <array name="AdcChannelLowLimit"/>
+                                       <array name="AdcChannelRangeSelect"/>
+                                       <array name="AdcChannelRefVoltsrcHigh"/>
+                                       <array name="AdcChannelRefVoltsrcLow"/>
+                                       <array name="AdcChannelResolution"/>
+                                       <array name="AdcChannelSampTime"/>
+                                       <setting name="AdcEnablePresampling" value="true"/>
+                                       <setting name="AdcEnableThresholds" value="false"/>
+                                       <array name="AdcThresholdRegister"/>
+                                       <setting name="AdcWdogNotification" value="NULL_PTR"/>
+                                    </struct>
+                                    <struct name="2">
+                                       <setting name="Name" value="lpHSD5_IS_PTD3"/>
+                                       <setting name="AdcLogicalChannelId" value="2"/>
+                                       <setting name="AdcChannelName" value="S10_ChanNum34"/>
+                                       <setting name="AdcChannelId" value="34"/>
+                                       <array name="AdcChannelConvTime"/>
+                                       <array name="AdcChannelLimitCheck"/>
+                                       <array name="AdcChannelHighLimit">
+                                          <setting name="0" value="65535"/>
+                                       </array>
+                                       <array name="AdcChannelLowLimit"/>
+                                       <array name="AdcChannelRangeSelect"/>
+                                       <array name="AdcChannelRefVoltsrcHigh"/>
+                                       <array name="AdcChannelRefVoltsrcLow"/>
+                                       <array name="AdcChannelResolution"/>
+                                       <array name="AdcChannelSampTime"/>
+                                       <setting name="AdcEnablePresampling" value="true"/>
+                                       <setting name="AdcEnableThresholds" value="false"/>
+                                       <array name="AdcThresholdRegister"/>
+                                       <setting name="AdcWdogNotification" value="NULL_PTR"/>
+                                    </struct>
+                                    <struct name="3">
+                                       <setting name="Name" value="hpHSD2_IS_PTD20"/>
+                                       <setting name="AdcLogicalChannelId" value="3"/>
+                                       <setting name="AdcChannelName" value="S22_ChanNum46"/>
+                                       <setting name="AdcChannelId" value="46"/>
+                                       <array name="AdcChannelConvTime"/>
+                                       <array name="AdcChannelLimitCheck"/>
+                                       <array name="AdcChannelHighLimit">
+                                          <setting name="0" value="65535"/>
+                                       </array>
+                                       <array name="AdcChannelLowLimit"/>
+                                       <array name="AdcChannelRangeSelect"/>
+                                       <array name="AdcChannelRefVoltsrcHigh"/>
+                                       <array name="AdcChannelRefVoltsrcLow"/>
+                                       <array name="AdcChannelResolution"/>
+                                       <array name="AdcChannelSampTime"/>
+                                       <setting name="AdcEnablePresampling" value="true"/>
+                                       <setting name="AdcEnableThresholds" value="false"/>
+                                       <array name="AdcThresholdRegister"/>
+                                       <setting name="AdcWdogNotification" value="NULL_PTR"/>
+                                    </struct>
+                                    <struct name="4">
+                                       <setting name="Name" value="hpHSD4_IS_PTE16"/>
+                                       <setting name="AdcLogicalChannelId" value="4"/>
+                                       <setting name="AdcChannelName" value="P4_ChanNum4"/>
+                                       <setting name="AdcChannelId" value="4"/>
+                                       <array name="AdcChannelConvTime"/>
+                                       <array name="AdcChannelLimitCheck"/>
+                                       <array name="AdcChannelHighLimit">
+                                          <setting name="0" value="65535"/>
+                                       </array>
+                                       <array name="AdcChannelLowLimit"/>
+                                       <array name="AdcChannelRangeSelect"/>
+                                       <array name="AdcChannelRefVoltsrcHigh"/>
+                                       <array name="AdcChannelRefVoltsrcLow"/>
+                                       <array name="AdcChannelResolution"/>
+                                       <array name="AdcChannelSampTime"/>
+                                       <setting name="AdcEnablePresampling" value="true"/>
+                                       <setting name="AdcEnableThresholds" value="false"/>
+                                       <array name="AdcThresholdRegister"/>
+                                       <setting name="AdcWdogNotification" value="NULL_PTR"/>
+                                    </struct>
+                                    <struct name="5">
+                                       <setting name="Name" value="hpHSD5_IS_PTD0"/>
+                                       <setting name="AdcLogicalChannelId" value="5"/>
+                                       <setting name="AdcChannelName" value="P1_ChanNum1"/>
+                                       <setting name="AdcChannelId" value="1"/>
+                                       <array name="AdcChannelConvTime"/>
+                                       <array name="AdcChannelLimitCheck"/>
+                                       <array name="AdcChannelHighLimit">
+                                          <setting name="0" value="65535"/>
+                                       </array>
+                                       <array name="AdcChannelLowLimit"/>
+                                       <array name="AdcChannelRangeSelect"/>
+                                       <array name="AdcChannelRefVoltsrcHigh"/>
+                                       <array name="AdcChannelRefVoltsrcLow"/>
+                                       <array name="AdcChannelResolution"/>
+                                       <array name="AdcChannelSampTime"/>
+                                       <setting name="AdcEnablePresampling" value="true"/>
                                        <setting name="AdcEnableThresholds" value="false"/>
                                        <array name="AdcThresholdRegister"/>
                                        <setting name="AdcWdogNotification" value="NULL_PTR"/>
@@ -4378,7 +4452,12 @@
                                           <setting name="AdcAltGroupSamplingDuration2" value="22"/>
                                        </struct>
                                        <array name="AdcGroupDefinition">
-                                          <setting name="0" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/AdcChannel_0"/>
+                                          <setting name="0" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/lpHSD1_IS_PTB1"/>
+                                          <setting name="1" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/lpHSD2_IS_PTB0"/>
+                                          <setting name="2" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/lpHSD5_IS_PTD3"/>
+                                          <setting name="3" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/hpHSD2_IS_PTD20"/>
+                                          <setting name="4" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/hpHSD4_IS_PTE16"/>
+                                          <setting name="5" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/hpHSD5_IS_PTD0"/>
                                        </array>
                                        <array name="AdcGroupEcucPartitionRef"/>
                                     </struct>
@@ -4424,7 +4503,12 @@
                                           <setting name="AdcAltGroupSamplingDuration2" value="22"/>
                                        </struct>
                                        <array name="AdcGroupDefinition">
-                                          <setting name="0" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/AdcChannel_0"/>
+                                          <setting name="0" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/lpHSD1_IS_PTB1"/>
+                                          <setting name="1" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/lpHSD2_IS_PTB0"/>
+                                          <setting name="2" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/lpHSD5_IS_PTD3"/>
+                                          <setting name="3" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/hpHSD2_IS_PTD20"/>
+                                          <setting name="4" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/hpHSD4_IS_PTE16"/>
+                                          <setting name="5" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/hpHSD5_IS_PTD0"/>
                                        </array>
                                        <array name="AdcGroupEcucPartitionRef"/>
                                     </struct>
@@ -4509,6 +4593,52 @@
                                        </array>
                                        <setting name="AdcWdogNotification" value="Adc_Adc1WdogNotification"/>
                                     </struct>
+                                    <struct name="1">
+                                       <setting name="Name" value="lpHSD4_IS_PTD28"/>
+                                       <setting name="AdcLogicalChannelId" value="1"/>
+                                       <setting name="AdcChannelName" value="S22_ChanNum46"/>
+                                       <setting name="AdcChannelId" value="46"/>
+                                       <array name="AdcChannelConvTime"/>
+                                       <array name="AdcChannelLimitCheck"/>
+                                       <array name="AdcChannelHighLimit">
+                                          <setting name="0" value="4095"/>
+                                       </array>
+                                       <array name="AdcChannelLowLimit"/>
+                                       <array name="AdcChannelRangeSelect"/>
+                                       <array name="AdcChannelRefVoltsrcHigh"/>
+                                       <array name="AdcChannelRefVoltsrcLow"/>
+                                       <array name="AdcChannelResolution"/>
+                                       <array name="AdcChannelSampTime"/>
+                                       <setting name="AdcEnablePresampling" value="true"/>
+                                       <setting name="AdcEnableThresholds" value="false"/>
+                                       <array name="AdcThresholdRegister">
+                                          <setting name="0" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/AdcThresholdControl_0"/>
+                                       </array>
+                                       <setting name="AdcWdogNotification" value="Adc_Adc1WdogNotification"/>
+                                    </struct>
+                                    <struct name="2">
+                                       <setting name="Name" value="hpHSD6_IS_PTE1"/>
+                                       <setting name="AdcLogicalChannelId" value="2"/>
+                                       <setting name="AdcChannelName" value="P3_ChanNum3"/>
+                                       <setting name="AdcChannelId" value="3"/>
+                                       <array name="AdcChannelConvTime"/>
+                                       <array name="AdcChannelLimitCheck"/>
+                                       <array name="AdcChannelHighLimit">
+                                          <setting name="0" value="4095"/>
+                                       </array>
+                                       <array name="AdcChannelLowLimit"/>
+                                       <array name="AdcChannelRangeSelect"/>
+                                       <array name="AdcChannelRefVoltsrcHigh"/>
+                                       <array name="AdcChannelRefVoltsrcLow"/>
+                                       <array name="AdcChannelResolution"/>
+                                       <array name="AdcChannelSampTime"/>
+                                       <setting name="AdcEnablePresampling" value="true"/>
+                                       <setting name="AdcEnableThresholds" value="false"/>
+                                       <array name="AdcThresholdRegister">
+                                          <setting name="0" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_0/AdcThresholdControl_0"/>
+                                       </array>
+                                       <setting name="AdcWdogNotification" value="Adc_Adc1WdogNotification"/>
+                                    </struct>
                                  </array>
                                  <array name="AdcGroup">
                                     <struct name="0">
@@ -4554,6 +4684,8 @@
                                        </struct>
                                        <array name="AdcGroupDefinition">
                                           <setting name="0" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_1/ADC_POT_0"/>
+                                          <setting name="1" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_1/lpHSD4_IS_PTD28"/>
+                                          <setting name="2" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_1/hpHSD6_IS_PTE1"/>
                                        </array>
                                        <array name="AdcGroupEcucPartitionRef"/>
                                     </struct>
@@ -4600,6 +4732,8 @@
                                        </struct>
                                        <array name="AdcGroupDefinition">
                                           <setting name="0" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_1/ADC_POT_0"/>
+                                          <setting name="1" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_1/lpHSD4_IS_PTD28"/>
+                                          <setting name="2" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_1/hpHSD6_IS_PTE1"/>
                                        </array>
                                        <array name="AdcGroupEcucPartitionRef"/>
                                     </struct>
@@ -4651,14 +4785,98 @@
                                  <array name="AdcAlternateConvTimings"/>
                                  <array name="AdcChannel">
                                     <struct name="0">
-                                       <setting name="Name" value="ADC_POT_1"/>
+                                       <setting name="Name" value="lpHSD3_IS_PTD31"/>
                                        <setting name="AdcLogicalChannelId" value="0"/>
-                                       <setting name="AdcChannelName" value="S19_ChanNum43"/>
-                                       <setting name="AdcChannelId" value="43"/>
+                                       <setting name="AdcChannelName" value="S14_ChanNum38"/>
+                                       <setting name="AdcChannelId" value="38"/>
                                        <array name="AdcChannelConvTime"/>
                                        <array name="AdcChannelLimitCheck"/>
                                        <array name="AdcChannelHighLimit">
                                           <setting name="0" value="4095"/>
+                                       </array>
+                                       <array name="AdcChannelLowLimit"/>
+                                       <array name="AdcChannelRangeSelect"/>
+                                       <array name="AdcChannelRefVoltsrcHigh"/>
+                                       <array name="AdcChannelRefVoltsrcLow"/>
+                                       <array name="AdcChannelResolution"/>
+                                       <array name="AdcChannelSampTime"/>
+                                       <setting name="AdcEnablePresampling" value="false"/>
+                                       <setting name="AdcEnableThresholds" value="false"/>
+                                       <array name="AdcThresholdRegister"/>
+                                       <setting name="AdcWdogNotification" value="NULL_PTR"/>
+                                    </struct>
+                                    <struct name="1">
+                                       <setting name="Name" value="hpHSD1_IS_PTD22"/>
+                                       <setting name="AdcLogicalChannelId" value="1"/>
+                                       <setting name="AdcChannelName" value="S18_ChanNum42"/>
+                                       <setting name="AdcChannelId" value="42"/>
+                                       <array name="AdcChannelConvTime"/>
+                                       <array name="AdcChannelLimitCheck"/>
+                                       <array name="AdcChannelHighLimit">
+                                          <setting name="0" value="4095"/>
+                                       </array>
+                                       <array name="AdcChannelLowLimit"/>
+                                       <array name="AdcChannelRangeSelect"/>
+                                       <array name="AdcChannelRefVoltsrcHigh"/>
+                                       <array name="AdcChannelRefVoltsrcLow"/>
+                                       <array name="AdcChannelResolution"/>
+                                       <array name="AdcChannelSampTime"/>
+                                       <setting name="AdcEnablePresampling" value="false"/>
+                                       <setting name="AdcEnableThresholds" value="false"/>
+                                       <array name="AdcThresholdRegister"/>
+                                       <setting name="AdcWdogNotification" value="NULL_PTR"/>
+                                    </struct>
+                                    <struct name="2">
+                                       <setting name="Name" value="hpHSD3_IS_PTE5"/>
+                                       <setting name="AdcLogicalChannelId" value="2"/>
+                                       <setting name="AdcChannelName" value="S8_ChanNum32"/>
+                                       <setting name="AdcChannelId" value="32"/>
+                                       <array name="AdcChannelConvTime"/>
+                                       <array name="AdcChannelLimitCheck"/>
+                                       <array name="AdcChannelHighLimit">
+                                          <setting name="0" value="4095"/>
+                                       </array>
+                                       <array name="AdcChannelLowLimit"/>
+                                       <array name="AdcChannelRangeSelect"/>
+                                       <array name="AdcChannelRefVoltsrcHigh"/>
+                                       <array name="AdcChannelRefVoltsrcLow"/>
+                                       <array name="AdcChannelResolution"/>
+                                       <array name="AdcChannelSampTime"/>
+                                       <setting name="AdcEnablePresampling" value="false"/>
+                                       <setting name="AdcEnableThresholds" value="false"/>
+                                       <array name="AdcThresholdRegister"/>
+                                       <setting name="AdcWdogNotification" value="NULL_PTR"/>
+                                    </struct>
+                                    <struct name="3">
+                                       <setting name="Name" value="Vbat_Monitor_PTC23"/>
+                                       <setting name="AdcLogicalChannelId" value="3"/>
+                                       <setting name="AdcChannelName" value="S23_ChanNum47"/>
+                                       <setting name="AdcChannelId" value="47"/>
+                                       <array name="AdcChannelConvTime"/>
+                                       <array name="AdcChannelLimitCheck"/>
+                                       <array name="AdcChannelHighLimit">
+                                          <setting name="0" value="65535"/>
+                                       </array>
+                                       <array name="AdcChannelLowLimit"/>
+                                       <array name="AdcChannelRangeSelect"/>
+                                       <array name="AdcChannelRefVoltsrcHigh"/>
+                                       <array name="AdcChannelRefVoltsrcLow"/>
+                                       <array name="AdcChannelResolution"/>
+                                       <array name="AdcChannelSampTime"/>
+                                       <setting name="AdcEnablePresampling" value="false"/>
+                                       <setting name="AdcEnableThresholds" value="false"/>
+                                       <array name="AdcThresholdRegister"/>
+                                       <setting name="AdcWdogNotification" value="NULL_PTR"/>
+                                    </struct>
+                                    <struct name="4">
+                                       <setting name="Name" value="Ibat_Monitor_PTE24"/>
+                                       <setting name="AdcLogicalChannelId" value="4"/>
+                                       <setting name="AdcChannelName" value="S13_ChanNum37"/>
+                                       <setting name="AdcChannelId" value="37"/>
+                                       <array name="AdcChannelConvTime"/>
+                                       <array name="AdcChannelLimitCheck"/>
+                                       <array name="AdcChannelHighLimit">
+                                          <setting name="0" value="65535"/>
                                        </array>
                                        <array name="AdcChannelLowLimit"/>
                                        <array name="AdcChannelRangeSelect"/>
@@ -4715,7 +4933,11 @@
                                           <setting name="AdcAltGroupSamplingDuration2" value="22"/>
                                        </struct>
                                        <array name="AdcGroupDefinition">
-                                          <setting name="0" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_2/ADC_POT_1"/>
+                                          <setting name="0" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_2/lpHSD3_IS_PTD31"/>
+                                          <setting name="1" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_2/hpHSD1_IS_PTD22"/>
+                                          <setting name="2" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_2/hpHSD3_IS_PTE5"/>
+                                          <setting name="3" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_2/Vbat_Monitor_PTC23"/>
+                                          <setting name="4" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_2/Ibat_Monitor_PTE24"/>
                                        </array>
                                        <array name="AdcGroupEcucPartitionRef"/>
                                     </struct>
@@ -4761,7 +4983,11 @@
                                           <setting name="AdcAltGroupSamplingDuration2" value="22"/>
                                        </struct>
                                        <array name="AdcGroupDefinition">
-                                          <setting name="0" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_2/ADC_POT_1"/>
+                                          <setting name="0" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_2/lpHSD3_IS_PTD31"/>
+                                          <setting name="1" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_2/hpHSD1_IS_PTD22"/>
+                                          <setting name="2" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_2/hpHSD3_IS_PTE5"/>
+                                          <setting name="3" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_2/Vbat_Monitor_PTC23"/>
+                                          <setting name="4" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_2/Ibat_Monitor_PTE24"/>
                                        </array>
                                        <array name="AdcGroupEcucPartitionRef"/>
                                     </struct>
@@ -4814,7 +5040,7 @@
                                        <setting name="BctuHwTriggerEnable" value="false"/>
                                        <setting name="BctuTriggerConversionMode" value="SINGLE"/>
                                        <setting name="BctuAdcTargetMask" value="4"/>
-                                       <setting name="BctuAdcChannelSingle" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_2/ADC_POT_1"/>
+                                       <setting name="BctuAdcChannelSingle" value="/Adc/Adc/AdcConfigSet/AdcHwUnit_2/lpHSD3_IS_PTD31"/>
                                        <setting name="BctuConversionListStartIndex" value="0"/>
                                     </struct>
                                     <struct name="2">

@@ -1,161 +1,124 @@
-T7408 000:223.668   SEGGER J-Link V7.98b Log File
-T7408 000:223.783   DLL Compiled: Jul 31 2024 16:10:46
-T7408 000:223.788   Logging started @ 2024-11-09 15:44
-T7408 000:223.792   Process: D:\AppGallery\Software\Keil_v5\UV4\UV4.exe
-T7408 000:223.800 - 223.796ms
-T7408 000:223.807 JLINK_SetWarnOutHandler(...)
-T7408 000:223.811 - 0.005ms
-T7408 000:223.820 JLINK_OpenEx(...)
-T7408 000:236.611   Firmware: J-Link V9 compiled May  7 2021 16:26:12
-T7408 000:237.553   Firmware: J-Link V9 compiled May  7 2021 16:26:12
-T7408 000:237.818   Decompressing FW timestamp took 204 us
-T7408 000:244.027   Hardware: V9.60
-T7408 000:244.077   S/N: 69615131
-T7408 000:244.085   OEM: SEGGER
-T7408 000:244.093   Feature(s): GDB, RDI, FlashBP, FlashDL, JFlash
-T7408 000:245.056   Bootloader: (Could not read)
-T7408 000:256.786   TELNET listener socket opened on port 19021
-T7408 000:256.931   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
-T7408 000:257.008   WEBSRV Failed to put socket into listener state (port 19080)
-T7408 000:257.097   WEBSRV Webserver running on local port 19081
-T7408 000:257.291   Looking for J-Link GUI Server exe at: D:\AppGallery\Software\Keil_v5\ARM\Segger\JLinkGUIServer.exe
-T7408 000:257.365   Looking for J-Link GUI Server exe at: D:\Program Files\SEGGER\JLink\JLinkGUIServer.exe
-T7408 000:257.378   Forking J-Link GUI Server: D:\Program Files\SEGGER\JLink\JLinkGUIServer.exe
-T7408 006:008.831   J-Link GUI Server info: "J-Link GUI server V7.98b "
-T7408 006:009.172 - 5785.346ms returns "O.K."
-T7408 006:009.215 JLINK_GetEmuCaps()
-T7408 006:009.223 - 0.005ms returns 0xB9FF7BBF
-T7408 006:010.104 JLINK_TIF_GetAvailable(...)
-T7408 006:010.766 - 0.661ms
-T7408 006:010.837 JLINK_SetErrorOutHandler(...)
-T7408 006:010.843 - 0.006ms
-T7408 006:010.885 JLINK_ExecCommand("ProjectFile = "D:\Myworkspace\RBCM1.0\Software\S32K344_Keil\JLinkSettings.ini"", ...). 
-T7408 006:025.994   Ref file found at: D:\AppGallery\Software\Keil_v5\ARM\Segger\JLinkDevices.ref
-T7408 006:026.089   REF file references invalid XML file: D:\Program Files\SEGGER\JLink\JLinkDevices.xml
-T7408 006:027.497 - 16.612ms returns 0x00
-T7408 006:027.527 JLINK_ExecCommand("Device = S32K344:Cortex-M7_0", ...). 
-T7408 006:029.342   Device "S32K344" selected.
-T7408 006:029.729 - 2.193ms returns 0x00
-T7408 006:029.747 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
-T7408 006:029.757   ERROR: Unknown command
-T7408 006:029.765 - 0.010ms returns 0x01
-T7408 006:029.775 JLINK_GetHardwareVersion()
-T7408 006:029.783 - 0.008ms returns 96000
-T7408 006:029.789 JLINK_GetDLLVersion()
-T7408 006:029.795 - 0.005ms returns 79802
-T7408 006:029.801 JLINK_GetOEMString(...)
-T7408 006:029.808 JLINK_GetFirmwareString(...)
-T7408 006:029.813 - 0.005ms
-T7408 006:029.824 JLINK_GetDLLVersion()
-T7408 006:029.829 - 0.005ms returns 79802
-T7408 006:029.835 JLINK_GetCompileDateTime()
-T7408 006:029.840 - 0.005ms
-T7408 006:029.849 JLINK_GetFirmwareString(...)
-T7408 006:029.853 - 0.005ms
-T7408 006:029.860 JLINK_GetHardwareVersion()
-T7408 006:029.865 - 0.005ms returns 96000
-T7408 006:029.872 JLINK_GetSN()
-T7408 006:029.877 - 0.005ms returns 69615131
-T7408 006:029.884 JLINK_GetOEMString(...)
-T7408 006:029.893 JLINK_TIF_Select(JLINKARM_TIF_SWD)
-T7408 006:030.995 - 1.100ms returns 0x00
-T7408 006:031.031 JLINK_HasError()
-T7408 006:031.049 JLINK_SetSpeed(5000)
-T7408 006:031.277 - 0.228ms
-T7408 006:032.021 JLINK_HasError()
-T7408 006:032.039 JLINK_SetResetType(JLINKARM_RESET_TYPE_NORMAL)
-T7408 006:032.045 - 0.005ms returns JLINKARM_RESET_TYPE_NORMAL
-T7408 006:032.051 JLINK_Reset()
-T7408 006:032.548   ConfigTargetSettings() start
-T7408 006:032.565    J-Link Script File: Executing ConfigTargetSettings()
-T7408 006:032.611   ConfigTargetSettings() end - Took 48us
-T7408 006:032.621   InitTarget() start
-T7408 006:032.627    J-Link Script File: Executing InitTarget()
-T7408 006:034.653   SDA_AP detected
-T7408 006:034.670   Checking if debug access is already enabled...
-T7408 006:035.175     Core already enabled
-T7408 006:035.182   Checking if HSE firmware is installed...
-T7408 006:036.396     HSE firmware not installed
-T7408 006:036.405   Checking if Cortex-M7_0 and Cortex-M7_1 are operating in lockstep mode
-T7408 006:036.954     Lock step mode enabled
-T7408 006:036.967   InitTarget() end - Took 4.33ms
-T7408 006:037.664   Found SW-DP with ID 0x6BA02477
-T7408 006:040.380   DPIDR: 0x6BA02477
-T7408 006:040.403   CoreSight SoC-400 or earlier
-T7408 006:040.409   AP map detection skipped. Manually configured AP map found.
-T7408 006:040.421   AP[0]: MEM-AP (IDR: Not set)
-T7408 006:040.431   AP[1]: APB-AP (IDR: Not set)
-T7408 006:040.437   AP[2]: MEM-AP (IDR: Not set)
-T7408 006:040.442   AP[3]: AHB-AP (IDR: Not set)
-T7408 006:040.448   AP[4]: AHB-AP (IDR: Not set)
-T7408 006:040.454   AP[5]: AHB-AP (IDR: Not set)
-T7408 006:040.459   AP[6]: MEM-AP (IDR: Not set)
-T7408 006:040.465   AP[7]: MEM-AP (IDR: Not set)
-T7408 006:040.471   AP[4]: Skipped ROMBASE read. CoreBaseAddr manually set by user
-T7408 006:041.027   AP[4]: Core found
-T7408 006:041.555   CPUID register: 0x411FC272. Implementer code: 0x41 (ARM)
-T7408 006:042.065   Cache: L1 I/D-cache present
-T7408 006:042.077   Found Cortex-M7 r1p2, Little endian.
-T7408 006:042.636   -- Max. mem block: 0x00010758
-T7408 006:043.921   CPU_ReadMem(4 bytes @ 0xE000EDF0)
-T7408 006:044.329   CPU_ReadMem(4 bytes @ 0xE0002000)
-T7408 006:044.654   FPUnit: 8 code (BP) slots and 0 literal slots
-T7408 006:044.661   CPU_ReadMem(4 bytes @ 0xE000EDFC)
-T7408 006:044.985   CPU_ReadMem(4 bytes @ 0xE0001000)
-T7408 006:045.278   CPU_WriteMem(4 bytes @ 0xE0001000)
-T7408 006:045.577   CPU_ReadMem(4 bytes @ 0xE000ED88)
-T7408 006:045.882   CPU_WriteMem(4 bytes @ 0xE000ED88)
-T7408 006:046.183   CPU_ReadMem(4 bytes @ 0xE000ED88)
-T7408 006:046.647   CPU_WriteMem(4 bytes @ 0xE000ED88)
-T7408 006:047.099   ROM table scan skipped. CoreBaseAddr manually set by user: 0x40250400
-T7408 006:047.113   CPU_WriteMem(4 bytes @ 0xE000ED84)
-T7408 006:047.511   CPU_ReadMem(4 bytes @ 0xE000ED80)
-T7408 006:047.966   I-Cache L1: 8 KB, 128 Sets, 32 Bytes/Line, 2-Way
-T7408 006:047.980   CPU_WriteMem(4 bytes @ 0xE000ED84)
-T7408 006:048.397   CPU_ReadMem(4 bytes @ 0xE000ED80)
-T7408 006:048.731   D-Cache L1: 8 KB, 64 Sets, 32 Bytes/Line, 4-Way
-T7408 006:048.739   SetupTarget() start
-T7408 006:048.746    J-Link Script File: Executing SetupTarget()
-T7408 006:050.860   CPU_WriteMem(4 bytes @ 0x20000000)
-T7408 006:051.247   CPU_WriteMem(4 bytes @ 0x20000004)
-T7408 006:051.560   CPU_WriteMem(4 bytes @ 0x20000008)
-T7408 006:051.969   CPU_WriteMem(4 bytes @ 0x2000000C)
-T7408 006:052.311   Initializing ECC RAM...
-T7408 006:052.321     RAMCodeAddr: 0x20000000
-T7408 006:052.327     RAMInitAddr: 0x20000010
-T7408 006:052.333     RAMInitSize: 0x00007FF0
-T7408 006:052.338     InitPattern: 0xDEADBEEF
-T7408 006:052.705   CPU_WriteMem(10 bytes @ 0x20000000)
-T7408 006:053.188   CPU_ReadMem(4 bytes @ 0xE0001000)
-T7408 006:057.118     ECC RAM initialized successfully
-T7408 006:057.142   Initializing ECC RAM...
-T7408 006:057.149     RAMCodeAddr: 0x20000000
-T7408 006:057.155     RAMInitAddr: 0x20400000
-T7408 006:057.161     RAMInitSize: 0x00004000
-T7408 006:057.166     InitPattern: 0xDEADBEEF
-T7408 006:057.180   CPU_WriteMem(10 bytes @ 0x20000000)
-T7408 006:057.666   CPU_ReadMem(4 bytes @ 0xE0001000)
-T7408 006:061.403     ECC RAM initialized successfully
-T7408 006:061.437   SetupTarget() end - Took 12.6ms
-T7408 006:061.667   ResetTarget() start
-T7408 006:061.686    J-Link Script File: Executing ResetTarget()
-T7408 006:263.332   -- Identifying target device...
-T7408 006:263.355   -- SWD selected. Executing JTAG -> SWD switching sequence...
-T7408 006:266.059   SDA_AP detected
-T7408 006:266.072   Checking if core is already enabled...
-T7408 006:266.756     Core already enabled
-T7408 006:472.927   ResetTarget() end - Took 411ms
-T7408 006:475.462   CPU_WriteMem(4 bytes @ 0xE0002000)
-T7408 006:475.835   CPU_ReadMem(4 bytes @ 0xE000EDFC)
-T7408 006:476.247   CPU_ReadMem(4 bytes @ 0xE0001000)
-T7408 006:476.763 - 444.712ms
-T7408 006:476.800 JLINK_GetId()
-T7408 006:477.326 - 0.522ms returns 0x6BA02477
-T7408 006:485.755 JLINK_GetFirmwareString(...)
-T7408 006:485.777 - 0.022ms
-T7408 015:888.373 JLINK_Close()
-T7408 015:888.872   CPU_ReadMem(4 bytes @ 0xE0001000)
-T7408 015:889.328   CPU_WriteMem(4 bytes @ 0xE0001004)
-T7408 015:892.386 - 4.013ms
-T7408 015:892.406   
-T7408 015:892.411   Closed
+T766C 000:171.814   SEGGER J-Link V7.98b Log File
+T766C 000:171.936   DLL Compiled: Jul 31 2024 16:10:46
+T766C 000:171.942   Logging started @ 2025-03-30 13:37
+T766C 000:171.947   Process: D:\AppGallery\Software\Keil_v5\UV4\UV4.exe
+T766C 000:171.954 - 171.952ms
+T766C 000:171.962 JLINK_SetWarnOutHandler(...)
+T766C 000:171.967 - 0.006ms
+T766C 000:171.974 JLINK_OpenEx(...)
+T766C 000:175.679   Firmware: J-Link Pro V4 V11 PLUS Oct compiled 1 2024 13:26:26
+T766C 000:176.646   Firmware: J-Link Pro V4 V11 PLUS Oct compiled 1 2024 13:26:26
+T766C 000:177.002   Decompressing FW timestamp took 308 us
+T766C 000:178.990   Hardware: V11.00
+T766C 000:179.020   S/N: 601023401
+T766C 000:179.026   OEM: SEGGER
+T766C 000:179.032   Feature(s): FlashBP, GDB, JFlash, FlashDL, RDI
+T766C 000:179.737   Bootloader: (Could not read)
+T766C 000:180.229   USB speed mode: High speed (480 MBit/s)
+T766C 000:180.568   TELNET listener socket opened on port 19021
+T766C 000:180.644   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T766C 000:180.773   WEBSRV Webserver running on local port 19080
+T766C 000:180.853   Looking for J-Link GUI Server exe at: D:\AppGallery\Software\Keil_v5\ARM\Segger\JLinkGUIServer.exe
+T766C 000:180.904   Looking for J-Link GUI Server exe at: D:\Program Files\SEGGER\JLink\JLinkGUIServer.exe
+T766C 000:180.915   Forking J-Link GUI Server: D:\Program Files\SEGGER\JLink\JLinkGUIServer.exe
+T766C 000:207.451   J-Link GUI Server info: "J-Link GUI server V7.98b "
+T766C 000:214.552 - 42.565ms returns "O.K."
+T766C 000:214.616 JLINK_GetEmuCaps()
+T766C 000:214.637 - 0.016ms returns 0xB9FF7BBF
+T766C 000:214.667 JLINK_TIF_GetAvailable(...)
+T766C 000:214.895 - 0.227ms
+T766C 000:214.914 JLINK_SetErrorOutHandler(...)
+T766C 000:214.918 - 0.004ms
+T766C 000:214.935 JLINK_ExecCommand("ProjectFile = "E:\Myworkspace\RBCM_S32K344_AUTOSAR_MBD\Firmware\S32K344_DAPlink\JLinkSettings.ini"", ...). 
+T766C 000:226.825   Ref file found at: D:\AppGallery\Software\Keil_v5\ARM\Segger\JLinkDevices.ref
+T766C 000:226.898   REF file references invalid XML file: D:\Program Files\SEGGER\JLink\JLinkDevices.xml
+T766C 000:228.111 - 13.175ms returns 0x00
+T766C 000:228.140 JLINK_ExecCommand("Device = S32K344:Cortex-M7_0", ...). 
+T766C 000:229.664   Device "S32K344" selected.
+T766C 000:229.924 - 1.778ms returns 0x00
+T766C 000:229.939 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T766C 000:229.947   ERROR: Unknown command
+T766C 000:229.953 - 0.008ms returns 0x01
+T766C 000:229.961 JLINK_GetHardwareVersion()
+T766C 000:229.967 - 0.006ms returns 110000
+T766C 000:229.972 JLINK_GetDLLVersion()
+T766C 000:229.976 - 0.004ms returns 79802
+T766C 000:229.981 JLINK_GetOEMString(...)
+T766C 000:229.986 JLINK_GetFirmwareString(...)
+T766C 000:229.990 - 0.004ms
+T766C 000:229.998 JLINK_GetDLLVersion()
+T766C 000:230.002 - 0.004ms returns 79802
+T766C 000:230.006 JLINK_GetCompileDateTime()
+T766C 000:230.010 - 0.004ms
+T766C 000:230.017 JLINK_GetFirmwareString(...)
+T766C 000:230.021 - 0.004ms
+T766C 000:230.026 JLINK_GetHardwareVersion()
+T766C 000:230.030 - 0.004ms returns 110000
+T766C 000:230.035 JLINK_GetSN()
+T766C 000:230.039 - 0.004ms returns 601023401
+T766C 000:230.044 JLINK_GetOEMString(...)
+T766C 000:230.052 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T766C 000:230.824 - 0.771ms returns 0x00
+T766C 000:230.840 JLINK_HasError()
+T766C 000:230.852 JLINK_SetSpeed(500)
+T766C 000:231.080 - 0.228ms
+T766C 000:231.409 JLINK_HasError()
+T766C 000:231.418 JLINK_SetResetType(JLINKARM_RESET_TYPE_NORMAL)
+T766C 000:231.424 - 0.005ms returns JLINKARM_RESET_TYPE_NORMAL
+T766C 000:231.430 JLINK_Reset()
+T766C 000:231.633   ConfigTargetSettings() start
+T766C 000:231.645    J-Link Script File: Executing ConfigTargetSettings()
+T766C 000:231.670   ConfigTargetSettings() end - Took 25us
+T766C 000:231.678   InitTarget() start
+T766C 000:231.684    J-Link Script File: Executing InitTarget()
+T766C 000:348.467   Unknown SDA AP Id detected: 0xFFFFFFFF
+T766C 000:348.520   InitTarget() end - Took 116ms
+T766C 000:348.547   Connect failed. Resetting via Reset pin and trying again.
+T766C 000:410.726   ConfigTargetSettings() start
+T766C 000:410.761    J-Link Script File: Executing ConfigTargetSettings()
+T766C 000:410.787   ConfigTargetSettings() end - Took 24us
+T766C 000:410.798   InitTarget() start
+T766C 000:410.807    J-Link Script File: Executing InitTarget()
+T766C 000:527.730   Unknown SDA AP Id detected: 0xFFFFFFFF
+T766C 000:527.755   InitTarget() end - Took 116ms
+T766C 000:527.761 - 296.330ms
+T766C 000:527.773 JLINK_GetId()
+T766C 000:528.069   ConfigTargetSettings() start
+T766C 000:528.080    J-Link Script File: Executing ConfigTargetSettings()
+T766C 000:528.109   ConfigTargetSettings() end - Took 28us
+T766C 000:528.115   InitTarget() start
+T766C 000:528.120    J-Link Script File: Executing InitTarget()
+T766C 000:644.577   Unknown SDA AP Id detected: 0xFFFFFFFF
+T766C 000:644.628   InitTarget() end - Took 116ms
+T766C 000:644.646   Connect failed. Resetting via Reset pin and trying again.
+T766C 000:706.794   ConfigTargetSettings() start
+T766C 000:706.845    J-Link Script File: Executing ConfigTargetSettings()
+T766C 000:706.895   ConfigTargetSettings() end - Took 47us
+T766C 000:706.911   InitTarget() start
+T766C 000:706.924    J-Link Script File: Executing InitTarget()
+T766C 000:823.455   Unknown SDA AP Id detected: 0xFFFFFFFF
+T766C 000:823.515   InitTarget() end - Took 116ms
+T766C 000:823.547 - 295.757ms returns 0x00000000
+T766C 000:823.593 JLINK_GetId()
+T766C 000:823.934   ConfigTargetSettings() start
+T766C 000:823.967    J-Link Script File: Executing ConfigTargetSettings()
+T766C 000:823.985   ConfigTargetSettings() end - Took 17us
+T766C 000:823.992   InitTarget() start
+T766C 000:823.998    J-Link Script File: Executing InitTarget()
+T766C 000:940.511   Unknown SDA AP Id detected: 0xFFFFFFFF
+T766C 000:940.561   InitTarget() end - Took 116ms
+T766C 000:940.577   Connect failed. Resetting via Reset pin and trying again.
+T766C 001:003.017   ConfigTargetSettings() start
+T766C 001:003.074    J-Link Script File: Executing ConfigTargetSettings()
+T766C 001:003.117   ConfigTargetSettings() end - Took 40us
+T766C 001:003.138   InitTarget() start
+T766C 001:003.154    J-Link Script File: Executing InitTarget()
+T766C 001:120.375   Unknown SDA AP Id detected: 0xFFFFFFFF
+T766C 001:120.401   InitTarget() end - Took 117ms
+T766C 001:120.407 - 296.814ms returns 0x00000000
+T766C 001:130.258 JLINK_GetFirmwareString(...)
+T766C 001:130.290 - 0.031ms
+T766C 005:729.285 JLINK_Close()
+T766C 005:739.012 - 9.725ms
+T766C 005:739.034   
+T766C 005:739.038   Closed

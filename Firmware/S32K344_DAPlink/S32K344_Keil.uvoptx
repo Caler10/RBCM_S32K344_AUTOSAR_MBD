@@ -120,12 +120,12 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>JL2CM3</Key>
-          <Name>-U69615131 -O78 -S2 -ZTIFSpeedSel5000 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight SW-DP") -D00(6BA02477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO7 -FD20400000 -FC0 -FN1 -FF0S32K3x4_Code.FLM -FS0400000 -FL0400000 -FP0($$Device:S32K344$Flash\S32K3x4_Code.FLM)</Name>
+          <Name>-U601023401 -O78 -S6 -ZTIFSpeedSel500 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -TO18 -TC10000000 -TP21 -TDS8001 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO15 -FD20400000 -FC200 -FN1 -FF0S32K3x4_Code.FLM -FS0400000 -FL0400000 -FP0($$Device:S32K344$Flash\S32K3x4_Code.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
           <Key>CMSIS_AGDI</Key>
-          <Name>-X"Any" -UAny -O206 -S8 -C0 -P00000004 -N00("ARM CoreSight SW-DP") -D00(6BA02477) -L00(0) -TO65554 -TC10000000 -TT10000000 -TP20 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO15 -FD20400000 -FC10000 -FN1 -FF0S32K3x4_Code.FLM -FS0400000 -FL0400000 -FP0($$Device:S32K344$Flash\S32K3x4_Code.FLM)</Name>
+          <Name>-X"Any" -UAny -O206 -S0 -C0 -P00000004 -N00("") -D00(00000000) -L00(0) -TO65554 -TC10000000 -TT10000000 -TP20 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO15 -FD20400000 -FC10000 -FN1 -FF0S32K3x4_Code.FLM -FS0400000 -FL0400000 -FP0($$Device:S32K344$Flash\S32K3x4_Code.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -181,7 +181,7 @@
         <EnableFlashSeq>1</EnableFlashSeq>
         <EnableLog>0</EnableLog>
         <Protocol>2</Protocol>
-        <DbgClock>10000000</DbgClock>
+        <DbgClock>1000000</DbgClock>
       </DebugDescription>
     </TargetOption>
   </Target>
