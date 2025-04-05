@@ -404,48 +404,24 @@
                   </dependency>
                </dependencies>
                <pins>
-                  <pin peripheral="LPSPI1" signal="lpspi1_sck" pin_num="114" pin_signal="PTB14">
-                     <pin_features>
-                        <pin_feature name="direction" value="INPUT"/>
-                        <pin_feature name="safeMode" value="outputOff"/>
-                        <pin_feature name="pullSelect" value="pullDown"/>
-                        <pin_feature name="pullEnable" value="disabled"/>
-                        <pin_feature name="padKeepingEnable" value="disabled"/>
-                        <pin_feature name="outputInversionSelect" value="doNotInvert"/>
-                        <pin_feature name="InitValue" value="state_0"/>
-                     </pin_features>
-                  </pin>
-                  <pin peripheral="LPSPI1" signal="lpspi1_sin" pin_num="113" pin_signal="PTB15">
-                     <pin_features>
-                        <pin_feature name="direction" value="INPUT"/>
-                        <pin_feature name="safeMode" value="outputOff"/>
-                        <pin_feature name="pullSelect" value="pullDown"/>
-                        <pin_feature name="pullEnable" value="disabled"/>
-                        <pin_feature name="padKeepingEnable" value="disabled"/>
-                        <pin_feature name="outputInversionSelect" value="doNotInvert"/>
-                        <pin_feature name="InitValue" value="state_0"/>
-                     </pin_features>
-                  </pin>
-                  <pin peripheral="LPSPI1" signal="lpspi1_sout" pin_num="112" pin_signal="PTB16">
+                  <pin peripheral="SIUL2" signal="gpio, 46" pin_num="114" pin_signal="PTB14">
                      <pin_features>
                         <pin_feature name="direction" value="OUTPUT"/>
-                        <pin_feature name="safeMode" value="outputOff"/>
-                        <pin_feature name="pullSelect" value="pullDown"/>
-                        <pin_feature name="pullEnable" value="disabled"/>
-                        <pin_feature name="padKeepingEnable" value="disabled"/>
-                        <pin_feature name="outputInversionSelect" value="doNotInvert"/>
-                        <pin_feature name="InitValue" value="state_0"/>
                      </pin_features>
                   </pin>
-                  <pin peripheral="LPSPI1" signal="lpspi1_pcs3" pin_num="110" pin_signal="PTB17">
+                  <pin peripheral="SIUL2" signal="gpio, 47" pin_num="113" pin_signal="PTB15">
                      <pin_features>
-                        <pin_feature name="direction" value="INPUT"/>
-                        <pin_feature name="safeMode" value="outputOff"/>
-                        <pin_feature name="pullSelect" value="pullDown"/>
-                        <pin_feature name="pullEnable" value="disabled"/>
-                        <pin_feature name="padKeepingEnable" value="disabled"/>
-                        <pin_feature name="outputInversionSelect" value="doNotInvert"/>
-                        <pin_feature name="InitValue" value="state_0"/>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="SIUL2" signal="gpio, 48" pin_num="112" pin_signal="PTB16">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="SIUL2" signal="gpio, 49" pin_num="110" pin_signal="PTB17">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
                      </pin_features>
                   </pin>
                </pins>
@@ -1985,6 +1961,12 @@
                                     <struct name="9">
                                        <setting name="Name" value="hpHSD2_IN1_PTB13"/>
                                        <setting name="DioChannelId" value="13"/>
+                                       <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
+                                       <array name="DioChannelEcucPartitionRef"/>
+                                    </struct>
+                                    <struct name="10">
+                                       <setting name="Name" value="LED_PTB14"/>
+                                       <setting name="DioChannelId" value="14"/>
                                        <setting name="PDACSlot" value="VIRTUAL_WRAPPER_PDAC0"/>
                                        <array name="DioChannelEcucPartitionRef"/>
                                     </struct>
