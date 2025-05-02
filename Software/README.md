@@ -6,13 +6,13 @@
 
 ## 部分界面展示：
 
-![WUTE-MQTT-DashBoard1.png](Software/WUTE-MQTT-DashBoard1.png)
+![WUTE-MQTT-DashBoard1.png](WUTE-MQTT-DashBoard1.png)
 
-![WUTE-MQTT-DashBoard2.png](Software/WUTE-MQTT-DashBoard2.png)
+![WUTE-MQTT-DashBoard2.png](WUTE-MQTT-DashBoard2.png)
 
-![WUTE-MQTT-DashBoard3.png](Software/WUTE-MQTT-DashBoard3.png)
+![WUTE-MQTT-DashBoard3.png](WUTE-MQTT-DashBoard3.png)
 
-![WUTE-MQTT-DashBoard4.png](Software/WUTE-MQTT-DashBoard4.png)
+![WUTE-MQTT-DashBoard4.png](WUTE-MQTT-DashBoard4.png)
 
 ## 开发日志
 

@@ -79,7 +79,8 @@ Item {
                     Layout.preferredWidth: 80
                     font.pixelSize:  14
                     backRadius: 4
-                    // bckcolor: "#4785FF"
+                    bckcolor: "#909090"
+                    // bckcolor: MqttClient.Connected ? "#4785FF" : "#909090"
                     // bckcolor: {
                     //     switch(client.state) {
                     //     case MqttClient.Connected: "#1AAD19"
@@ -306,6 +307,7 @@ Item {
                     implicitHeight: 32
                     font.pixelSize:  14
                     backRadius: 4
+                    bckcolor: "#909090"
                     // onClicked: {
                     //     if (subField.text.length === 0) {
                     //         console.log("No topic specified to subscribe to.")
@@ -363,6 +365,7 @@ Item {
                     implicitHeight: 32
                     font.pixelSize:  14
                     backRadius: 4
+                    bckcolor: "#909090"
 
                     onClicked: {
                         if (pubField.text.length === 0) {

@@ -27,23 +27,12 @@ void JsonDataProvider::JsonDataParse(QByteArray package)
     {
         QJsonObject root_Obj = root_Doc.object();
 
-        // 数值解析测试用例
-        // if (root_Obj.contains("data1") && root_Obj["data1"].isDouble()) {
-        //     m_instance->setdata1(root_Obj["data1"].toInt());
-        //     qDebug()<<"data1 is "<<m_instance->data1();
-        // } else { qWarning() << "data1 字段缺失或类型错误"; }
-        // 字符串解析测试用例
-        // if (root_Obj.contains("data2") && root_Obj["data2"].isString()) {
-        //     m_instance->setdata2(root_Obj["data2"].toString());
-        //     qDebug()<<"data2 is "<<m_instance->data2();
-        // } else { qWarning() << "BmsValue 字段缺失或类型错误"; }
-
         //关键信号数据
-        m_instance->setActButtonState(root_Obj["ActButtonState"].toInt());              //激活按钮状态
-        m_instance->setILValue(root_Obj["ILValue"].toInt());                            //安全回路电流诊断数据
-        m_instance->setReadyButtonState(root_Obj["ReadyButtonState"].toInt());          //待驶按钮状态
-        m_instance->setMcuReadyState(root_Obj["McuReadyState"].toInt());                //MCU ready状态
-        m_instance->setDriveReadyState(root_Obj["DriveReadyState"].toInt());            //待驶状态
+        m_instance->setActButtonState(root_Obj["ActButtonState"].toInt());      //激活按钮状态
+        m_instance->setILValue(root_Obj["ILValue"].toInt());                    //安全回路电流诊断数据
+        m_instance->setReadyButtonState(root_Obj["ReadyButtonState"].toInt());  //待驶按钮状态
+        m_instance->setMcuReadyState(root_Obj["McuReadyState"].toInt());        //MCU ready状态
+        m_instance->setDriveReadyState(root_Obj["DriveReadyState"].toInt());    //待驶状态
         //低压电池监测数据
         m_instance->setLvBatsV(root_Obj["LvBatsV"].toInt());              //低压电池电压
         m_instance->setLvBatsI(root_Obj["LvBatsI"].toInt());              //低压电池输出电流
@@ -84,8 +73,18 @@ void JsonDataProvider::JsonDataParse(QByteArray package)
         m_instance->setMotorTorque(root_Obj["MotorTorque"].toInt());            //PumpValue
         m_instance->setMotorTemp(root_Obj["MotorTemp"].toInt());            //Fan1Value
 
-
         qDebug()<<"VcuValue is "<<m_instance->VcuValue();
         qDebug()<<"BmsValue is "<<m_instance->BmsValue();
+
+        // 数值解析测试用例
+        // if (root_Obj.contains("data1") && root_Obj["data1"].isDouble()) {
+        //     m_instance->setdata1(root_Obj["data1"].toInt());
+        //     qDebug()<<"data1 is "<<m_instance->data1();
+        // } else { qWarning() << "data1 字段缺失或类型错误"; }
+        // 字符串解析测试用例
+        // if (root_Obj.contains("data2") && root_Obj["data2"].isString()) {
+        //     m_instance->setdata2(root_Obj["data2"].toString());
+        //     qDebug()<<"data2 is "<<m_instance->data2();
+        // } else { qWarning() << "BmsValue 字段缺失或类型错误"; }
     }
 }

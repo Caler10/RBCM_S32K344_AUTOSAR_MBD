@@ -1,3 +1,4 @@
+# 此为注释,将被Git忽略
 build/
 RemoteSystemsTempFiles/
 RBCM_Model_Config/
@@ -10,4 +11,4 @@ slprj/
 *.original
 *.slxc
 *.log
-
+*.zip
