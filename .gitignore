@@ -1,6 +1,10 @@
 # 此为注释,将被Git忽略
+build/
+slprj/
+*.user
 *.autosave
 *.original
-*.user
+*.slxc
 *.log
 *.zip
+
