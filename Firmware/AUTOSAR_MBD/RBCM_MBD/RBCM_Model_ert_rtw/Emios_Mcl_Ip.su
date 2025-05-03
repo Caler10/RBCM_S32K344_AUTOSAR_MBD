@@ -1,0 +1,12 @@
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Emios_Mcl_Ip.c:180:27:Emios_Mcl_Ip_Init	48	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Emios_Mcl_Ip.c:275:6:Emios_Mcl_Ip_EnableChannel	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Emios_Mcl_Ip.c:287:6:Emios_Mcl_Ip_DisableChannel	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Emios_Mcl_Ip.c:299:6:Emios_Mcl_Ip_ComparatorTransferEnable	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Emios_Mcl_Ip.c:312:6:Emios_Mcl_Ip_ComparatorTransferDisable	16	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Emios_Mcl_Ip.c:329:27:Emios_Mcl_Ip_Deinit	12	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Emios_Mcl_Ip.c:382:6:Emios_Mcl_Ip_SetReloadInterval	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Emios_Mcl_Ip.c:395:9:Emios_Mcl_Ip_ValidateChannel	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Emios_Mcl_Ip.c:412:27:Emios_Mcl_Ip_SetCounterBusPeriod	4	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Emios_Mcl_Ip.c:450:8:Emios_Mcl_Ip_GetCounterBusPeriod	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Emios_Mcl_Ip.c:483:6:Emios_Mcl_Ip_ConfigureGlobalTimebase	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Emios_Mcl_Ip.c:503:6:Emios_Mcl_Ip_SetClockMode	12	static

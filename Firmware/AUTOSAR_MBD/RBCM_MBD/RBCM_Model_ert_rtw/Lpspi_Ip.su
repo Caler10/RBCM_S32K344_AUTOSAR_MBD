@@ -1,0 +1,17 @@
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:2925:13:Lpspi_TransmitRxInit	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:2683:13:Lpspi_TransmitTxInit	32	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:853:13:Lpspi_Ip_TransferProcess	48	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:2186:21:Lpspi_Ip_Init	12	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:2240:21:Lpspi_Ip_DeInit	4	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:2271:21:Lpspi_Ip_SyncTransmit	56	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:2973:21:Lpspi_Ip_AsyncTransmit	32	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:3618:6:Lpspi_Ip_ManageBuffers	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:3690:21:Lpspi_Ip_UpdateTransferParam	16	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:3722:21:Lpspi_Ip_UpdateFrameSize	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:3750:21:Lpspi_Ip_UpdateLsb	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:3776:21:Lpspi_Ip_UpdateByteSwap	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:3802:21:Lpspi_Ip_UpdateDefaultTransmitData	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:3828:21:Lpspi_Ip_UpdateTransferMode	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:3882:6:Lpspi_Ip_Cancel	16	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:3948:6:Lpspi_Ip_IrqHandler	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lpspi_Ip.c:3996:23:Lpspi_Ip_GetStatus	0	static

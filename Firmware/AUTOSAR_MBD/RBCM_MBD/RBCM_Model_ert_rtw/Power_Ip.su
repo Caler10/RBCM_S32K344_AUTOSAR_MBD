@@ -1,0 +1,11 @@
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip.c:325:13:Power_Ip_PrepareSocStandby	8	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip.c:379:6:Power_Ip_SetMode	16	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip.c:482:24:Power_Ip_GetPreviousMode	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip.c:531:20:Power_Ip_GetResetReason	8	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip.c:587:23:Power_Ip_GetResetRawValue	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip.c:607:6:Power_Ip_Init	8	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip.c:690:6:Power_Ip_InstallNotificationsCallback	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip.c:707:6:Power_Ip_EnableSleepOnExit	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip.c:720:6:Power_Ip_DisableSleepOnExit	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip.c:737:6:Power_Ip_EnableLastMile	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip.c:750:6:Power_Ip_DisableLastMile	0	static

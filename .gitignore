@@ -1,14 +1,6 @@
 # 此为注释,将被Git忽略
-build/
-RemoteSystemsTempFiles/
-RBCM_Model_Config/
-RBCM_Model_ert_rtw/
-.metadata/
-generate/
-slprj/
-*.user
 *.autosave
 *.original
-*.slxc
+*.user
 *.log
 *.zip

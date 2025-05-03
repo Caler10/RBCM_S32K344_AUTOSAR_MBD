@@ -1,0 +1,8 @@
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Monitor.c:178:13:Clock_Ip_ClockMonitorEmpty	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Monitor.c:184:13:Clock_Ip_ClockMonitorEmpty_Set	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Monitor.c:193:13:Clock_Ip_ClockMonitorEmpty_Disable	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Monitor.c:420:13:Clock_Ip_EnableCmuFcFceRefCntLfrefHfref	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Monitor.c:246:13:Clock_Ip_DisableCmuFcFceRefCntLfrefHfref	32	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Monitor.c:294:13:Clock_Ip_ResetCmuFcFceRefCntLfrefHfref	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Monitor.c:303:13:Clock_Ip_SetCmuFcFceRefCntLfrefHfref	16	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Monitor.c:467:6:Clock_Ip_CMU_ClockFailInt	24	static

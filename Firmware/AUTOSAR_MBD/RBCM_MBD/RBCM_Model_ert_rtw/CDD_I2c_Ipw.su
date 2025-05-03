@@ -1,0 +1,10 @@
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/CDD_I2c_Ipw.c:127:13:I2c_Ipw_SlaveCallback	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/CDD_I2c_Ipw.c:184:13:I2c_Ipw_MasterCallback	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/CDD_I2c_Ipw.c:221:13:I2c_Ipw_FlexioI2cMasterCallback	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/CDD_I2c_Ipw.c:259:6:I2c_Ipw_InitChannel	24	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/CDD_I2c_Ipw.c:291:6:I2c_Ipw_StartListening	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/CDD_I2c_Ipw.c:328:6:I2c_Ipw_DeInitChannel	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/CDD_I2c_Ipw.c:357:16:I2c_Ipw_SyncTransmit	32	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/CDD_I2c_Ipw.c:425:16:I2c_Ipw_AsyncTransmit	32	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/CDD_I2c_Ipw.c:481:6:I2c_Ipw_PrepareSlaveBuffer	0	static
+E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/CDD_I2c_Ipw.c:540:16:I2c_Ipw_GetStatus	8	static
