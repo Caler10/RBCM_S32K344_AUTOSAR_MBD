@@ -27,13 +27,17 @@
 
 # 设计说明
 
+## 整车电子电气架构
+
+![WUTE_EE_Architecture.png](WUTE_EE_Architecture.png)
+
 ## 硬件说明
 
-硬件采用核心板和底板分板设计，板对板连接器连接
+硬件采用核心板和底板分板设计，板对板连接器连接，硬件架构图如下：
 
 ![RBCM_Architecture.png](Hardware/RBCM_Architecture.png)
 
-### RBCM核心板：
+### RBCM核心板
 
 主控采用NXP的车规级微控制器S32K344，符合ASIL D的功能安全等级和ISO 26262标准
 
@@ -45,7 +49,7 @@
 
 采用ESP32S3作为调试芯片，基于DAPlink调试方案，[DAPlink方案实现参考](https://oshwhub.com/ylj2000/dap_hs_esp_open)(👈戳我了解)，支持无线串口和2.4G无线调试与标定功能
 
-### RBCM底板：
+### RBCM底板
 
 低压配电保护与诊断管理方面基于infineon的智能高边驱动芯片BTT6200-4ESA和BTT6050-2ERA实现
 
@@ -166,7 +170,6 @@ json测试数据包：
 
 配置COM口，烧录标定
 
+# 其他内容
 
-
-
-施工中。。。
+施工中...
