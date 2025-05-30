@@ -2,7 +2,7 @@
 
 # 关于本项目
 
-本人的国创项目，一款基于AUTOSAR+MBD开发的车规级大学方程式赛车后车身域控制器RBCM，具体功能如下：
+本人的国创项目，一款基于符合AUTOSAR规范的MBD开发的车规级大学方程式赛车后车身域控制器RBCM，具体功能如下：
 
 1. 具备2.4G无线烧录与标定功能
 2. 整车低压配电过流保护（取代保险丝）
@@ -28,6 +28,8 @@
 # 设计说明
 
 ## 整车电子电气架构
+
+整车电子电气架构图：
 
 ![WUTE_EE_Architecture.png](WUTE_EE_Architecture.png)
 
@@ -67,7 +69,7 @@
 
 具备过压保护，浪涌保护，反接保护，过流保护，温度电流监测等防护功能
 
-硬件实物图照片：
+硬件实物图：
 
 ![实物图1.jpg](Hardware/实物图1.jpg)
 
@@ -78,15 +80,13 @@
 
 ## 软件说明
 
-软件部分基于NXP的工具链开发，包括：
+NXP官方为S32K3提供了一套符合AUTOSAR规范的的S32K3（Model-Based Design Tools，MBDT）工具箱支持，以及变量观测与标定工具，该项目中具体使用到的软件工具如下：
 
 1. AUTOSAR MCAL层配置工具：S32 Config Tool
 2. AUTOSAR应用层开发工具：MBD开发工具箱（基于simulink平台）：NXP_MBDToolbox_S32K3xx
-3. 观测与标定工具：FreeMaster
+3. 变量观测与标定工具：FreeMaster
 
-采用自下而上的AUTOSAR SWC开发方式，先在simulink开发模型组件，再生成ARXML（AUTOSAR描述文件）组件描述并与simulink模型绑定
-
-本项目MBD模型采用模块化的搭建方式，将软件功能划分为了几个子系统搭建
+AUTOSAR应用层采用基于模型开发MBD的开发方式，软件架构上采用模块化的设计方式，以高内聚，低耦合为设计原则，将软件整体根据不同任务划分为各子系统搭建。 
 
 部分开发记录请见 ..\Firmware\AUTOSAR_MBD\RBCM_MBD\RBCM_Model.md 文件
 
