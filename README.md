@@ -15,13 +15,13 @@
 
 项目意义：优化大学方程式赛车整车电子电气架构，使VCU专注于底盘域的控制，RBCM负责车身域的管理与诊断
 
+![RBCM_MultiBoard.png](Hardware/RBCM_MultiBoard.png)
+
 为什么叫后车身域控制器？RBCM的设计目标包括对低压电池的监测和对整车低压配电诊断管理，因此与低压电池布置在一起，而WUTE车队的低压电池主要布置在车身后舱，因此RBCM也布置也在后方。
 
 本项目适用于[大学生方程式赛事](http://www.formulastudent.com.cn/)(👈戳我了解)，本项目是依照大学生方程式赛事规则进行设计的。
 
 本项目针对[武汉理工大学WUTE车队](https://space.bilibili.com/1177337861?spm_id_from=333.337.0.0)(👈戳我了解)25赛季E03电动方程式赛车开发，包含后车身域控制器的硬件设计及MBD软件开发，以及QT数传上位机的设计与开发。
-
-![RBCM_MultiBoard.png](Hardware/RBCM_MultiBoard.png)
 
 ---
 
@@ -33,9 +33,11 @@
 
 ## 硬件说明
 
-硬件采用核心板和底板分板设计，板对板连接器连接，硬件架构图如下：
+硬件采用核心板和底板分板设计，板对板连接器连接，硬件架构如下图：
 
 ![RBCM_Architecture.png](Hardware/RBCM_Architecture.png)
+
+![RBCM_Architecture2.png](Hardware/RBCM_Architecture2.png)
 
 ### RBCM核心板
 
@@ -65,6 +67,13 @@
 
 具备过压保护，浪涌保护，反接保护，过流保护，温度电流监测等防护功能
 
+硬件实物图照片：
+
+![实物图1.jpg](Hardware/实物图1.jpg)
+
+![实物图2.jpg](Hardware/实物图2.jpg)
+
+
 硬件BOM配单整理中...
 
 ## 软件说明
@@ -89,7 +98,7 @@ MBD模型展示：
 
 CAN发送部分将报文分成了三组，分别负责MBCM核心数据、诊断数据、采集的传感器数据报文发送至CAN总线上
 
-当前MCAL层已完成RBCM适配，MBD应用层开发已接近完成...
+当前MCAL层已完成RBCM适配，MBD应用层开发接近完成...
 
 ## 数传上位机说明
 
@@ -171,5 +180,15 @@ json测试数据包：
 配置COM口，烧录标定
 
 # 其他内容
+
+本项目基于Apache-2.0开源，有引用或者修改本项目的地方，请标明作者与出处。尊重作者，尊重开源~
+
+如果有任何疑问或建议可联系作者，QQ号：2095337725
+
+代码仓库链接：
+
+Github地址：https://github.com/Caler10/RBCM_S32K344_AUTOSAR_MBD
+
+Gitee地址：https://gitee.com/caler14/rbcm_-s32-k344_-autosar_-mbd
 
 施工中...
