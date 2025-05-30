@@ -153,7 +153,15 @@ json测试数据包：
 
 ```
 
----
+# 测试
+
+FreeMaster观测测试：
+
+![RBCM_freemaster_test.png](RBCM_freemaster_test.png)
+
+RBCM核心板温度监测与FreeMaster无线观测测试：
+
+![RBCM_freemaster_wireless_test.gif](RBCM_freemaster_wireless_test.gif)
 
 # 使用说明
 
