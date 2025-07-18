@@ -159,11 +159,11 @@ FreeMaster观测测试：
 
 ![RBCM_freemaster_test.png](RBCM_freemaster_test.png)
 
-RBCM核心板温度监测测试（FreeMaster无线观测）：
+RBCM核心板温度监测测试视频(FreeMaster无线观测):
 
 ![RBCM_freemaster_wireless_test.gif](RBCM_freemaster_wireless_test.gif)
 
-4G数传上位机通信测试(MQTTX模拟域控端)：
+4G数传上位机通信测试(MQTTX模拟RBCM域控端)：
 
 ![WUTE-MQTT-DashBoard_Test.png](Software/WUTE-MQTT-DashBoard_Test.png)
 
