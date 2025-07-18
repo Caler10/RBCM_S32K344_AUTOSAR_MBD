@@ -6,7 +6,7 @@
 
 1. 具备2.4G无线烧录与标定功能
 2. 整车低压配电过流保护（取代保险丝）
-3. 整车低压配电管理与诊断，可实时诊断各通道电流情况
+3. 整车低压配电管理与诊断，可实时诊断各通道设备电流情况
 4. 与整车CAN通信（PCAN、BCAN）
 5. 集成4G数传功能，采集整车跑动数据，并在MQTT上位机端实时显示
 6. 拥有丰富的外设挂载接口（多电平兼容），支持各种协议传感器等设备接入（包括ADC PWM UART IIC SPI，支持3.3V及5V）
@@ -19,7 +19,7 @@
 
 为什么叫后车身域控制器？RBCM的设计目标包括对低压电池的监测和对整车低压配电诊断管理，因此与低压电池布置在一起，而WUTE车队的低压电池主要布置在车身后舱，因此RBCM也布置也在后方。
 
-本项目适用于[大学生方程式赛事](http://www.formulastudent.com.cn/)(👈戳我了解)，本项目是依照大学生方程式赛事规则进行设计的。
+本项目适用于[大学生方程式赛事](http://www.formulastudent.com.cn/)(👈戳我了解)，本项目是符合大学生方程式赛事规则进行设计的。
 
 本项目针对[武汉理工大学WUTE车队](https://space.bilibili.com/1177337861?spm_id_from=333.337.0.0)(👈戳我了解)25赛季E03电动方程式赛车开发，包含后车身域控制器的硬件设计及MBD软件开发，以及QT数传上位机的设计与开发。
 
@@ -153,15 +153,19 @@ json测试数据包：
 
 ```
 
-# 测试
+# 测试过程记录
 
 FreeMaster观测测试：
 
 ![RBCM_freemaster_test.png](RBCM_freemaster_test.png)
 
-RBCM核心板温度监测与FreeMaster无线观测测试：
+RBCM核心板温度监测测试（FreeMaster无线观测）：
 
 ![RBCM_freemaster_wireless_test.gif](RBCM_freemaster_wireless_test.gif)
+
+4G数传上位机通信测试(MQTTX模拟域控端)：
+
+![WUTE-MQTT-DashBoard_Test.png](Software/WUTE-MQTT-DashBoard_Test.png)
 
 # 使用说明
 
