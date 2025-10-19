@@ -1,3 +1,0 @@
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/OsIf_Timer_System_Internal_Systick.c:172:6:OsIf_Timer_System_Internal_Init	0	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/OsIf_Timer_System_Internal_Systick.c:190:8:OsIf_Timer_System_Internal_GetCounter	0	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/OsIf_Timer_System_Internal_Systick.c:201:8:OsIf_Timer_System_Internal_GetElapsed	4	static

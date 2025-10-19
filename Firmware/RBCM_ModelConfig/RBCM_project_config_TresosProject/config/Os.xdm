@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datamodel xmlns="http://www.tresos.de/_projects/DataModel2/16/root.xsd"
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/16/attribute.xsd"
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd"
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd"
+           version="7.0">
+
+  <d:ctr xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd"
+          xmlns:cd="http://www.tresos.de/_projects/DataModel2/08/customdata.xsd"
+          xmlns:f="http://www.tresos.de/_projects/DataModel2/14/formulaexpr.xsd"
+          xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd"
+          xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd"
+          xmlns:variant="http://www.tresos.de/_projects/DataModel2/11/variant.xsd"
+          factory="autosar"
+          type="AUTOSAR">
+      <d:lst type="TOP-LEVEL-PACKAGES">
+         <d:ctr name="Os" type="AR-PACKAGE">
+            <d:lst type="ELEMENTS">
+               <d:chc name="Os" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+                  <d:ctr type="MODULE-CONFIGURATION">
+                     <a:a name="DEF" value="ASPath:/TS_T40D34M50I0R0/Os"/>
+                     <d:var name="POST_BUILD_VARIANT_USED" type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                     </d:var>
+                     <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION"
+                            value="VariantPreCompile">
+                        <a:a name="IMPORTER_INFO" value="@DEF"/>
+                     </d:var>
+                     <d:lst name="OsApplication" type="MAP">
+                        <d:ctr name="OsApplication_0" type="IDENTIFIABLE">
+                           <d:ref name="OsAppEcucPartitionRef" type="REFERENCE"
+                                  value="ASPath:/EcuC/EcuC/EcucPartitionCollection_0/EcucPartition_0">
+                              <a:a name="ENABLE" value="true"/>
+                           </d:ref>
+                           <d:ref name="OsApplicationCoreRef" type="REFERENCE"
+                                  value="ASPath:/EcuC/EcuC/EcucHardware_0/EcucCoreDefinition_0">
+                              <a:a name="ENABLE" value="true"/>
+                           </d:ref>
+                        </d:ctr>
+                        <d:ctr name="OsApplication_1" type="IDENTIFIABLE">
+                           <d:ref name="OsAppEcucPartitionRef" type="REFERENCE"
+                                  value="ASPath:/EcuC/EcuC/EcucPartitionCollection_0/EcucPartition_4">
+                              <a:a name="ENABLE" value="true"/>
+                           </d:ref>
+                           <d:ref name="OsApplicationCoreRef" type="REFERENCE"
+                                  value="ASPath:/EcuC/EcuC/EcucHardware_0/EcucCoreDefinition_4">
+                              <a:a name="ENABLE" value="true"/>
+                           </d:ref>
+                        </d:ctr>
+                     </d:lst>
+                     <d:lst name="OsEvent" type="MAP"/>
+                     <d:lst name="OsIsr" type="MAP"/>
+                     <d:lst name="OsTask" type="MAP"/>
+                     <d:lst name="OsCounter" type="MAP">
+                        <d:ctr name="OsCounter_0" type="IDENTIFIABLE">
+                           <d:var name="OsCounterMaxAllowedValue" type="INTEGER" value="1000"/>
+                           <d:var name="OsCounterMinCycle" type="INTEGER" value="1000"/>
+                           <d:var name="OsCounterTicksPerBase" type="INTEGER" value="1000"/>
+                           <d:var name="OsCounterType" type="ENUMERATION" value="SOFTWARE"/>
+                           <d:var name="OsSecondsPerTick" type="FLOAT">
+                              <a:a name="ENABLE" value="false"/>
+                              <a:a name="IMPORTER_INFO" value="@DEF"/>
+                           </d:var>
+                        </d:ctr>
+                     </d:lst>
+                  </d:ctr>
+               </d:chc>
+            </d:lst>
+         </d:ctr>
+      </d:lst>
+  </d:ctr>
+
+</datamodel>

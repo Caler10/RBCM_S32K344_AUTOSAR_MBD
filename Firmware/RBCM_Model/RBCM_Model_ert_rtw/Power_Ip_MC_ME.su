@@ -1,0 +1,8 @@
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_ME.c:402:13:Power_Ip_MC_ME_ConfigurePartitionClock	32	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_ME.c:613:6:Power_Ip_MC_ME_ConfigCoreCOFBClock	96	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_ME.c:662:6:Power_Ip_MC_ME_EnablePartitionClock	16	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_ME.c:703:6:Power_Ip_MC_ME_DisablePartitionClock	16	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_ME.c:734:6:Power_Ip_MC_ME_SocTriggerResetEvent	0	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_ME.c:769:6:Power_Ip_MC_ME_CoreStandbyEntry	8	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_ME.c:808:6:Power_Ip_MC_ME_SocStandbyEntry	8	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_ME.c:854:24:Power_Ip_MC_ME_GetPreviousMode	0	static

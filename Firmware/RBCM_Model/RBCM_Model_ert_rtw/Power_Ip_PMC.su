@@ -1,0 +1,4 @@
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_PMC.c:253:6:Power_Ip_PMC_PowerInit	32	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_PMC.c:417:6:Power_Ip_PMC_PrepareLowPowerEntry	4	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_PMC.c:766:6:Power_Ip_PMC_EnableLastMile	32	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_PMC.c:831:6:Power_Ip_PMC_DisableLastMile	0	static

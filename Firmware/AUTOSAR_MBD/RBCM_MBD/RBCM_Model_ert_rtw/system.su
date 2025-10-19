@@ -1,5 +1,0 @@
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/Project_Settings/Startup_Code/system.c:274:6:startup_go_to_user_mode	0	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/Project_Settings/Startup_Code/system.c:287:6:default_interrupt_routine	0	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/Project_Settings/Startup_Code/system.c:406:7:Sys_GetCoreID	0	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/Project_Settings/Startup_Code/system.c:418:6:SystemInit	16	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/Project_Settings/Startup_Code/system.c:736:6:Enable_FPU	0	static

@@ -1,5 +1,0 @@
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/src/freemaster_serial.c:280:13:_FMSTR_Listen	16	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/src/freemaster_serial.c:343:13:_FMSTR_SerialSendResponse	32	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/src/freemaster_serial.c:607:19:_FMSTR_SerialInit	16	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/src/freemaster_serial.c:674:13:_FMSTR_SerialPoll	40	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/src/freemaster_serial.c:180:6:FMSTR_ProcessSerial	32	static

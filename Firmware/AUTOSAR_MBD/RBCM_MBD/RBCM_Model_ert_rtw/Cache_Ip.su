@@ -1,6 +1,0 @@
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Cache_Ip.c:347:16:Cache_Ip_Enable	16	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Cache_Ip.c:400:16:Cache_Ip_Disable	16	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Cache_Ip.c:455:16:Cache_Ip_Invalidate	16	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Cache_Ip.c:511:16:Cache_Ip_Clean	16	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Cache_Ip.c:567:16:Cache_Ip_InvalidateByAddr	24	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Cache_Ip.c:624:16:Cache_Ip_CleanByAddr	24	static

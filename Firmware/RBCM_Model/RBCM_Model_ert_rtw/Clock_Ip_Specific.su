@@ -1,0 +1,12 @@
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Specific.c:209:13:Clock_Ip_PllPowerClockIp	24	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Specific.c:302:13:Clock_Ip_FxoscPowerClockIp	24	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Specific.c:353:13:Clock_Ip_SxoscPowerClockIp	24	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Specific.c:404:13:Clock_Ip_CmusPowerClockIp	24	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Specific.c:453:13:Clock_Ip_MscmPowerClockIp	24	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Specific.c:504:6:Clock_Ip_PowerClockIpModules	8	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Specific.c:652:6:Clock_Ip_McMeEnterKey	0	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Specific.c:674:6:DisableFircInStandbyMode	0	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Specific.c:680:6:EnableFircInStandbyMode	16	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Specific.c:688:6:DisableSircInStandbyMode	0	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Specific.c:694:6:EnableSircInStandbyMode	16	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Clock_Ip_Specific.c:805:6:Clock_Ip_Command	8	static

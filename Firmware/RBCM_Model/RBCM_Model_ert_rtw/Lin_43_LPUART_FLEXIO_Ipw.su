@@ -1,0 +1,11 @@
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lin_43_LPUART_FLEXIO_Ipw.c:676:13:Lin_Ipw_HandleTxSleepCmd	8	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lin_43_LPUART_FLEXIO_Ipw.c:775:16:Lin_43_LPUART_FLEXIO_Ipw_CheckWakeup	0	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lin_43_LPUART_FLEXIO_Ipw.c:800:6:Lin_43_LPUART_FLEXIO_Ipw_InitChannel	16	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lin_43_LPUART_FLEXIO_Ipw.c:862:16:Lin_43_LPUART_FLEXIO_Ipw_SendFrame	24	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lin_43_LPUART_FLEXIO_Ipw.c:968:16:Lin_43_LPUART_FLEXIO_Ipw_GoToSleep	32	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lin_43_LPUART_FLEXIO_Ipw.c:1043:16:Lin_43_LPUART_FLEXIO_Ipw_GoToSleepInternal	16	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lin_43_LPUART_FLEXIO_Ipw.c:1117:16:Lin_43_LPUART_FLEXIO_Ipw_HardwareGetStatus	8	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lin_43_LPUART_FLEXIO_Ipw.c:1155:6:Lin_43_LPUART_FLEXIO_Ipw_WakeUp	0	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lin_43_LPUART_FLEXIO_Ipw.c:1189:6:Lin_43_LPUART_FLEXIO_Ipw_WakeUpInternal	0	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lin_43_LPUART_FLEXIO_Ipw.c:1221:6:Lin_43_LPUART_FLEXIO_Ipw_Callback	32	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Lin_43_LPUART_FLEXIO_Ipw.c:1316:6:Flexio_Lin_Ipw_Callback	32	static

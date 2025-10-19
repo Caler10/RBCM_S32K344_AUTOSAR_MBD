@@ -202,5 +202,3 @@ RBCM核心板温度监测测试视频(FreeMaster无线观测):
 Github地址：https://github.com/Caler10/RBCM_S32K344_AUTOSAR_MBD
 
 Gitee地址：https://gitee.com/caler14/rbcm_-s32-k344_-autosar_-mbd
-
-施工中...

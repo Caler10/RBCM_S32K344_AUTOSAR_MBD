@@ -1,4 +1,0 @@
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Tspc_Port_Ip.c:132:6:Tspc_Port_Ip_EnableObeGroup	8	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Tspc_Port_Ip.c:161:6:Tspc_Port_Ip_DisableObeGroup	8	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Tspc_Port_Ip.c:190:6:Tspc_Port_Ip_MaskObeGroup	0	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Tspc_Port_Ip.c:214:6:Tspc_Port_Ip_ConfigureObeGroup	32	static

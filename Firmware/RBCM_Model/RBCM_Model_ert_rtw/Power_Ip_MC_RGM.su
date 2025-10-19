@@ -1,0 +1,7 @@
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_RGM.c:241:13:Power_Ip_MC_RGM_ClearFesResetFlags.part.0	32	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_RGM.c:282:13:Power_Ip_MC_RGM_ClearDesResetFlags.part.0	32	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_RGM.c:345:6:Power_Ip_MC_RGM_ResetInit	8	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_RGM.c:523:20:Power_Ip_MC_RGM_GetResetReason	24	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_RGM.c:591:8:Power_Ip_MC_RGM_GetResetReason_Uint	8	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_RGM.c:607:23:Power_Ip_MC_RGM_GetResetRawValue	16	static
+E:/Workspace/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/Power_Ip_MC_RGM.c:737:7:Power_Ip_MC_RGM_ResetDuringStandby	0	static

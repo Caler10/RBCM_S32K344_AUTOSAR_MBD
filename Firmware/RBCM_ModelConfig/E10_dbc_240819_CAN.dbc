@@ -1,0 +1,335 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: BMS_Ext
+VAL_TABLE_ DCDC_Sat 3 "正常" 2 "短路到电源或者过
+载、过温故障" 1 "开路" 0 "短路到地
+" ;
+VAL_TABLE_ Ready_Button 1 "按钮按下" 0 "按钮未按下" ;
+VAL_TABLE_ Veh_Ready 1 "车辆进入待驶状态" 0 "车辆未进入待驶状态" ;
+VAL_TABLE_ MCUReady 1 "MCU进入Ready状态" 0 "MCU未进入Ready状态" ;
+VAL_TABLE_ DRS 2 "关闭" 1 "开启" 0 "维持当前状态" ;
+VAL_TABLE_ Pump 2 "关闭" 1 "开启" 0 "维持当前状态" ;
+VAL_TABLE_ Beep 2 "关闭" 1 "开启" 0 "保持原有状态" ;
+VAL_TABLE_ BHVB_State_IMDwarning 1 "IMD未报警" 0 "IMD报警" ;
+VAL_TABLE_ BHVB_State_FZ 1 "互锁断开" 0 "互锁闭合" ;
+VAL_TABLE_ BHVB_State_HV 1 "电压大于50.2V" 0 "电压小于50.2V" ;
+VAL_TABLE_ BHVB_State_intention 1 "意向检测闭合" 0 "意向检测断开" ;
+VAL_TABLE_ BHVB_State_BMSwarning 1 "BMS未报警" 0 "BMS报警" ;
+VAL_TABLE_ BMS_Cooling_Heating_ValTable 1 "Active" 0 "Inactive" ;
+VAL_TABLE_ BatAlmLv_ValTab 3 "3级告警" 2 "2级告警" 1 "1级告警 断电" 0 "无告警" ;
+VAL_TABLE_ BatState_ValTab 7 "错误状态" 6 "关机状态" 5 "运行状态" 4 "预充状态" 3 "待机状态" 2 "自检状态" 1 "休眠状态" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ New_Signal_134 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ New_Signal_133 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147484163 DashBoard: 8 Vector__XXX
+ SG_ DCDC_Sat : 19|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Ready_Button : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VehReady : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_Ready : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Brk_Pos : 8|8@1+ (1,0) [0|100] "" Vector__XXX
+ SG_ APPS_Pos : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 2400479858 RBCM_Core_State: 4 Vector__XXX
+ SG_ RDCU_Battery2_Voltage : 16|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ RDCU_Battery1_Voltage : 8|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ RDCU_DRS_State : 2|2@1- (1,0) [-2|1] "" Vector__XXX
+ SG_ RDCU_DCDC_State : 0|2@1- (1,0) [-2|1] "" Vector__XXX
+
+BO_ 2400480114 RBCM_Diagnose_Data: 2 Vector__XXX
+ SG_ PDB_Error_State : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDB_Error_Device : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2400480370 RBCM_Peripheral_Data: 7 Vector__XXX
+ SG_ HSDx_Channelx_State6 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HSDx_Channelx_State5 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HSDx_Channelx_State4 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HSDx_Channelx_State3 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HSDx_Channelx_State2 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HSDx_Channelx_State1 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDB_State_Pack_number : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2147484162 PDB_ctr: 8 Vector__XXX
+ SG_ DRS : 0|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ Beep : 2|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ Pump : 40|8@1+ (1,0) [0|100] "" Vector__XXX
+ SG_ Taillight : 32|8@1+ (1,0) [0|100] "" Vector__XXX
+ SG_ FAN2 : 16|8@1+ (1,0) [0|100] "" Vector__XXX
+ SG_ FAN1 : 8|8@1+ (1,0) [0|100] "" Vector__XXX
+ SG_ FAN3 : 24|8@1+ (1,0) [0|100] "" Vector__XXX
+
+BO_ 2147484418 temp1: 8 Vector__XXX
+ SG_ temchannel4 : 55|16@0- (0.1,0) [0|0] "" Vector__XXX
+ SG_ temchannel3 : 39|16@0- (0.1,0) [0|0] "" Vector__XXX
+ SG_ temchannel2 : 23|16@0- (0.1,0) [0|0] "" Vector__XXX
+ SG_ temchannel1 : 7|16@0- (0.1,0) [0|0] "" Vector__XXX
+
+BO_ 2147484419 temp2: 8 Vector__XXX
+ SG_ temchannel8 : 55|16@0- (0.1,0) [0|0] "" Vector__XXX
+ SG_ temchannel7 : 39|16@0- (0.1,0) [0|0] "" Vector__XXX
+ SG_ temchannel6 : 23|16@0- (0.1,0) [0|0] "" Vector__XXX
+ SG_ temchannel5 : 7|16@0- (0.1,0) [0|0] "" Vector__XXX
+
+BO_ 2533359616 VCU_Panel: 8 Vector__XXX
+ SG_ Wheel_Angle : 32|8@1- (1,0) [0|5000] "" Vector__XXX
+ SG_ Linear_RR : 24|8@1- (1,0) [0|5000] "" Vector__XXX
+ SG_ Linear_FR : 16|8@1- (1,0) [0|5000] "" Vector__XXX
+ SG_ Linear_RL : 8|8@1- (1,0) [0|5000] "" Vector__XXX
+ SG_ Linear_FL : 0|8@1- (1,0) [0|5000] "" Vector__XXX
+
+BO_ 2556510450 VCU: 8 Vector__XXX
+ SG_ Linear_RL : 16|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Linear_FR : 8|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Linear_FL : 0|8@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 2684354559 BHVB_State: 8 Vector__XXX
+ SG_ high_voltaege : 24|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_FZ_OPEN : 28|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_FZ_OPEN : 29|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ negative_relay_intention_close : 26|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ positive_relay_intention_close : 27|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ precharge_relay_intention_close : 25|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ BMS_STATE_OK : 20|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ IMD_STATE_OK : 21|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ voltage_detect_ok : 16|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ negative_relay_detect_ok : 18|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ precharge_relay_detect_ok : 17|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ positive_relay_detect_ok : 19|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Accu_Output_Vol : 8|8@1- (4.9,0) [0|0] "" Vector__XXX
+ SG_ Accu_Vol_pre : 0|8@1- (4.9,0) [0|0] "" Vector__XXX
+
+BO_ 2556772595 BMS_HCU_ALM: 8 Vector__XXX
+ SG_ BMS_ALM_VCU_OFFLINE : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_PRECHG_FAIL : 36|1@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_LEAK_OC : 37|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_HVREL_FAIL : 47|1@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_HALL_BREAK : 46|1@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_DSCH_OCT : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_DSCH_OCS : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_CHRG_OCT : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_CHRG_OCS : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_CELL_UV : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_CELL_UT : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_CELL_TBK : 14|1@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_CELL_OV : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_CELL_OT : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_CELL_LBK : 15|1@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_CELL_DV : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_CELL_DT : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_BSU_OFFLINE : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_BSU_FAULT : 39|1@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_BMU_FAIL : 34|1@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_BATT_UV : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_BATT_UC : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_BATT_OV : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_BATT_OC : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BMS_ALM_AUX_FAIL : 35|1@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2365573103 MCU_Pwr: 8 Vector__XXX
+ SG_ MCU_HvAcCurrRms : 48|16@1+ (0.1,-1600) [-1600|1600] "" Vector__XXX
+ SG_ MCU_HvCurr : 32|16@1+ (0.1,-1600) [-1600|1600] "" Vector__XXX
+ SG_ MCU_HvVolt : 16|16@1+ (0.1,0) [0|1000] "Volt" Vector__XXX
+ SG_ MCU_MotorTemp : 8|8@1+ (1,-50) [-50|205] "" Vector__XXX
+ SG_ MCU_McuTemp : 0|8@1+ (1,-50) [-50|205] "celcius" Vector__XXX
+
+BO_ 2365572847 MCU_Stat: 8 Vector__XXX
+ SG_ MCU_AlmLv : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MCU_IsSelfcheckPass : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsMotorOvertemp : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsMcuOvertemp : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsUnderPowerLim : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsHvUndervoltage : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsLvError : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsHvOvervoltage : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsOverCurr : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsRevoloverError : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsPreChg : 41|1@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MCU_IsReady : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsMcuNOTActive : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsZeroLocMode : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsBrakeMode : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsSpdMode : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsTorqMode : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsFreeMode : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_TORQ_RPT : 16|16@1+ (1,0) [0|1000] "1/1000" Vector__XXX
+ SG_ MCU_SPD_RPT : 0|16@1+ (0.5,-10000) [-10000|10000] "rpm" Vector__XXX
+
+BO_ 2294411041 VCU_MCU_CMD: 8 Vector__XXX
+ SG_ MCU_HV_Voltage : 48|16@1+ (0.1,0) [0|1000] "" Vector__XXX
+ SG_ MCU_IsPosRelayAct : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_GEAR_CMD : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MCU_IsMcuNOTActive : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsZeroLocMode : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsBrakeMode : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsSpdMode : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsTorqMode : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_IsFreeMode : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_TORQ_CMD : 16|16@1+ (1,0) [0|1000] "1/1000" Vector__XXX
+ SG_ MCU_SPD_CMD : 0|16@1+ (0.5,-10000) [-10000|10000] "rpm" Vector__XXX
+
+BO_ 2556575987 BMS_HCU_MAXT: 8 Vector__XXX
+ SG_ HeatingCtl : 47|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CoolingCtl : 39|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ MinTempNo : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ MaxTempNo : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ MinTemp : 15|8@0+ (1,-40) [-40|120] "Celsius" Vector__XXX
+ SG_ MaxTemp : 7|8@0+ (1,-40) [-40|120] "Celsius" Vector__XXX
+
+BO_ 2556510451 BMS_HCU_MAXV: 8 Vector__XXX
+ SG_ MinCellVoltNo : 47|8@0+ (1,0) [0|255] "miliVolt" Vector__XXX
+ SG_ MaxCellVoltNo : 39|8@0+ (1,0) [0|255] "miliVolt" Vector__XXX
+ SG_ MinCellVolt : 23|16@0+ (1,0) [0|5000] "miliVolt" Vector__XXX
+ SG_ MaxCellVolt : 7|16@0+ (1,0) [0|5000] "miliVolt" Vector__XXX
+
+BO_ 2556444915 BMS_HCU_INFO: 8 BMS_Ext
+ SG_ BatLife : 63|8@0+ (1,0) [0|255] "cycle" Vector__XXX
+ SG_ BatAlmLv : 51|4@0+ (1,0) [0|4] "" Vector__XXX
+ SG_ BatState : 55|4@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ BatSoh : 47|8@0+ (1,0) [0|100] "%" Vector__XXX
+ SG_ BatSoc : 39|8@0+ (1,0) [0|100] "%" Vector__XXX
+ SG_ BatCurrent : 23|16@0+ (0.1,-1000) [-1000|1000] "Amps" Vector__XXX
+ SG_ BatVoltage : 7|16@0+ (0.1,0) [0|900] "Volt" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 2147484163 Brk_Pos "制动踏板开度
+";
+CM_ SG_ 2147484163 APPS_Pos "加速踏板开度
+";
+CM_ SG_ 2400479858 RDCU_Battery2_Voltage "低压电池电压信息";
+CM_ SG_ 2400479858 RDCU_Battery1_Voltage "低压电池电压信息";
+CM_ SG_ 2400479858 RDCU_DRS_State "DRS工作状态";
+CM_ SG_ 2400479858 RDCU_DCDC_State "DCDC开启状态";
+CM_ SG_ 2400480114 PDB_Error_State "错误类型与错误状态（高四位：错误类型；低四位：错误状态）";
+CM_ SG_ 2400480114 PDB_Error_Device "错误设备编号（十六进制）";
+CM_ SG_ 2400480370 HSDx_Channelx_State6 "HSDx通道x的电流值";
+CM_ SG_ 2400480370 HSDx_Channelx_State5 "HSDx通道x的电流值";
+CM_ SG_ 2400480370 HSDx_Channelx_State4 "HSDx通道x的电流值";
+CM_ SG_ 2400480370 HSDx_Channelx_State3 "HSDx通道x的电流值";
+CM_ SG_ 2400480370 HSDx_Channelx_State2 "HSDx通道x的电流值";
+CM_ SG_ 2400480370 HSDx_Channelx_State1 "HSDx通道x的电流值";
+CM_ SG_ 2400480370 PDB_State_Pack_number "数据包编号（总数据包数量5）";
+CM_ SG_ 2147484162 Taillight "尾灯：发送PWM占空比";
+CM_ SG_ 2147484162 FAN2 "电池箱风扇：发送pwm占空比";
+CM_ SG_ 2147484162 FAN1 "水箱风扇：发送PWM占空比";
+CM_ SG_ 2147484162 FAN3 "预留风扇";
+CM_ SG_ 2684354559 high_voltaege "电池箱两端电压大于50.2V";
+CM_ SG_ 2684354559 BMS_FZ_OPEN "BMS安全回路断开";
+CM_ SG_ 2684354559 IMD_FZ_OPEN "IMD安全回路断开
+";
+CM_ SG_ 2684354559 negative_relay_intention_close "主正继电器意向状态";
+CM_ SG_ 2684354559 positive_relay_intention_close "主正继电器意向状态";
+CM_ SG_ 2684354559 precharge_relay_intention_close "预充继电器意向状态
+";
+CM_ SG_ 2684354559 BMS_STATE_OK "BMS Warning
+";
+CM_ SG_ 2684354559 IMD_STATE_OK "IMD warning";
+CM_ SG_ 2684354559 voltage_detect_ok "电压检测电路正常
+";
+CM_ SG_ 2684354559 negative_relay_detect_ok "主负继电器检测电路正常";
+CM_ SG_ 2684354559 precharge_relay_detect_ok "预充继电器检测电路正常";
+CM_ SG_ 2684354559 positive_relay_detect_ok "主正继电器检测电路正常";
+CM_ SG_ 2684354559 Accu_Output_Vol "电池箱输出电压（主正继电器外侧和主负继电器外侧）";
+CM_ SG_ 2684354559 Accu_Vol_pre "电池箱两端电压（预充继电器外侧与主负继电器内侧）";
+CM_ SG_ 2365572847 MCU_IsMcuNOTActive "是否为自由模式";
+CM_ SG_ 2365572847 MCU_IsZeroLocMode "是否为自由模式";
+CM_ SG_ 2365572847 MCU_IsBrakeMode "是否为自由模式";
+CM_ SG_ 2365572847 MCU_IsSpdMode "是否为自由模式";
+CM_ SG_ 2365572847 MCU_IsTorqMode "是否为自由模式";
+CM_ SG_ 2365572847 MCU_IsFreeMode "是否为自由模式";
+CM_ SG_ 2365572847 MCU_TORQ_RPT "VCU发送电机转矩指令";
+CM_ SG_ 2365572847 MCU_SPD_RPT "VCU发送电机转速指令";
+CM_ SG_ 2294411041 MCU_IsPosRelayAct "是否为自由模式";
+CM_ SG_ 2294411041 MCU_GEAR_CMD "是否为自由模式";
+CM_ SG_ 2294411041 MCU_IsMcuNOTActive "是否为自由模式";
+CM_ SG_ 2294411041 MCU_IsZeroLocMode "是否为自由模式";
+CM_ SG_ 2294411041 MCU_IsBrakeMode "是否为自由模式";
+CM_ SG_ 2294411041 MCU_IsSpdMode "是否为自由模式";
+CM_ SG_ 2294411041 MCU_IsTorqMode "是否为自由模式";
+CM_ SG_ 2294411041 MCU_IsFreeMode "是否为自由模式";
+CM_ SG_ 2294411041 MCU_TORQ_CMD "VCU发送电机转矩指令";
+CM_ SG_ 2294411041 MCU_SPD_CMD "VCU发送电机转速指令";
+CM_ BO_ 2556575987 "单体温度最值";
+CM_ SG_ 2556575987 HeatingCtl "BMS加热状态";
+CM_ SG_ 2556575987 CoolingCtl "BMS冷却状态";
+CM_ SG_ 2556575987 MinTempNo "最低温度序号";
+CM_ SG_ 2556575987 MaxTempNo "最高温度序号";
+CM_ SG_ 2556575987 MinTemp "电池单体最低温度";
+CM_ SG_ 2556575987 MaxTemp "电池单体最高温度";
+CM_ BO_ 2556510451 "单体电压最值";
+CM_ SG_ 2556510451 MinCellVoltNo "最低单体电压序号";
+CM_ SG_ 2556510451 MaxCellVoltNo "最高单体电压序号";
+CM_ SG_ 2556510451 MinCellVolt "最低单体电压";
+CM_ SG_ 2556510451 MaxCellVolt "最高单体电压";
+CM_ BO_ 2556444915 "BMS信息";
+CM_ SG_ 2556444915 BatLife "通信生命信息 通信一次++1";
+CM_ SG_ 2556444915 BatAlmLv "动力电池告警级别";
+CM_ SG_ 2556444915 BatState "动力电池状态";
+CM_ SG_ 2556444915 BatSoh "动力电池SOH";
+CM_ SG_ 2556444915 BatSoc "动力电池SOC";
+CM_ SG_ 2556444915 BatCurrent "动力电池电流";
+CM_ SG_ 2556444915 BatVoltage "动力电池总电压";
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "BusType" "CAN";
+VAL_ 2147484163 DCDC_Sat 3 "正常" 2 "短路到电源或者过
+载、过温故障" 1 "开路" 0 "短路到地
+" ;
+VAL_ 2147484163 Ready_Button 1 "按钮按下" 0 "按钮未按下" ;
+VAL_ 2147484163 VehReady 1 "车辆进入待驶状态" 0 "车辆未进入待驶状态" ;
+VAL_ 2147484163 MCU_Ready 1 "MCU进入Ready状态" 0 "MCU未进入Ready状态" ;
+VAL_ 2684354559 high_voltaege 1 "电压大于50.2V" 0 "电压小于50.2V" ;
+VAL_ 2684354559 BMS_FZ_OPEN 1 "互锁断开" 0 "互锁闭合" ;
+VAL_ 2684354559 IMD_FZ_OPEN 1 "互锁断开" 0 "互锁闭合" ;
+VAL_ 2684354559 negative_relay_intention_close 1 "意向检测闭合" 0 "意向检测断开" ;
+VAL_ 2684354559 positive_relay_intention_close 1 "意向检测闭合" 0 "意向检测断开" ;
+VAL_ 2684354559 precharge_relay_intention_close 1 "意向检测闭合" 0 "意向检测断开" ;
+VAL_ 2684354559 BMS_STATE_OK 1 "BMS未报警" 0 "BMS报警" ;
+VAL_ 2684354559 IMD_STATE_OK 1 "IMD未报警" 0 "IMD报警" ;
+VAL_ 2684354559 voltage_detect_ok 1 "正常" 0 "故障" ;
+VAL_ 2684354559 negative_relay_detect_ok 1 "正常" 0 "故障" ;
+VAL_ 2684354559 precharge_relay_detect_ok 1 "正常" 0 "故障" ;
+VAL_ 2684354559 positive_relay_detect_ok 1 "正常" 0 "故障" ;
+VAL_ 2556575987 HeatingCtl 1 "Active" 0 "Inactive" ;
+VAL_ 2556575987 CoolingCtl 1 "Active" 0 "Inactive" ;
+VAL_ 2556444915 BatAlmLv 3 "3级告警" 2 "2级告警" 1 "1级告警 断电" 0 "无告警" ;
+VAL_ 2556444915 BatState 7 "错误状态" 6 "关机状态" 5 "运行状态" 4 "预充状态" 3 "待机状态" 2 "自检状态" 1 "休眠状态" ;
+SIG_GROUP_ 2556772595 BMS 1 :;
+

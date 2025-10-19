@@ -1,5 +1,0 @@
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/OsIf_Timer_System.c:310:6:OsIf_Timer_System_Init	0	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/OsIf_Timer_System.c:360:8:OsIf_Timer_System_GetCounter	0	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/OsIf_Timer_System.c:415:8:OsIf_Timer_System_GetElapsed	0	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/OsIf_Timer_System.c:476:6:OsIf_Timer_System_SetTimerFrequency	0	static
-E:/Myworkspace/RBCM_S32K344_AUTOSAR_MBD/Firmware/AUTOSAR_MBD/RBCM_MBD/RBCM_Model_Config/RTD/src/OsIf_Timer_System.c:524:8:OsIf_Timer_System_MicrosToTicks	8	static
