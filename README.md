@@ -92,7 +92,7 @@ AUTOSAR应用层采用基于模型开发MBD的开发方式，软件架构上采�
 
 MBD模型展示：
 
-![RBCM_MBD.png](Firmware/AUTOSAR_MBD/RBCM_MBD.png)
+![RBCM_MBD.png](Firmware/RBCM_MBD.png)
 
 ### 关于CAN应用层协议架构
 
