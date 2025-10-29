@@ -2,7 +2,7 @@
 
 # 关于本项目
 
-本人的国创项目，一款基于符合AUTOSAR规范的MBD开发的车规级大学方程式赛车后车身域控制器RBCM，具体功能如下：
+本人的国创项目，一款基于符合AUTOSAR规范的MBDT开发的车规级大学方程式赛车后车身域控制器RBCM，具体功能如下：
 
 1. 具备2.4G无线烧录与标定功能
 2. 整车低压配电过流保护（取代保险丝）
@@ -82,7 +82,7 @@
 
 NXP官方为S32K3提供了一套符合AUTOSAR规范的的S32K3（Model-Based Design Tools，MBDT）工具箱支持，以及变量观测与标定工具，该项目中具体使用到的软件工具如下：
 
-1. AUTOSAR MCAL层配置工具：S32 Config Tool
+1. AUTOSAR MCAL层配置工具：S32 Config Tool/EB tresos
 2. AUTOSAR应用层开发工具：MBD开发工具箱（基于simulink平台）：NXP_MBDToolbox_S32K3xx
 3. 变量观测与标定工具：FreeMaster
 
